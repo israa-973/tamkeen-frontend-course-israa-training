@@ -2,9 +2,10 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #f8f9fa;
 }
 .header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
 }
 .header h1 {
@@ -26,7 +27,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 .product-card img {
@@ -66,8 +67,11 @@
     font-size: 25px;
     margin-right: 10px;
 }
+.card-footer {
+    align-items: center;
+}
 .footer {
-    text-align: center;
+    text-align: left;
     margin-top: 40px;
 }   
 .footer h2 {
@@ -78,3 +82,14 @@
     font-size: 16px;
     color: #666;
 }   
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
