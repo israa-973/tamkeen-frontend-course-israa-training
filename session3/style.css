@@ -20,6 +20,7 @@
     text-align: center;
 }
 .product-card {
+    display: inline-block;
     width: 250px;
     margin: 20px;
     background-color: #fff;
@@ -43,6 +44,26 @@
 }
 .card-footer {
     margin-top: 15px;
+}
+.card-footer button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-footer button:hover {
+    background-color: #218838;
+}   
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+.new-price {
+    color: #28a745;
+    font-weight: bold;
 }
 .footer {
     text-align: center;
