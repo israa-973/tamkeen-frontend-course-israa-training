@@ -59,11 +59,12 @@
 .old-price {
     text-decoration: line-through;
     color: #999;
-    margin-right: 10px;
 }
 .new-price {
     color: #28a745;
     font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
 }
 .footer {
     text-align: center;
