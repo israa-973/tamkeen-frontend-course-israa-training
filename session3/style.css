@@ -1,8 +1,12 @@
+.body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f8f9fa;
 }
 .header {
     text-align: left;
