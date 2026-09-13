@@ -19,6 +19,7 @@
 .products-cards {
     display: inline-block;
     text-align: center;
+    width: 100%;
 }
 .product-card {
     display: inline-block;
@@ -32,7 +33,7 @@
 }
 .product-card img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 10px;
 }
 .product-name {
