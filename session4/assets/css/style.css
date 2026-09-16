@@ -48,7 +48,7 @@ body {
     background-color: #F4F4F4;
     border-radius: 16px;
     padding: 24px;
-    margin: 0px 7px;
+    margin: 7px 7px;
 }
 
 .ml-0 {
@@ -87,7 +87,7 @@ body {
 
 .cards-container .card .view-profile {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
 }
 
