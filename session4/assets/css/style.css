@@ -1,6 +1,7 @@
 body {
     background-image: url('../images/background.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
     font-family: 'Helvetica Neue';
@@ -15,7 +16,7 @@ body {
 .team-container {
     text-align: left;
     margin-top: 40px;
-    max-width: 70%;
+    max-width: 68%;
 }
 
 .welcome-message {
@@ -79,7 +80,7 @@ body {
 
 .cards-container .card .role {
     font-size: 16px;
-    color: #666;
+    color: #353535;
     text-align: left;
     height: 150px;
 }
