@@ -1,59 +1,90 @@
 body {
-    background-image: url('images/background.jpg');
+    background-image: url('images/background.jpeg');
     background-size: cover;
     margin: 0px;
     padding: 0px;
+    font-family: 'Helvetica Neue';
+}
+.ml-0 {
+    margin-left: 0px !important;
+}
+.mr-0 {
+    margin-right: 0px !important;
 }
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0px auto;
     padding: 20px;
 }
 .team-container {
     text-align: left;
     margin-top: 40px;
+    max-width: 70%;
 }
 .welcome-message {
-    font-size: 24px;
-    color: #333;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 300;
+     margin-bottom: 20px;
 }
 .team-description {
-    font-size: 16px;
-    color: #666;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 200;
+}
+.team-container .team-name {
+    font-weight: 900;
 }
 .cards-container {
-    display: inline-block;
-    text-align: center;
+    display: block;
     width: 100%;
-    gap: 20px;
 }  
 .cards-container .card {
     display: inline-block;
-    width: 267px;
-    margin: 20px;
-    background-color: #fff;
+    vertical-align: top;
+    width: 32.3%;
+    background-color: #F4F4F4;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    padding: 20px;
+    padding: 24px;
+    margin: 0 7px;
+    box-sizing: border-box;
+
+}
+.cards-container .card .image-container {
+text-align: center;
+padding: 15px 0px;
 }
 .cards-container .card img {
-    width: 100%;
-    height: 250px;
-    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 .cards-container .card .name {
     font-size: 24px;
     margin: 10px 0px;
+    text-align: center;
+    color: #7A0A72;
 }
 .cards-container .card .role {
     font-size: 16px;
     color: #666;
+    text-align: left;
+    height: 150px;
 }
 .cards-container .card .view-profile {
-    display: inline-block;
-    margin-top: 10px;
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+}
+.cards-container .card .view-profile a {
+    display: block;
     text-decoration: none;
-    color: #004e11;
-    font-weight: bold;
+    color: #fff;
+    background-color: #B220AF;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 0px;
+font-size: 18px;
 }
