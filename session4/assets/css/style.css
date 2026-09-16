@@ -6,14 +6,6 @@ body {
     font-family: 'Helvetica Neue';
 }
 
-.ml-0 {
-    margin-left: 0px !important;
-}
-
-.mr-0 {
-    margin-right: 0px !important;
-}
-
 .container {
     max-width: 1200px;
     margin: 0px auto;
@@ -51,13 +43,19 @@ body {
 .cards-container .card {
     display: inline-block;
     vertical-align: top;
-    width: 32.3%;
+    width: 28.3%;
     background-color: #F4F4F4;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 24px;
-    margin: 0 7px;
-    box-sizing: border-box;
+    margin: 0px 7px;
+}
 
+.ml-0 {
+    margin-left: 0px !important;
+}
+
+.mr-0 {
+    margin-right: 0px !important;
 }
 
 .cards-container .card .image-container {
@@ -87,7 +85,6 @@ body {
 }
 
 .cards-container .card .view-profile {
-    display: block;
     text-align: center;
     width: 90%;
     margin-top: 20px;
