@@ -117,3 +117,11 @@ section.hero-section {
     min-width: 300px;
     margin-bottom: 100px;
 }
+.background-container-2 {
+    margin: 0 auto;
+    background-color: #F2F5FF;
+}
+.section2{
+    align-items: center;
+    width: 100%;
+}
