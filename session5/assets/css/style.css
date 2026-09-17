@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background: linear-gradient(to left, #2A77F7, #1243AA);
+}   
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.header nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+.header nav ul li {
+    margin-left: 1rem;
+}
+.header nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+}
+section.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.hero-section .hero-text {
+    max-width: 600px;
+}
+.hero-section .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-section .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.hero-section .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero-section .hero-image {
+    max-width: 500px;
+    width: 100%;
+}
