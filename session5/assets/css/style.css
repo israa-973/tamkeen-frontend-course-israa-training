@@ -122,8 +122,15 @@ section.hero-section {
     background-color: #F2F5FF;
 }
 .section2{
-    align-items: center;
     max-width: 1440px;
+     margin: 0 auto;
+    padding: 0 82px;
+    height: 871px;
+}
+
+.section2 .title {
+    text-align: center;
+    margin: 68px 0px;
 }
 .section2 .title h2{
 color: #000;
@@ -133,11 +140,40 @@ font-size: 32px;
 .our-services {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 .profile {
-    align-items: center;
-    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+     text-align: center;
+    padding: 60px 40px;
+}
+.image-container {
+  margin-bottom: 20px;  
+}
+.profile h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+} 
+.role{
+    margin-bottom: 20px;
+}
+.description{
+  margin-bottom: 20px;
+  font-size: 16px;  
+  line-height: 35px;
+}
+.service-categories {
+   display: flex;
+    justify-content: space-between;
+
+}
+.service-categories .company {
+    padding: 20px 58px;
     background-color: #fff;
     border-radius: 10px;
+    text-align: center;
+        margin: 40px 0px ;
+}
+.company-name p{
+    color: #A3A3A3;
 }
