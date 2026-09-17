@@ -123,5 +123,21 @@ section.hero-section {
 }
 .section2{
     align-items: center;
+    max-width: 1440px;
+}
+.section2 .title h2{
+color: #000;
+font-weight: bold;
+font-size: 32px;
+}
+.our-services {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+}
+.profile {
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
 }
