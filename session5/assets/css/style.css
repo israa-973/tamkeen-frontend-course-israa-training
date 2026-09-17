@@ -17,16 +17,15 @@ body {
     font-family: 'Montserrat-Medium';
 }
 
-.background {
+.background-container-1 {
     background: linear-gradient(to left, #2A77F7, #1243AA);
     margin: 0 auto;
 }
 
 .main-container {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 82px;
-    width: 100%;
     height: 871px;
 }
 
@@ -80,20 +79,20 @@ section.hero-section {
 
 .hero-section .hero-text {
     max-width: 600px;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .hero-section .hero-text h1 {
     font-size: 52px;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 24px;
     color: #fff;
     line-height: 65px;
 }
 
 .hero-section .hero-text p {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     color: #fff;
     line-height: 39px;
 }
@@ -101,6 +100,7 @@ section.hero-section {
 .hero-section .cta-button {
     padding: 24px 57px;
     font-size: 16px;
+    font-weight:bold;
     background-color: #EF7F3C;
     color: #fff;
     text-decoration: none;
