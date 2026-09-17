@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-/* @font-face {
-    font-family: 'Montserrat-Medium';
-    src: url('../fonts/Montserrat-Medium.ttf') format('ttf');
-} */
-@font-face {   
+@font-face {
     font-family: 'Montserrat-Medium';
     src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
         url('../fonts/Montserrat-Medium.woff') format('woff');
@@ -16,7 +12,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 
 body {
     font-family: 'Montserrat-Medium';
@@ -53,9 +48,7 @@ body {
     margin-right: 0.5rem;
 }
 
-.header .navigation {
-
-}
+.header .navigation {}
 
 .header nav .logo {
     font-size: 1.5rem;
@@ -74,14 +67,14 @@ body {
 .header nav ul li a {
     color: #fff;
     text-decoration: none;
-     font-size: 16px;
-     padding: 10px;
-     letter-spacing: 2px;
+    font-size: 16px;
+    padding: 10px;
+    letter-spacing: 2px;
 }
 
 section.hero-section {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -105,7 +98,6 @@ section.hero-section {
     line-height: 39px;
 }
 
-
 .hero-section .cta-button {
     padding: 24px 57px;
     font-size: 16px;
@@ -113,10 +105,10 @@ section.hero-section {
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.hero-image .hero-image-container{
+.hero-image .hero-image-container {
     width: 100%;
 }
 
