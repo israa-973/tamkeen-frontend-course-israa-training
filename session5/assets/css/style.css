@@ -26,7 +26,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 82px;
-    height: 871px;
 }
 
 .header {
@@ -125,21 +124,21 @@ section.hero-section {
     max-width: 1440px;
      margin: 0 auto;
     padding: 0 82px;
-    height: 871px;
 }
 
 .section2 .title {
     text-align: center;
-    margin: 68px 0px;
+    padding: 68px 0px;
 }
 .section2 .title h2{
 color: #000;
-font-weight: bold;
+font-weight: bolder;
 font-size: 32px;
 }
 .our-services {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 .profile {
     background-color: #fff;
@@ -151,8 +150,10 @@ font-size: 32px;
   margin-bottom: 20px;  
 }
 .profile h3{
-    font-weight: bold;
     margin-bottom: 10px;
+    font-weight: bolder ;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 .role{
     margin-bottom: 20px;
@@ -165,6 +166,9 @@ font-size: 32px;
 .service-categories {
    display: flex;
     justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+padding-bottom: 68px;
 
 }
 .service-categories .company {
