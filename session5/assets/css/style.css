@@ -72,20 +72,14 @@ body {
     margin-right: 0.5rem;
 }
 
-.header .navigation {}
-
-.header nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo p{
+    font-weight: 500;
 }
 
 .header nav ul {
     list-style: none;
     display: flex;
-}
-
-.header nav ul li {
-    margin-left: 1rem;
+    gap: 20px;
 }
 
 .header nav ul li a {
@@ -94,6 +88,7 @@ body {
     font-size: 16px;
     padding: 10px;
     letter-spacing: 2px;
+    font-weight: 500;
 }
 
 section.hero-section {
@@ -175,31 +170,30 @@ section.hero-section {
     background-color: #fff;
     border-radius: 20px;
     text-align: center;
-    padding: 50px 30px;
+    padding: 40px 30px;
     color: #002348;
 }
 
 .image-container {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .profile h3 {
     margin-bottom: 10px;
-    font-weight: bolder;
+    font-weight: 400;
     font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:system-ui;
 }
 
 .role {
     margin-bottom: 20px;
+    font-size: 12px;
 }
 
 .description {
-       margin-bottom: 20px;
-     font-family:system-ui;
-    font-size: 15px;
-    line-height: 30px; 
-    font-weight: 300;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 34px; 
 }
 
 .service-categories {
