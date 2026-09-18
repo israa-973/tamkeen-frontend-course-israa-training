@@ -226,8 +226,11 @@ section.hero-section {
 }
 
 .background-container-3{
- background: linear-gradient(to left, #2A77F7, #1243AA);
+ background: linear-gradient(to left, #2A77F7, #1243AA), url('../images/BG-Wave\ 1.png');
     margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .section3{
@@ -242,13 +245,15 @@ section.hero-section {
 }
 
 .section3 .title h2{
-    color: #000;
+    color: #fff;
     font-weight: bolder;
     font-size: 32px;
 }
 
 .section3 .title p{
-
+color: #fff;
+    padding: 12px 0px;
+    font-size: 18px;
 }
 
 .common-website-problems{
@@ -257,16 +262,26 @@ section.hero-section {
     gap: 20px;
 }
 
-.common-website-problems .problem{
+.common-website-problems .problem {
 padding: 20px 58px;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
-    margin: 40px 0px;
+    margin-bottom: 80px;
 }
 
 .common-website-problems .problem .image-container{
+ 
+}
+
+.common-website-problems .problem .image-container img{
  margin-bottom: 20px;
+ background-color: #FDF3ED;
+ border-radius: 10px;
+ padding: 20px 20px;
+ width: 80px;
+ height: 80px;
+ text-align: center;
 }
 
 .common-website-problems .problem .name-problem{
