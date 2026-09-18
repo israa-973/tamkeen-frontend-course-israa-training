@@ -160,7 +160,7 @@ section.hero-section {
 }
 
 .section2 .title h2 {
-    color: #000;
+    color: #111;
     font-weight: bolder;
     font-size: 32px;
 }
@@ -176,6 +176,7 @@ section.hero-section {
     border-radius: 20px;
     text-align: center;
     padding: 50px 30px;
+    color: #002348;
 }
 
 .image-container {
@@ -194,9 +195,11 @@ section.hero-section {
 }
 
 .description {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 35px;
+       margin-bottom: 20px;
+     font-family:system-ui;
+    font-size: 15px;
+    line-height: 30px; 
+    font-weight: 300;
 }
 
 .service-categories {
@@ -226,7 +229,7 @@ section.hero-section {
 }
 
 .background-container-3{
- background: linear-gradient(to left, #2A77F7, #1243AA), url('../images/BG-Wave\ 1.png');
+ background: linear-gradient(to left, #2A77F7, #1243AA), url('../images/BG-Wave\ 1.svg');
     margin: 0 auto;
     background-size: cover;
     background-position: center;
@@ -242,12 +245,16 @@ section.hero-section {
 .section3 .title{
   text-align: center;
     padding: 68px 0px;
+    width: 100%;
 }
 
 .section3 .title h2{
     color: #fff;
     font-weight: bolder;
     font-size: 32px;
+    line-height: 52px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .section3 .title p{
@@ -263,11 +270,12 @@ color: #fff;
 }
 
 .common-website-problems .problem {
-padding: 20px 58px;
+padding: 50px 30px;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 80px;
+     color: #002348;
 }
 
 .common-website-problems .problem .image-container{
@@ -288,11 +296,12 @@ padding: 20px 58px;
       margin-bottom: 10px;
     font-weight: bolder;
     font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .common-website-problems .problem .description{
      margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 35px;   
+     font-family:system-ui;
+    font-size: 15px;
+    line-height: 30px; 
+    font-weight: 300;   
 }
