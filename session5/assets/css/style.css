@@ -224,3 +224,60 @@ section.hero-section {
     color: #A3A3A3;
     font-size: 12px;
 }
+
+.background-container-3{
+ background: linear-gradient(to left, #2A77F7, #1243AA);
+    margin: 0 auto;
+}
+
+.section3{
+  max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.section3 .title{
+  text-align: center;
+    padding: 68px 0px;
+}
+
+.section3 .title h2{
+    color: #000;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.section3 .title p{
+
+}
+
+.common-website-problems{
+  display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.common-website-problems .problem{
+padding: 20px 58px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.common-website-problems .problem .image-container{
+ margin-bottom: 20px;
+}
+
+.common-website-problems .problem .name-problem{
+      margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.common-website-problems .problem .description{
+     margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 35px;   
+}
