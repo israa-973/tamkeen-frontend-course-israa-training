@@ -15,25 +15,6 @@
     font-display: swap;
 }
 
-
-
-/* @font-face {
-        font-family: 'Montserrat';
-        src: url('../fonts/Montserrat-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
-                url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
-                url('../fonts/Montserrat-VariableFont_wght.woff') format('woff'),
-                url('../fonts/Montserrat-VariableFont_wght.otf') format('opentype'),
-                url('../fonts/Montserrat-VariableFont_wght.svg') format('svg');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-}
-         */
-
-
-
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -93,7 +74,7 @@ body {
 
 section.hero-section {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
 }
 
@@ -224,7 +205,9 @@ section.hero-section {
 }
 
 .background-container-3 {
-    background: linear-gradient(to left, #2A77F7, #1243AA), url('../images/BG-Wave\ 1.svg');
+    /* background: linear-gradient(to left, #2A77F7, #1243AA), url('../images/BG-Wave\ 1.svg'); */
+    background: url('../images/BG-Wave\ 1.svg'), linear-gradient(to left, #2A77F7, #1243AA);
+
     margin: 0 auto;
     background-size: cover;
     background-position: center;
