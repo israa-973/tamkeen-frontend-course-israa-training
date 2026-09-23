@@ -75,7 +75,7 @@ header {
 
 /* Hero Section */
 .hero-content {
-    max-width: 1300px;
+    max-width: 1400px;
     padding: 0 120px;
     margin: 30px auto;
     justify-content: center;
@@ -94,9 +94,8 @@ header {
 
 .hero-title h1 {
     color: #073141;
-    max-width: 640px;
-    font-size: 64px;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 400;
     font-family: sans-serif;
     margin-bottom: 50px;
 }
@@ -119,7 +118,6 @@ header {
 
 .hero-image {
     object-fit: cover;
-    width: 100%;
 }
 
 .carousel-indicators {
