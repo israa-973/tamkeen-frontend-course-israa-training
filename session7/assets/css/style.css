@@ -359,3 +359,86 @@ font-size: 24px;
 .cta-content button a {
     color: #1D7293;
 }
+
+/* resources-section */
+.resources-section{
+margin: 160px auto;
+}
+
+.resources-label{
+text-align: center;
+max-width: 1000px;
+margin: 0 auto 40px;
+}
+
+.resources-label .title{
+  color: #1D7293;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.resources-label .description{
+font-size: 18px;
+}
+
+.resources-grid{
+max-width: 1300px;
+margin: 0 auto;
+justify-content: flex-start;
+flex-wrap: wrap;
+gap: 40px;
+}
+
+.resource-card{
+max-width: calc(50% - 20px);
+padding: 40px;
+gap: 40px;
+background-color: #E0EFF4;
+align-items: center;
+border-radius: 0 30px;
+}
+
+.resource-image{
+
+}
+
+.resource-content{
+
+}
+
+.resource-content .title{
+font-size: 24px;
+margin-bottom: 6px;
+}
+
+.resource-content .description{
+font-size: 18px;
+}
+
+/* guides-section */
+.guides-section{
+margin: 160px auto;
+}
+
+.testımonıals-label{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testımonıals-label .title{
+ color: #1D7293;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20PX;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.testımonıals-label .description{
+font-size: 18px;
+}
+
