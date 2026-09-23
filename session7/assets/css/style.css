@@ -39,7 +39,7 @@ body {
 header {
     max-width: 1728px;
     text-align: center;
-    padding: 16px 0;
+    padding: 30px;
 
 }
 
@@ -102,7 +102,6 @@ header {
 }
 
 .cta-buttons-contaner {
-    justify-content: last baseline;
     gap: 30px;
 }
 
@@ -189,7 +188,7 @@ header {
 }
 
 .artwork-grid {
-    justify-content: center;
+    justify-content: space-between;
     gap: 40;
     flex-wrap: wrap;
     color: #68818B;
@@ -197,9 +196,9 @@ header {
 }
 
 .artwork-card {
-    flex: 0 1 calc(25% - 20px);
+    flex: 0 1 calc(25% - 40px);
     width: 100%;
-
+    margin-bottom: 40px;
 }
 
 .artwork-title {
@@ -248,7 +247,7 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    margin: 160px auto;
 }
 
 
@@ -256,7 +255,7 @@ header {
     color: #1D7293;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -266,9 +265,10 @@ header {
     padding: 40px;
     flex-direction: column;
     gap: 40px;
-    margin: 0 auto;
+    margin: 0px auto 80px;
     width: 100%;
     justify-content: center;
+    border-radius: 0px 30px 0px 30px;
 
 }
 
@@ -325,4 +325,39 @@ header {
 
 .work-description {
     font-size: 18px;
+}
+
+/* community-cta-section */
+.community-cta-section {
+    background: #1D7293 url('../images/object.png');
+}
+
+.cta-content {
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.cta-content .title{
+font-size: 24px;
+}
+
+.cta-content .description{
+    font-size: 18px;
+}
+
+.cta-content button {
+    background-color: #F6FDFF;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.cta-content button a {
+    color: #1D7293;
 }
