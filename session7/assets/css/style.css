@@ -341,11 +341,11 @@ header {
     color: #fff;
 }
 
-.cta-content .title{
-font-size: 24px;
+.cta-content .title {
+    font-size: 24px;
 }
 
-.cta-content .description{
+.cta-content .description {
     font-size: 18px;
 }
 
@@ -361,18 +361,18 @@ font-size: 24px;
 }
 
 /* resources-section */
-.resources-section{
-margin: 160px auto;
+.resources-section {
+    margin: 160px auto;
 }
 
-.resources-label{
-text-align: center;
-max-width: 1000px;
-margin: 0 auto 40px;
+.resources-label {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 40px;
 }
 
-.resources-label .title{
-  color: #1D7293;
+.resources-label .title {
+    color: #1D7293;
     font-size: 24px;
     font-weight: 600;
     margin: 40px 0 20px;
@@ -380,65 +380,147 @@ margin: 0 auto 40px;
     text-transform: capitalize;
 }
 
-.resources-label .description{
-font-size: 18px;
+.resources-label .description {
+    font-size: 18px;
 }
 
-.resources-grid{
-max-width: 1300px;
-margin: 0 auto;
-justify-content: flex-start;
-flex-wrap: wrap;
-gap: 40px;
+.resources-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.resource-card{
-max-width: calc(50% - 20px);
-padding: 40px;
-gap: 40px;
-background-color: #E0EFF4;
-align-items: center;
-border-radius: 0 30px;
+.resource-card {
+    max-width: calc(50% - 20px);
+    padding: 40px;
+    gap: 40px;
+    background-color: #E0EFF4;
+    align-items: center;
+    border-radius: 0 30px;
 }
 
-.resource-image{
+.resource-image {}
 
+.resource-content {}
+
+.resource-content .title {
+    font-size: 24px;
+    margin-bottom: 6px;
 }
 
-.resource-content{
-
-}
-
-.resource-content .title{
-font-size: 24px;
-margin-bottom: 6px;
-}
-
-.resource-content .description{
-font-size: 18px;
+.resource-content .description {
+    font-size: 18px;
 }
 
 /* guides-section */
-.guides-section{
-margin: 160px auto;
+.guides-section {
+    margin: 160px auto;
 }
 
-.testımonıals-label{
+.testimonials-label {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-.testımonıals-label .title{
- color: #1D7293;
+.testimonials-label .title {
+    color: #1D7293;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20PX;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
-.testımonıals-label .description{
-font-size: 18px;
+.testimonials-label .description {
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
+.testimonials-grid {
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* awards-section */
+.awards-content {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.awards-content .title {
+    color: #1D7293;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20PX;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.awards-content .description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.awards-images {
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+/* partners-section */
+.partners-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.partners-content .title {
+    max-width: 1000px;
+    color: #1D7293;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20PX auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.partners-content .description {
+    font-size: 18px;
+    margin: 0 auto 40px;
+    max-width: 1000px;
+}
+
+.partners-images {
+    justify-content: space-between;
+    margin: 0 auto 160px;
+    max-width: 1728px;
+}
+
+/* site-footer */
+.site-footer {
+    margin-bottom: 120px;
+}
+
+.footer-content {
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-text {}
+
+.footer-text .title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #062A44;
+}
+
+.footer-text .description {
+    font-size: 14px;
+    color: #325168;
+    line-height: 20px;
+}
