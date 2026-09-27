@@ -1,23 +1,24 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0 auto;
-    
+
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
+
 .cta-button {
     padding: 10px 30px;
     font-size: 16px;
@@ -27,81 +28,83 @@ ul{
     border: 0px;
 }
 
-.search-bar button{
+.search-bar button {
     background-color: black;
     color: #fff;
+    line-height: 12px;
 }
 
-.pos-a{
+.pos-a {
     position: absolute;
 }
 
-.pos-r{
+.pos-r {
     position: relative;
 }
 
-.pos-f{
+.pos-f {
     position: fixed;
 }
 
-header{
-  margin: 0 auto; 
+header {
+    margin: 0 auto;
 }
 
-.main-navigation{
+.main-navigation {
     justify-content: space-between;
     margin: 0;
     padding: 24px 112px;
     align-items: center;
 }
 
-.nav-list{
+.nav-list {
     gap: 20px;
 }
 
-.nav-list a{
+.nav-list a {
     color: #fff;
     font-size: 24px;
 }
 
-.create-account{
+.create-account {
     color: black;
     background-color: #fff;
 }
 
-.background{
+.background {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.hero-section{
+.hero-section {
     background: linear-gradient(to bottom, #0a3e02b2, #00000000), url('../images/background.png');
     text-align: center;
+    background-size: cover;
 }
 
-.hero-container{
-margin: 0 auto;
-text-align: center;
-max-width: 750px;
+.hero-container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 750px;
 }
 
-.hero-container .rete-number{
+.hero-container .rete-number {
     color: #fff;
 }
 
-.stars-number{
+.stars-number {
     justify-content: center;
     gap: 20px;
     color: #fff;
     font-size: 24px;
 }
 
-.stars-number img{
+.stars-number img {
     width: 116px;
     height: 20px;
 }
 
-.search-bar{
+.search-bar {
     background-color: #fff;
     border-radius: 500px;
     justify-content: space-between;
@@ -112,28 +115,28 @@ max-width: 750px;
     align-items: center;
 }
 
-.search-bar .text{
- align-items: center;  
+.search-bar .text {
+    align-items: center;
 }
 
 
-.search-bar .img{
-margin-right: 12px;
+.search-bar .img {
+    margin-right: 12px;
 }
 
-.search-bar img{
+.search-bar img {
     width: 16px;
     height: 16px;
 }
 
-.hero-container h1{
-font-size: 80px;
-color: #fff;
-margin: 18px 0;
-text-transform: capitalize;
+.hero-container h1 {
+    font-size: 80px;
+    color: #fff;
+    margin: 18px 0;
+    text-transform: capitalize;
 }
 
-.check{
+.check {
     justify-content: space-between;
     width: 600px;
     margin: 0 auto;
@@ -141,14 +144,100 @@ text-transform: capitalize;
     padding: 12px 0;
     align-items: center;
     color: #fff;
+    padding-bottom: 400px;
+    padding-top: 20px;
 }
 
-.check span{
+.check span {
     gap: 10px;
     align-items: center;
 }
 
-.check span img{
+.check span img {
     width: 20px;
     height: 20px;
+}
+
+.features-container {
+    background: linear-gradient(#00000064);
+    border-top: solid 1px #959595;
+}
+
+.features-grid {
+    width: 1218px;
+    color: #fff;
+    text-align: left;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.features-grid .title {
+    font-size: 18px;
+}
+
+.features-grid .description {
+    font-size: 16px;
+    color: #C7C7C7;
+}
+
+.feature.active {
+    border-top: solid 4px #FFF500;
+}
+
+.trending-hikes{
+    background-color: #171412;
+    padding: 120px 0 120px;
+}
+
+.trending-hikes .content{
+    max-width: 1218px;
+    margin: 0 auto 24px;
+}
+
+.trending-hikes .content .title{
+    color: #FFF624;
+    font-size: 16px;
+    text-transform:uppercase;
+}
+
+.trending-hikes .content .text{
+justify-content: space-between;
+align-items: center;
+}
+
+.trending-hikes .content a{
+color: #FFF624;
+text-decoration: underline;
+text-transform: uppercase;
+}
+
+.trending-hikes .content .description{
+font-size: 40px;
+color: #fff;
+}
+
+.gallery{
+    justify-content: space-between;
+    gap: 8px;
+    width: 1440px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+
+}
+
+.gallery-item .content{
+    bottom: 10px;
+    justify-content: space-between;
+    width: 354px;
+    padding: 0 18px;
+    color: #fff;
+}
+
+.gallery-item .content img{
+    width: 32px;
+    height: 32px;
 }
