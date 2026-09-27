@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    
+}
+
+.d-flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.cta-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.search-bar button{
+    background-color: black;
+    color: #fff;
+}
+
+.pos-a{
+    position: absolute;
+}
+
+.pos-r{
+    position: relative;
+}
+
+.pos-f{
+    position: fixed;
+}
+
+header{
+  margin: 0 auto; 
+}
+
+.main-navigation{
+    justify-content: space-between;
+    margin: 0;
+    padding: 24px 112px;
+    align-items: center;
+}
+
+.nav-list{
+    gap: 20px;
+}
+
+.nav-list a{
+    color: #fff;
+    font-size: 24px;
+}
+
+.create-account{
+    color: black;
+    background-color: #fff;
+}
+
+.background{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.hero-section{
+    background: linear-gradient(to bottom, #0a3e02b2, #00000000), url('../images/background.png');
+    text-align: center;
+}
+
+.hero-container{
+margin: 0 auto;
+text-align: center;
+max-width: 750px;
+}
+
+.hero-container .rete-number{
+    color: #fff;
+}
+
+.stars-number{
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.stars-number img{
+    width: 116px;
+    height: 20px;
+}
+
+.search-bar{
+    background-color: #fff;
+    border-radius: 500px;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+    height: 44px;
+    padding: 12px;
+    align-items: center;
+}
+
+.search-bar .text{
+ align-items: center;  
+}
+
+
+.search-bar .img{
+margin-right: 12px;
+}
+
+.search-bar img{
+    width: 16px;
+    height: 16px;
+}
+
+.hero-container h1{
+font-size: 80px;
+color: #fff;
+margin: 18px 0;
+text-transform: capitalize;
+}
+
+.check{
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+    height: 44px;
+    padding: 12px 0;
+    align-items: center;
+    color: #fff;
+}
+
+.check span{
+    gap: 10px;
+    align-items: center;
+}
+
+.check span img{
+    width: 20px;
+    height: 20px;
+}
