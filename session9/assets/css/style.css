@@ -341,3 +341,47 @@ color: #000;
     right: 130px;
     top: 44px;
 }
+
+.statistics{
+background-color: #171412;
+color: #fff;
+padding-bottom: 96px;
+}
+
+.statistics .container{
+    justify-content: space-around;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.stat-number{
+    font-size: 60px;
+    color: #FFF500;
+    margin-bottom: 0px;
+}
+
+.stat-title{
+    font-size: 18px;
+}
+
+.stat-description{
+    font-size: 16px;
+    color: #C7C7C7;
+}
+
+/* footer */
+footer{
+    background-color: #292524;
+    padding: 49px 0;
+}
+
+footer .content{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 32px ;
+    gap: 4px;
+    color: #fff;
+    font-size: 16px;
+}
