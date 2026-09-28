@@ -259,7 +259,8 @@ background-color: #292524;
 }
 
 .explore-without-limits .content{
-    color: #fff;
+    color: hsl(0, 0%, 100%);
+    width: 47.9%;
 }
 
 .explore-without-limits .content h3{
@@ -286,7 +287,57 @@ color: #000;
 }
 
 .explore-without-limits .images{
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 8px;
+    width: 52.1%;
+}
+
+
+.explore-without-limits .card{
+    justify-content: center;
+}
+
+.explore-without-limits .card p{
+    bottom: 0px;
+    color: #fff;
+}
+
+/* app-promotion */
+.app-promotion{
+    background-color: #171412;
+    padding: 96px 0;
+}
+
+.app-promotion .container{
+    width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292524;
+    color: #fff;
+}
+
+.app-promotion .container .label{
+    width: 727px;
+    padding-left: 31px;
+}
+
+.app-promotion .container .label span{
+    gap: 12px;
+    align-items: center;
+}
+
+.app-promotion .container .label span img{
+    width: 20px;
+    height: 20px;
+}
+
+.app-downioad-links{
+    gap: 12px;
+}
+
+.mockup{
+    right: 130px;
+    top: 44px;
 }
