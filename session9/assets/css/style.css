@@ -109,7 +109,7 @@ header {
     background-color: #fff;
     border-radius: 500px;
     justify-content: space-between;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     height: 44px;
     padding: 12px;
@@ -139,7 +139,7 @@ header {
 
 .check {
     justify-content: space-between;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     height: 44px;
     padding: 12px 0;
@@ -165,7 +165,7 @@ header {
 }
 
 .features-grid {
-    width: 1218px;
+    max-width: 1218px;
     color: #fff;
     text-align: left;
     gap: 30px;
@@ -187,69 +187,68 @@ header {
 }
 
 /* rending-hikes */
-.trending-hikes{
+.trending-hikes {
     background-color: #171412;
     padding: 120px 0 120px;
 }
 
-.trending-hikes .content{
+.trending-hikes .content {
     max-width: 1218px;
     margin: 0 auto 24px;
 }
 
-.trending-hikes .content .title{
+.trending-hikes .content .title {
     color: #FFF624;
     font-size: 16px;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.trending-hikes .content .text{
-justify-content: space-between;
-align-items: center;
+.trending-hikes .content .text {
+    justify-content: space-between;
+    align-items: center;
 }
 
-.trending-hikes .content a{
-color: #FFF624;
-text-decoration: underline;
-text-transform: uppercase;
+.trending-hikes .content a {
+    color: #FFF624;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
-.trending-hikes .content .description{
-font-size: 40px;
-color: #fff;
+.trending-hikes .content .description {
+    font-size: 40px;
+    color: #fff;
 }
 
-.gallery{
+.gallery {
     justify-content: space-between;
     gap: 8px;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
-.gallery-item{
+.gallery-item {}
 
-}
-
-.gallery-item .content{
+.gallery-item .content {
     bottom: 0px;
     justify-content: space-between;
-    width: 354px;
+    max-width: 354px;
     padding: 0 18px;
     color: #fff;
     align-items: center;
 }
 
-.gallery-item .content img{
+.gallery-item .content img {
     width: 32px;
     height: 32px;
 }
 
 /* explore-without-limits */
-.explore-without-limits{
-background-color: #292524;
+.explore-without-limits {
+    background-color: #292524;
 }
-.explore-without-limits .container{
+
+.explore-without-limits .container {
     padding: 96px 0px;
     max-width: 1218px;
     margin: 0 auto;
@@ -258,59 +257,59 @@ background-color: #292524;
     align-items: center;
 }
 
-.explore-without-limits .content{
+.explore-without-limits .content {
     color: hsl(0, 0%, 100%);
-    width: 47.9%;
+    max-width: 47.9%;
 }
 
-.explore-without-limits .content h3{
-font-size: 40px;
+.explore-without-limits .content h3 {
+    font-size: 40px;
 }
 
-.explore-without-limits .content p{
-font-size: 18px;
+.explore-without-limits .content p {
+    font-size: 18px;
 }
 
-.explore-without-limits .content span{
+.explore-without-limits .content span {
     gap: 10px;
     align-items: center;
     font-size: 18px;
 }
 
-.explore-without-limits .content span img{
+.explore-without-limits .content span img {
     width: 20px;
     height: 20px;
 }
 
-.explore-without-limits .content .create-account a{
-color: #000;
+.explore-without-limits .content .create-account a {
+    color: #000;
 }
 
-.explore-without-limits .images{
+.explore-without-limits .images {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 8px;
-    width: 52.1%;
+    max-width: 52.1%;
 }
 
 
-.explore-without-limits .card{
+.explore-without-limits .card {
     justify-content: center;
 }
 
-.explore-without-limits .card p{
+.explore-without-limits .card p {
     bottom: 0px;
     color: #fff;
 }
 
 /* app-promotion */
-.app-promotion{
+.app-promotion {
     background-color: #171412;
     padding: 96px 0;
 }
 
-.app-promotion .container{
-    width: 1280px;
+.app-promotion .container {
+    max-width: 1280px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -318,37 +317,37 @@ color: #000;
     color: #fff;
 }
 
-.app-promotion .container .label{
-    width: 727px;
+.app-promotion .container .label {
+    max-width: 727px;
     padding-left: 31px;
 }
 
-.app-promotion .container .label span{
+.app-promotion .container .label span {
     gap: 12px;
     align-items: center;
 }
 
-.app-promotion .container .label span img{
+.app-promotion .container .label span img {
     width: 20px;
     height: 20px;
 }
 
-.app-downioad-links{
+.app-downioad-links {
     gap: 12px;
 }
 
-.mockup{
+.mockup {
     right: 130px;
     top: 44px;
 }
 
-.statistics{
-background-color: #171412;
-color: #fff;
-padding-bottom: 96px;
+.statistics {
+    background-color: #171412;
+    color: #fff;
+    padding-bottom: 96px;
 }
 
-.statistics .container{
+.statistics .container {
     justify-content: space-around;
     gap: 32px;
     max-width: 1280px;
@@ -356,31 +355,31 @@ padding-bottom: 96px;
     padding: 0 32px;
 }
 
-.stat-number{
+.stat-number {
     font-size: 60px;
     color: #FFF500;
     margin-bottom: 0px;
 }
 
-.stat-title{
+.stat-title {
     font-size: 18px;
 }
 
-.stat-description{
+.stat-description {
     font-size: 16px;
     color: #C7C7C7;
 }
 
 /* footer */
-footer{
+footer {
     background-color: #292524;
     padding: 49px 0;
 }
 
-footer .content{
+footer .content {
     max-width: 1280px;
     margin: 0 auto;
-    padding-left: 32px ;
+    padding-left: 32px;
     gap: 4px;
     color: #fff;
     font-size: 16px;
