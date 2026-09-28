@@ -46,6 +46,7 @@ ul {
     position: fixed;
 }
 
+/* hero-section */
 header {
     margin: 0 auto;
 }
@@ -185,6 +186,7 @@ header {
     border-top: solid 4px #FFF500;
 }
 
+/* rending-hikes */
 .trending-hikes{
     background-color: #171412;
     padding: 120px 0 120px;
@@ -241,4 +243,50 @@ color: #fff;
 .gallery-item .content img{
     width: 32px;
     height: 32px;
+}
+
+/* explore-without-limits */
+.explore-without-limits{
+background-color: #292524;
+}
+.explore-without-limits .container{
+    padding: 96px 0px;
+    max-width: 1218px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 46px;
+    align-items: center;
+}
+
+.explore-without-limits .content{
+    color: #fff;
+}
+
+.explore-without-limits .content h3{
+font-size: 40px;
+}
+
+.explore-without-limits .content p{
+font-size: 18px;
+}
+
+.explore-without-limits .content span{
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.explore-without-limits .content span img{
+    width: 20px;
+    height: 20px;
+}
+
+.explore-without-limits .content .create-account a{
+color: #000;
+}
+
+.explore-without-limits .images{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
 }
