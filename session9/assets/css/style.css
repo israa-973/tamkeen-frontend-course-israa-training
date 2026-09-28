@@ -59,12 +59,12 @@ header {
 }
 
 .nav-list {
-    gap: 20px;
+    gap: 24px;
 }
 
 .nav-list a {
     color: #fff;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .create-account {
@@ -78,13 +78,13 @@ header {
 }
 
 .hero-section {
-    background: linear-gradient(to bottom, #0a3e02b2, #00000000), url('../images/background.png');
+    background: linear-gradient(to bottom, #0a3e028a, #00000000), url('../images/background.png');
     text-align: center;
     background-size: cover;
 }
 
 .hero-container {
-    margin: 0 auto;
+    margin: 65px auto 0;
     text-align: center;
     max-width: 750px;
 }
@@ -98,6 +98,7 @@ header {
     gap: 20px;
     color: #fff;
     font-size: 24px;
+    align-items: center;
 }
 
 .stars-number img {
@@ -217,6 +218,7 @@ header {
 .trending-hikes .content .description {
     font-size: 40px;
     color: #fff;
+    margin: 0px;
 }
 
 .gallery {
@@ -232,7 +234,7 @@ header {
 .gallery-item .content {
     bottom: 0px;
     justify-content: space-between;
-    max-width: 354px;
+    width: 354px;
     padding: 0 18px;
     color: #fff;
     align-items: center;
@@ -259,7 +261,7 @@ header {
 
 .explore-without-limits .content {
     color: hsl(0, 0%, 100%);
-    max-width: 47.9%;
+    width: 47.9%;
 }
 
 .explore-without-limits .content h3 {
@@ -289,7 +291,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 8px;
-    max-width: 52.1%;
+    width: 52.1%;
 }
 
 
@@ -305,7 +307,7 @@ header {
 /* app-promotion */
 .app-promotion {
     background-color: #171412;
-    padding: 96px 0;
+    padding: 96px 0 64px;
 }
 
 .app-promotion .container {
@@ -322,6 +324,10 @@ header {
     padding-left: 31px;
 }
 
+.app-promotion .container h3 {
+    font-size: 40px;
+}
+
 .app-promotion .container .label span {
     gap: 12px;
     align-items: center;
@@ -334,6 +340,7 @@ header {
 
 .app-downioad-links {
     gap: 12px;
+    padding-top: 32px;
 }
 
 .mockup {
