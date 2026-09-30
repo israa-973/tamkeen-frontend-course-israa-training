@@ -398,6 +398,10 @@ margin: 0;
     color: #035787;
 }
 
+.event-card img{
+    margin-bottom: 32px;
+}
+
 .event-section .title h6{
     font-size: 40px;
     margin: 0;
