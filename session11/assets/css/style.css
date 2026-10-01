@@ -40,6 +40,14 @@ img {
     height: auto;
 }
 
+h2{
+    font-size:40px;
+}
+
+.title span {
+    color: #F9AB3F
+}
+
 .cta-btn {
     padding: 10px 26px;
     background-color: #F9AB3F;
@@ -52,6 +60,17 @@ img {
     font-size: 24px;
 }
 
+.btn{
+    padding: 10px 26px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+}
+
+/* header */
 header {
     max-width: 1480px;
     margin: 0 auto;
@@ -110,10 +129,6 @@ header {
     margin-top: 0;
 }
 
-.hero-title span {
-    color: #F9AB3F
-}
-
 .featured-dishes-slider {
     gap: 20px;
     max-width: 1480px;
@@ -164,4 +179,78 @@ padding: 1px;
 
 .slider-pagination li.active{
     background-color:#3E280B;
+}
+
+/* food-categories */
+.food-categories{
+margin: 0 auto;
+padding: 82px 0;
+justify-content: center;
+align-items:center;
+gap:63px;
+flex-direction: column;
+text-align:center;
+color:#3E280B
+}
+
+.food-categories .title{
+margin: 0;
+}
+
+.category-slider{
+justify-content: space-between;
+align-items:center;
+margin: 0 auto;
+max-width:1480px;
+gap:80px;
+padding:10px;
+}
+
+.category-card{
+background-color:#FFF9F0;
+padding:16px;
+border-radius:115px;
+}
+
+.category-card .card-img{
+    background-color:#F9AB3F;
+    padding:22px;
+    max-width: 146px;
+   height: 146px;
+  border-radius:50%;
+  
+}
+
+.category-card img{
+   
+}
+
+.category-card p{
+    font-size:18px;
+    padding:0 0 20px 0;
+    position: relative;
+}
+
+.category-card p::after{
+    content: "";
+    border-bottom:2px dashed #F9AB3F;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+}
+
+.dishes-buttons{
+    gap:25px;
+}
+
+.all{
+    background-color:#3E280B;
+    color:#fff;
+}
+
+.Popular{
+background-color:#F6F6F6;
+color:#3E280B
 }
