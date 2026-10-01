@@ -138,3 +138,30 @@ header {
     left: 25px;
     bottom: 25px;
 }
+
+.slider-pagination{
+    padding: 5px;
+    background-color:#F9AB3F;
+    width:fit-content;
+    text-align:center;
+    border-radius: 50px;
+    margin:24px auto 0;
+}
+
+.slider-pagination ul{
+    gap:12px;
+justify-content: center;
+align-items:center;
+padding: 1px;
+}
+
+.slider-pagination li{
+    background-color:#C78A35;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+}
+
+.slider-pagination li.active{
+    background-color:#3E280B;
+}
