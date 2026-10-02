@@ -432,7 +432,7 @@ header {
 .mopile-app-promotion {
     background-image: url(../images/Rectangle\ 15.png), linear-gradient(to bottom, #3E280B, #000);
     background-size: cover;
-    width: 1420px;
+    max-width: 1420px;
     margin: 0 auto;
     border-radius: 20px;
     top: -200px;
@@ -660,6 +660,10 @@ footer .container {
     border: none;
     padding: 10px 20px;
     border-radius: 6px;
+}
+
+.app-download-buttons button a {
+    height: 32px;
 }
 
 .social-media-links ul {
