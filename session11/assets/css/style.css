@@ -181,7 +181,7 @@ header {
     background-color: #3E280B;
 }
 
-.dish-info .y{
+.dish-info .y {
     background-color: #F9AB3F;
     color: #3E280B;
 }
@@ -420,17 +420,17 @@ header {
     padding: 12px 50px;
 }
 
-.pattern{
-margin: 0 auto;
-background-image: url(../images/pattern.png);
-max-width: 1560px;
-height: 260px;
-top: -70px;
+.pattern {
+    margin: 0 auto;
+    background-image: url(../images/pattern.png);
+    max-width: 1560px;
+    height: 260px;
+    top: -70px;
 }
 
 /* mopile-app-promotion */
-.mopile-app-promotion{
-    background-image:url(../images/Rectangle\ 15.png),linear-gradient(to bottom, #3E280B, #000);
+.mopile-app-promotion {
+    background-image: url(../images/Rectangle\ 15.png), linear-gradient(to bottom, #3E280B, #000);
     background-size: cover;
     width: 1420px;
     margin: 0 auto;
@@ -441,77 +441,78 @@ top: -70px;
     overflow: hidden;
 }
 
-.app-promotion-banner{
-gap: 79px;
-align-items: center;
+.app-promotion-banner {
+    gap: 79px;
+    align-items: center;
     justify-content: center;
     padding-bottom: 100px;
 }
 
 
-.mobile-app-preview{
-   width: 50%;
+.mobile-app-preview {
+    width: 50%;
 }
 
-.mobile-app-preview img{
+.mobile-app-preview img {
     top: -180px;
     right: 0;
 }
 
-.promotion-title{
+.promotion-title {
     color: #F9AB3F;
     padding-top: 80px;
 }
 
-.promotion-description{
+.promotion-description {
     color: #fff;
     font-size: 18px;
 }
 
-.download-button{
+.download-button {
     color: #fff;
     margin-top: 30px;
     font-size: 18px;
 }
 
-.download-button button{
+.download-button button {
     border-radius: 6px;
     border: none;
     background-color: #fff;
 
 }
 
-.download-button .google-play{
-margin-right: 20px;
+.download-button .google-play {
+    margin-right: 20px;
 }
 
 
 /* customer-testimonials */
-.customer-testimonials{
-margin-top: -100px;
-padding-bottom: 70px;
-background-image: url(../images/Union.png);
-color: #3E280B;
+.customer-testimonials {
+    margin-top: -100px;
+    padding-bottom: 70px;
+    background-image: url(../images/Union.png);
+    color: #3E280B;
 }
 
-.customer-testimonials .container{
+.customer-testimonials .container {
     justify-content: center;
     flex-direction: column;
     max-width: 1480px;
     margin: 0 auto;
     letter-spacing: 1px;
 }
-.customer-testimonials .text{
+
+.customer-testimonials .text {
     text-align: center;
     margin-bottom: 150px;
 }
 
-.customer-testimonials .text .title-line{
- font-size: 40px;
+.customer-testimonials .text .title-line {
+    font-size: 40px;
     margin: 0;
 }
 
-.customer-testimonials .text span{
+.customer-testimonials .text span {
     color: #F9AB3F;
 }
 
@@ -535,45 +536,46 @@ color: #3E280B;
     right: 0;
 }
 
-.customer-photo{
+.customer-photo {
     padding: 10px;
     border-radius: 50%;
     border: 1px dashed #3E280B;
     width: 149px;
     top: -75px;
 }
-.customer-photo img{
+
+.customer-photo img {
     padding: 10px;
     border-radius: 50%;
     border: 1px dashed #3E280B;
     background-color: #F9AB3F;
 }
 
-.testimonials-card{
+.testimonials-card {
     border: 1px solid #E4E4E4;
     border-radius: 20px;
     padding: 60px 36px;
 }
 
-.testimonials-cards{
- justify-content: space-between;
-align-items: center;
-gap: 70px;   
+.testimonials-cards {
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
 }
 
-.testimonials-slider{
-justify-content: space-between;
-align-items: center;
-gap: 70px;
-max-width: 1288px;
-margin: 0 auto;
+.testimonials-slider {
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    max-width: 1288px;
+    margin: 0 auto;
 }
 
-.customer-name{
+.customer-name {
     font-size: 24px;
 }
 
-.customer-name span{
+.customer-name span {
     color: #F9AB3F;
 }
 
@@ -586,11 +588,11 @@ margin: 0 auto;
 }
 
 /* review-cta */
-.review-cta{
-margin-bottom: 70px;
+.review-cta {
+    margin-bottom: 70px;
 }
 
-.review-cta .review-cta-panner{
+.review-cta .review-cta-panner {
     max-width: 1180px;
     margin: 0 auto;
     padding: 22px 88px;
@@ -605,25 +607,26 @@ margin-bottom: 70px;
     color: #3E280B;
 }
 
-.review-via-app{
-color: #3E280B;
-margin-left: 10px;
+.review-via-app {
+    color: #3E280B;
+    margin-left: 10px;
 }
-.review-here{
+
+.review-here {
     background-color: #3E280B;
     color: #fff;
     margin-right: 10px;
 }
 
 /* footer */
-footer{
+footer {
     max-width: 1480px;
     margin: 0 auto;
- border-top: 1px solid #F9AB3F;
+    border-top: 1px solid #F9AB3F;
     padding: 50px;
 }
 
-footer .container{
+footer .container {
     flex-direction: column;
     justify-content: center;
     gap: 88px;
@@ -631,49 +634,47 @@ footer .container{
     text-align: center;
 }
 
-.links-footer{
+.links-footer {
     gap: 20px;
 }
 
 
-.links-footer li{
-    border-right:1px solid #3E280B ;
+.links-footer li {
+    border-right: 1px solid #3E280B;
     padding-right: 20px;
     letter-spacing: 1px;
 }
 
-.links-footer .none{
+.links-footer .none {
     border: none;
     padding: 0;
 }
 
-.app-download-buttons{
-font-size: 18px;
-font-weight: bold;
+.app-download-buttons {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.app-download-buttons button{
+.app-download-buttons button {
     background-color: #3E280B;
     border: none;
     padding: 10px 20px;
     border-radius: 6px;
 }
 
-.social-media-links ul{
-justify-content: center;
-gap: 20px;
-align-items: center;
-margin-bottom: 21px;
+.social-media-links ul {
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 21px;
 }
 
 
-.social-media-links li{
-   width: 40px; 
-   height: 40px;
-   background-color: #F9AB3F;
-   border-radius: 50px;
-   justify-content: center;
-align-items: center;
+.social-media-links li {
+    width: 40px;
+    height: 40px;
+    background-color: #F9AB3F;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
 }
-
-
