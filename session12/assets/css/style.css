@@ -216,12 +216,13 @@ margin-top: 100px;
 }
 
 /* recent-projects */
-.recent-projects .lable{
+.recent-projects .label{
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 45px;
 }
 
-.recent-projects .lable h2{
+.recent-projects .label h2{
 font-size: 50px;
 margin: 0;
 }
@@ -245,4 +246,15 @@ gap: 20px;
     border-radius: 999px;  
     width: 45px;
     height: 45px;
+}
+
+.projects-container{
+    margin-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-card{
+
 }
