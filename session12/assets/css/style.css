@@ -60,8 +60,9 @@ h2 {
 
 .cta-btn:hover{
     background-color: #005284;
-    font-size:larger;
+    transform: scaleX(1.05);
     color: #fff;
+    cursor: pointer;
     transition: all 0.3s ease-out;
 }
 
