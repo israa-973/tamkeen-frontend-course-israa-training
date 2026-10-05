@@ -55,11 +55,16 @@ h2 {
     text-align: center;
     width: fit-content;
     height: fit-content;
+    transition: all 0.3s ease-out;
 }
 
-.cta-btn:hover {
-    background-color: #b87f2f;
+.cta-btn:hover{
+    background-color: #005284;
+    font-size:larger;
+    color: #fff;
+    transition: all 0.3s ease-out;
 }
+
 
 p {
     line-height: 24px;
@@ -155,6 +160,12 @@ header {
 .hero-img {
     margin-bottom: -50px;
     margin-left: 100px;
+    transition: all 1s ;
+}
+
+.hero-img:hover{
+    transform: scale(1.02)rotate(2deg);
+    transition: all 1s ;
 }
 
 .search-bar {
@@ -264,11 +275,30 @@ input {
 
     border: 1px solid #bebebe94;
     border-radius: 14px;
-
+transition: all 1s ;
 }
 
 .project-card img {
     transform: scale(1.008);
+    
+}
+
+.project-card .img-container{
+
+}
+
+.project-card:hover{
+    transform: scale(1.009);
+    transition: all 1s;
+    box-shadow: 0 5px 10px #cccccc;
+}
+
+a{
+    transition: 0.3s all ease-in-out;
+}
+a:hover{
+    color: #0076bf;
+    transition: 0.4s all ease-in-out;
 }
 
 .img-container::after {
