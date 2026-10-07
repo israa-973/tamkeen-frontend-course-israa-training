@@ -34,6 +34,9 @@ a {
     color: inherit;
 }
 
+a:hover{
+    color: #bf8f00;
+}
 
 img {
     width: 100%;
@@ -44,9 +47,6 @@ h2 {
     font-size: 40px;
 }
 
-.title span {
-    color: #F9AB3F
-}
 
 .cta-btn {
     padding: 15px 25px;
@@ -59,11 +59,18 @@ h2 {
 }
 
 .cta-btn:hover{
-    background-color: #005284;
+    background-color: #ae7700;
     transform: scaleX(1.05);
     color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease-out;
+}
+
+.cta-btn a:hover{
+    color: #fff;
+}
+
+.cta-btn:active{
+    background-color: #513700;
 }
 
 
@@ -166,7 +173,6 @@ header {
 
 .hero-img:hover{
     transform: scale(1.02)rotate(2deg);
-    transition: all 1s ;
 }
 
 .search-bar {
@@ -177,12 +183,16 @@ header {
     max-width: 470px;
 }
 
+
+
+
 input {
     background-color: transparent;
     border: none;
     outline: none;
     margin-left: 18px;
 }
+
 
 .get-a-quote {
     background-color: #1F1F1F;
@@ -196,6 +206,11 @@ input {
     margin: 0 auto;
     margin-bottom: 120px;
     padding: 0 30px;
+}
+
+
+.step:hover .step-icon {
+    transform: scale(1.1);
 }
 
 .how-it-works .lable {
@@ -215,6 +230,7 @@ input {
 .step-icon {
     width: 75px;
     height: 75px;
+    transition: all 0.3s ease-out;
 }
 
 .step {
@@ -255,15 +271,35 @@ input {
     background: transparent;
     width: 45px;
     height: 45px;
+    border-radius: 999px;
+}
+
+.previous:hover{
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+.previous:active{
+    background-color: #1f1e1e;
 }
 
 .next {
     border: none;
-    background: #000;
+    background-color: #707070;
     border-radius: 999px;
     width: 45px;
     height: 45px;
 }
+
+.next:hover{
+    cursor: pointer;
+    background-color: #000;
+}
+
+.next:active{
+    background-color: #424242;
+}
+
 
 .projects-container {
     margin-bottom: 80px;
@@ -297,10 +333,7 @@ transition: all 1s ;
 a{
     transition: 0.3s all ease-in-out;
 }
-a:hover{
-    color: #0076bf;
-    transition: 0.4s all ease-in-out;
-}
+
 
 .img-container::after {
     content: "";
@@ -349,6 +382,9 @@ a:hover{
     margin: 0 auto;
 }
 
+.about-the-brokerage .container .img{
+ transition: all 1s ;   
+}
 
 .about-the-brokerage .container .img::after {
     content: "";
@@ -360,6 +396,10 @@ a:hover{
     bottom: 0;
     background: linear-gradient(to right, #c1dee874, #ffffff00, #FBD9B999);
 }
+.about-the-brokerage .container .img:hover{
+transform: scale(1.02)rotate(2deg);
+}
+
 
 .about-the-brokerage .container {
     max-width: 1245px;
@@ -437,8 +477,13 @@ a:hover{
 .newsletter-banner .image {
     margin-top: -40px;
     margin-right: -15px;
+    transition: all 1s ;
 
 }
+.newsletter-banner .image:hover{
+transform: scale(1.02)rotate(2deg);
+}
+
 
 .search-bar {
     background-color: #fff;
@@ -514,6 +559,11 @@ footer .container {
 footer img {
     width: 24px;
     height: 24px;
+    transition: 0.3s all ease-in-out;
+}
+
+footer img:hover{
+    transform: translateY(-3px);
 }
 
 .contact-links li img {
