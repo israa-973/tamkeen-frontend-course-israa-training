@@ -151,6 +151,8 @@ header {
     padding-top: 60px;
     background-blend-mode: overlay;
     margin-bottom: 80px;
+    border-radius: 14px;
+
 }
 
 .hero-content {
@@ -206,6 +208,7 @@ input {
     margin: 0 auto;
     margin-bottom: 120px;
     padding: 0 30px;
+    
 }
 
 
