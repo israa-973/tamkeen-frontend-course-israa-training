@@ -360,6 +360,37 @@ width: fit-content;
  
 }
 
+.card-iphone span {
+    padding: 10px 20px;
+     background-color: #494949;
+  border-radius: 8px;  
+  font-weight: 100;
+  width: fit-content;
+  font-size: 16px;
+}
+
+.card-realme span {
+    padding: 10px 20px;
+     background-color: #F6DE8D;
+  border-radius: 8px; 
+  font-weight: 100; 
+  width: fit-content;
+  font-size: 16px;
+}
+
+.card-xiaomi span {
+    padding: 10px 20px;
+     background-color: #FFD1B0;
+  border-radius: 8px;  
+  font-weight: 100;
+  width: fit-content;
+  font-size: 16px;
+}
+
+.xiaomi{
+  padding: 10px 20px;
+  
+}
 .card-iphone::after{
      content: "";
     width: 226px;
@@ -368,8 +399,8 @@ width: fit-content;
     border-radius: 50%;
     opacity: 6%;
     background-color: #fff;
-    right: 0;
-    top: -100px;
+    right: -20px;
+    top: -90px;
     
 }
 
@@ -381,8 +412,8 @@ width: fit-content;
     border-radius: 50%;
     border: 1px solid #ffffff20;
     background-color: transparent;
-    right: -10px;
-    top: -110px;   
+    right: -30px;
+    top: -100px;  
 }
 
 .card-realme::after{
@@ -392,8 +423,8 @@ width: fit-content;
     position: absolute;
     border-radius: 50%;
     background-color: #F6DE8D;
-    right: 0;
-    top: -100px;
+    right: -20px;
+    top: -90px;
     
 }
 
@@ -405,8 +436,8 @@ width: fit-content;
     border-radius: 50%;
     border: 1px solid #F6DE8D;
     background-color: transparent;
-    right: -10px;
-    top: -110px;   
+   right: -30px;
+    top: -100px;   
 }
 
 .card-xiaomi::after{
@@ -416,8 +447,8 @@ width: fit-content;
     position: absolute;
     border-radius: 50%;
     background-color: #FFD1B0;
-    right: 0;
-    top: -100px;
+   right: -20px;
+    top: -90px;
 }
 
 .card-xiaomi::before{
@@ -428,8 +459,8 @@ width: fit-content;
     border-radius: 50%;
     border: 1px solid #FFD1B0;
     background-color: transparent;
-    right: -10px;
-    top: -110px;   
+    right: -30px;
+    top: -100px;  
 }
 
 .card{
@@ -440,7 +471,7 @@ width: fit-content;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 33px;
-    
+    font-size: 24px;
 }
 
 .card-iphone{
@@ -475,6 +506,7 @@ z-index: 1;
     padding: 8px 12px;
 }
 
+
 .Apple img{
     width: fit-content;
 }
@@ -489,7 +521,9 @@ gap: 20px;
 .content-card p{
     margin: 0;
 }
-
+.REALME{
+   width: 114px;
+}
 .XIAOMI{
 width: 62px;
     height: 62px;
