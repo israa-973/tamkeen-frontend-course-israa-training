@@ -134,12 +134,12 @@ header {}
 
 /* hero-section */
 .hero-section {
-    max-width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .swiper {
-    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
     height: 316px;
     border-radius: 12px;
 }
@@ -232,7 +232,10 @@ header {}
     width: 86px;
     height: 86px;
     border-radius: 50px;
+   margin: -40px;
 }
+
+
 
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
@@ -540,4 +543,54 @@ width: 62px;
 .essentials{
     max-width: 1200px;
     margin: 0 auto; 
+    
+}
+
+.container-slid-essential{
+width: 180px;
+text-align: center;
+}
+
+.img-essential{
+width: 180px;
+height: 180px;
+border-radius: 16px;
+background-color: #f5f5f5;
+justify-content: center;
+align-items: center;
+}
+
+.title-essential{  
+margin-top: 20px;
+}
+
+.title-essential span{
+color: #666;
+}
+
+.title-essential h3{
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.swiper3 .swiper-button-prev{
+    /* background-color: #F3F9FB;
+    border: 8px solid #fff;
+    width: 86px;
+    height: 86px;
+    border-radius: 50px; */
+    margin-left:-50px ;
+}
+
+.swiper3 .swiper-button-next {
+    margin-right:-50px ;
+}
+
+.swiper3 .swiper-button-next,
+.swiper3 .swiper-button-prev {
+
+    ::slotted(svg),
+    svg {
+        height: 32px;
+    }
 }

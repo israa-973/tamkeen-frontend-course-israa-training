@@ -50,7 +50,7 @@
 
     <main>
         <section class="hero-carousel-section">
-            <div class="hero-section">
+            <div class="hero-section pos-r">
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -247,7 +247,7 @@
         </section>
 
         
-<section class="essentials">
+<section class="essentials pos-r">
             <div class="container-shop">
                 <div class="section-title d-flex">
                     <h3>Daily <span>Essentials</span></h3>
@@ -258,16 +258,18 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                        <div class="swiper-slide">Slide 10</div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/41624-7-groceries-hd-download-hd-png 1.png" alt=""></div><div class="title-essential"><span>Daily Essentials</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/54018-9-grocery-free-hq-image 2.png" alt=""></div><div class="title-essential"><span>Vegitables</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/pngegg 1.png" alt=""></div><div class="title-essential"><span>Fruits</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/23410-4-strawberry-photo 1.png" alt=""></div><div class="title-essential"><span>Strowberry</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/22136-3-mango-fruit 1.png" alt=""></div><div class="title-essential"><span>Mango</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/35763-7-cherry-fruit-file 1.png" alt=""></div><div class="title-essential"><span>Cherry</span><h3>UP to 50% OFF</h3></div></div></div>
+                       <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/41624-7-groceries-hd-download-hd-png 1.png" alt=""></div><div class="title-essential"><span>Daily Essentials</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/54018-9-grocery-free-hq-image 2.png" alt=""></div><div class="title-essential"><span>Vegitables</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/pngegg 1.png" alt=""></div><div class="title-essential"><span>Fruits</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/23410-4-strawberry-photo 1.png" alt=""></div><div class="title-essential"><span>Strowberry</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/22136-3-mango-fruit 1.png" alt=""></div><div class="title-essential"><span>Mango</span><h3>UP to 50% OFF</h3></div></div></div>
+                        <div class="swiper-slide"><div class="container-slid-essential"><div class="img-essential d-flex"><img src="assets/images/35763-7-cherry-fruit-file 1.png" alt=""></div><div class="title-essential"><span>Cherry</span><h3>UP to 50% OFF</h3></div></div></div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -333,6 +335,16 @@
             pagination: {
               el: '.swiper1-pagination',
               clickable: true,
+            },
+        });
+
+        let swiper3 = new Swiper('.swiper3', {
+            slidesPerView: 6,
+            freeMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                clickable: true
             },
         });
 
