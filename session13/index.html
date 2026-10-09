@@ -90,13 +90,12 @@
                     <div class="swiper-pagination">
                     </div>
 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
                     <!-- If we need scrollbar -->
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="shop">
@@ -527,7 +526,8 @@
         });
 
         let swiper1 = new Swiper('.swiper1', {
-            slidesPerView: 7,
+            slidesPerView: 'auto',
+            spaceBetween: 40,
             freeMode: true,
             navigation: {
                 nextEl: '.swiper1-button-next',
@@ -541,7 +541,8 @@
         });
 
         let swiper2 = new Swiper('.swiper2', {
-            slidesPerView: 3,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
             freeMode: true,
             navigation: {
                 nextEl: '.swiper1-button-next',
@@ -555,7 +556,8 @@
         });
 
         let swiper3 = new Swiper('.swiper3', {
-            slidesPerView: 6,
+            slidesPerView: 'auto',
+            spaceBetween: 40,
             freeMode: true,
             navigation: {
                 nextEl: '.swiper-button-next',
