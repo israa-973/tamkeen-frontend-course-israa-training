@@ -603,6 +603,11 @@ footer {
     z-index: 1;
 }
 
+footer a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+
 .container-footer::before {
     content: "";
     width: 467px;
