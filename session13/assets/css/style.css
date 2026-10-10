@@ -163,11 +163,11 @@ p {
 }
 
 .swiper .slide2 {
-    background-color: #214432;
+    background-color: #534507;
 }
 
 .swiper .slide3 {
-    background-color: #443c21;
+    background-color: #442140;
 }
 
 .swiper .swiper-slide::before {
@@ -286,6 +286,12 @@ p {
     overflow: hidden;
 }
 
+.container-shop .swiper-slide:hover .img-product {
+    border: 1px solid #05ABF3 ;
+    box-shadow: 0 4px 8px #e7e6e6;
+    cursor: pointer;
+}
+
 .section-title {
     justify-content: space-between;
     align-items: center;
@@ -343,6 +349,8 @@ p {
     width: 132px;
     margin-bottom: 33px;
 }
+
+
 
 .img-product {
     width: 132px;
@@ -485,6 +493,14 @@ p {
     margin-bottom: 33px;
     font-size: 24px;
 }
+.card:hover{
+box-shadow: 0 4px 8px #e7e6e6;
+    cursor: pointer}
+
+.card:hover .img-card{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
 
 .card-iphone {
     background-color: #313131;
@@ -505,7 +521,7 @@ p {
 }
 
 .img-card {
-
+transition: all 0.3s;
     z-index: 1;
 }
 
@@ -569,6 +585,12 @@ p {
     background-color: #f5f5f5;
     justify-content: center;
     align-items: center;
+}
+
+.img-essential:hover{
+    cursor: pointer;
+    border: 1px solid #008ECC;
+    box-shadow: 0 4px 8px #e7e6e6;
 }
 
 .title-essential {
@@ -687,6 +709,10 @@ footer span img {
 
 }
 
+.footer-buttens img:hover{
+    transform: scale(1.05);
+}
+
 .popular-categories span {
     border-bottom: 3px solid #fff;
     padding-bottom: 16px;
@@ -709,6 +735,7 @@ footer span img {
     list-style: disc;
     font-weight: 200;
     margin-top: 20px;
+    margin-left: 20px;
 
 }
 
@@ -716,6 +743,7 @@ footer span img {
     list-style: disc;
     font-weight: 200;
     margin-top: 20px;
+    margin-left: 20px;
 
 }
 
