@@ -439,6 +439,96 @@
             </div>
         </section>
 
+        <section class="testimonials">
+            <div class="container-testimonials">
+                <div class="testimonials-title">
+                    <h3>What Student's Say</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+                <div class="slider-area pos-r">
+                    <div class="swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"Teachings of the great explore of truth, the master-builder of human happiness. no one rejects,dislikes, or avoids pleasure itself, pleasure itself"</p>
+                                    <div class="author d-flex">
+                                        <div class="avatar">FK</div>
+                                        <div>
+                                            <p class="name">Finlay Kirk</p>
+                                            <p class="role">Web Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots"</p>
+                                    <div class="author d-flex">
+                                        <div class="avatar">DC</div>
+                                        <div>
+                                            <p class="name">Dannette P. Cervantes</p>
+                                            <p class="role">Web Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"</p>
+                                    <div class="author d-flex">
+                                        <div class="avatar">CA</div>
+                                        <div>
+                                            <p class="name">Clara R. Altman</p>
+                                            <p class="role">UI&UX Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"Teachings of the great explore of truth, the master-builder of human happiness. no one rejects,dislikes, or avoids pleasure itself, pleasure itself"</p>
+                                    <div class="author d-flex">
+                                        <div class="avatar">FK</div>
+                                        <div>
+                                            <p class="name">Finlay Kirk</p>
+                                            <p class="role">Web Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots"</p>
+                                    <div class="author d-flex">
+                                        <div class="avatar">DC</div>
+                                        <div>
+                                            <p class="name">Dannette P. Cervantes</p>
+                                            <p class="role">Web Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="quote">"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"</p>
+                                    <div class="author d-flex">
+                                        <div class="avatar">CA</div>
+                                        <div>
+                                            <p class="name">Clara R. Altman</p>
+                                            <p class="role">UI&UX Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper4-pagination"></div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="pos-r">
@@ -560,9 +650,22 @@
             spaceBetween: 20,
             freeMode: true,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper3 .swiper-button-next',
+                prevEl: '.swiper3 .swiper-button-prev',
                 clickable: true
+            },
+        });
+
+        let swiper4 = new Swiper('.swiper4', {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.slider-area .swiper-button-next',
+                prevEl: '.slider-area .swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper4-pagination',
+                clickable: true,
             },
         });
 

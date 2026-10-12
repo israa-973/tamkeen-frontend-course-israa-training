@@ -628,6 +628,118 @@ transition: all 0.3s;
     }
 }
 
+/* testimonials */
+.testimonials {
+    background-color: #FDF6F0;
+    padding: 80px 0;
+}
+
+.container-testimonials {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-title h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.testimonials-title p {
+    color: #9D9D9D;
+    margin: 10px 0 0;
+}
+
+.swiper4 .swiper-slide {
+    width: auto;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 380px;
+    max-width: 85vw;
+    height: 100%;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card .quote {
+    color: #9D9D9D;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 25px;
+}
+
+.testimonial-card .author {
+    gap: 12px;
+    align-items: center;
+}
+
+.testimonial-card .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    color: #777;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.testimonial-card .name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.testimonial-card .role {
+    font-size: 12px;
+    color: #9D9D9D;
+    margin: 0;
+}
+
+.slider-area .swiper-button-prev,
+.slider-area .swiper-button-next {
+    color: #3E3E3E;
+    --swiper-navigation-size: 40px;
+}
+
+.slider-area .swiper-button-prev {
+    left: -60px;
+}
+
+.slider-area .swiper-button-next {
+    right: -60px;
+}
+
+.swiper4-pagination {
+    position: static;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.swiper4-pagination .swiper-pagination-bullet {
+    background-color: #D9D9D9;
+    opacity: 1;
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+}
+
+.swiper4-pagination .swiper-pagination-bullet-active {
+    width: 24px;
+    background-color: #5B2D8E;
+}
+
 /* footer */
 footer {
     background-color: #008ECC;
