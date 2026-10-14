@@ -16,6 +16,7 @@
 
 <body>
 
+    <!-- header -->
     <header>
         <div class="top-bar">
             <div class="container-top-bar d-flex">
@@ -49,6 +50,8 @@
     </header>
 
     <main>
+
+        <!-- hero-section -->
         <section class="hero-carousel-section">
             <div class="hero-section pos-r">
                 <div class="swiper">
@@ -98,6 +101,9 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
+
+
+        <!-- shop -->
         <section class="shop">
             <div class="container-shop">
                 <div class="section-title d-flex">
@@ -198,6 +204,8 @@
             </div>
         </section>
 
+
+        <!-- brands -->
         <section class="brands">
             <div class="container-shop">
                 <div class="section-title d-flex">
@@ -310,7 +318,7 @@
             </div>
         </section>
 
-
+        <!-- essentials -->
         <section class="essentials pos-r">
             <div class="container-shop">
                 <div class="section-title d-flex">
@@ -439,98 +447,31 @@
             </div>
         </section>
 
-        <section class="testimonials">
-            <div class="container-testimonials">
-                <div class="testimonials-title">
-                    <h3>What Student's Say</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+
+        <!-- offer-banner -->
+        <section class="offer-banner">
+            <div class="container-banner">
+                <span>MENTO</span>
+                <div id="bannerItems" class="bannerItems d-flex">
                 </div>
-                <div class="slider-area pos-r">
-                    <div class="swiper4">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <p class="quote">"Teachings of the great explore of truth, the master-builder of human happiness. no one rejects,dislikes, or avoids pleasure itself, pleasure itself"</p>
-                                    <div class="author d-flex">
-                                        <div class="avatar">FK</div>
-                                        <div>
-                                            <p class="name">Finlay Kirk</p>
-                                            <p class="role">Web Developer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <p class="quote">"Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots"</p>
-                                    <div class="author d-flex">
-                                        <div class="avatar">DC</div>
-                                        <div>
-                                            <p class="name">Dannette P. Cervantes</p>
-                                            <p class="role">Web Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <p class="quote">"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"</p>
-                                    <div class="author d-flex">
-                                        <div class="avatar">CA</div>
-                                        <div>
-                                            <p class="name">Clara R. Altman</p>
-                                            <p class="role">UI&UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <p class="quote">"Teachings of the great explore of truth, the master-builder of human happiness. no one rejects,dislikes, or avoids pleasure itself, pleasure itself"</p>
-                                    <div class="author d-flex">
-                                        <div class="avatar">FK</div>
-                                        <div>
-                                            <p class="name">Finlay Kirk</p>
-                                            <p class="role">Web Developer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <p class="quote">"Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots"</p>
-                                    <div class="author d-flex">
-                                        <div class="avatar">DC</div>
-                                        <div>
-                                            <p class="name">Dannette P. Cervantes</p>
-                                            <p class="role">Web Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <p class="quote">"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"</p>
-                                    <div class="author d-flex">
-                                        <div class="avatar">CA</div>
-                                        <div>
-                                            <p class="name">Clara R. Altman</p>
-                                            <p class="role">UI&UX Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                <button class="banner-btn"><a href="#">Shop Now</a></button>
+            </div>
+        </section>
+
+        <!-- whyChooseUs -->
+        <section class="whyChooseUs">
+            <div class="container-shop">
+                <div class="section-title d-flex">
+                    <h3>Why <span>Choose Us</span></h3>
                 </div>
-                <div class="swiper4-pagination"></div>
+                <div id="cardsWhyUs" class="cardsWhyUs d-flex">
+                </div>
             </div>
         </section>
 
     </main>
 
+    <!-- footer -->
     <footer class="pos-r">
         <div class="container-footer d-flex">
             <div class="Contact">
@@ -589,6 +530,9 @@
             <p>© 2022 All rights reserved.</p>
         </div>
     </footer>
+
+
+    <!-- script -->
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
 
@@ -668,6 +612,53 @@
                 clickable: true,
             },
         });
+
+
+        // *********************
+        // cardsWhyUs
+
+        let cardsWhyUsData = [
+            {
+                img: "assets/images/delivery.png",
+                title: "Fast Delivery",
+                desc: "Get your order delivered quickly."
+            },
+            {
+                img: "assets/images/secure-payment.png",
+                title: "Secure Payment",
+                desc: "Your payment details are safe."
+            },
+            {
+                img: "assets/images/distribution.png",
+                title: "Easy Returns",
+                desc: "Return products without hassle."
+            },
+            {
+                img: "assets/images/support.png",
+                title: "24/7 Support",
+                desc: "We are here whenever you need us."
+            }
+        ];
+        let cardsWhyUs = document.getElementById("cardsWhyUs");
+        cardsWhyUsData.forEach(function (item) {
+            cardsWhyUs.innerHTML +=
+                '<div id="cardsWhyUs" class="cardsWhyUs d-flex">' + '<div class="slide-WhyUs">' + '<div class="img-WhyUs d-flex">' + '<img src="' + item.img + '">' + '</div>' + '<div class="title-WhyUs">' + '<h3>' + item.title + '</h3>' + '</div>' + '<div class="desc-WhyUs">' + '<p>' + item.desc + '</p>' + '</div>' + '</div>' + '</div>'
+        }
+        )
+
+
+
+        // ****************
+        // bannerItems
+
+        let bannerDta = {
+            title: "Discover Your Next Favourite",
+            desc: "Explore electronics and everyday essentials.",
+            img: "assets/images/Screenshot_2026-10-14_at_15.39.41-removebg-preview.png"
+        };
+
+        let bannerItems = document.getElementById("bannerItems");
+        bannerItems.innerHTML = '<div id="bannerItems" class="bannerItems d-flex">' + '<div class="bannerTitle">' + '<h2>' + bannerDta.title + '</h2>' + '<p>' + bannerDta.desc + '</p>' + '</div>' + '<div class="bannerImg">' + '<img src="' + bannerDta.img + '">' + '</div>' + '</div>'
 
     </script>
 </body>
