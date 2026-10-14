@@ -2,16 +2,10 @@
     box-sizing: border-box
 }
 
-.hanken-grotesk-uniquifier {
-    font-family: "Hanken Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
 
 body {
     max-width: 1920px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
@@ -150,6 +144,7 @@ justify-content: space-between;
       max-width: 1550px;
         margin: 0 auto;
         padding: 0 40px 160px 0;
+        overflow: hidden;
       }
 .swiper_hero .swiper-button-next,.swiper_hero .swiper-button-prev {
 height: 34px;

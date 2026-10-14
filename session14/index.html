@@ -13,14 +13,6 @@
   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Store</title>
-</head>
-<body>
 
 <!-- header -->
   <header>
@@ -83,12 +75,6 @@
   </header>
 
 
-
-
-
-
-
-
 <!-- main -->
   <main>
 
@@ -128,7 +114,7 @@
 
 
    <!-- courses -->
-    <section id="courses">
+    <section class="courses">
       <div class="head-courses d-flex">
         <img src="assets/images/casual-life-3d-idea-lamp 1.png" alt="">
         <div class="title-courses">
@@ -180,9 +166,95 @@
           </div>
           <button class="Join-course cta-btn pos-a"><a href="#">Join Course</a></button>
         </article>
-        <!-- كرتان إضافيان بنفس البنية -->
       </div>
+
+      <div id="course-grid" class="course-grid d-flex"></div>
     </section>
+
+    <script>
+      // let courseData =[
+      //   {
+      //     src:"assets/images/little-girl-participating-online-classes 1.png",
+      //     categoty:"UI/UX Design",
+      //     title:"UI/UX Design for Beginners",
+      //     price:"$98",
+      //     duration:"22hr 30min",
+      //     courses:"34 Courses",
+      //     sales:"250 Sales",
+      //     href:"Join Course",
+      //   }
+      // ]
+      // let courseGrid = document.getElementById("course-grid");
+      // courseData.forEach(function(item)){
+      //   courseGrid.innerHTML+='<article class="course-card pos-r"> + '<img src="'+ item.src +'">'+'<span class="category d-flex">'+item.categoty+'+'<ul class="list-stars d-flex">'+'<li>'+'<img src='"+assets/images/star-svgrepo-com (1) 5.svg+"''>'+'</li>'+'<li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li><li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li><li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li><li><img src="assets/images/star-svgrepo-com (1) 1.svg" alt=""></li></ul></span>'+'<h3>'+item.title+'</h3>'+'<div class="price">'+item.price+'</div>'+'<div class="meta">'+'<ul class="meta-list d-flex">'+'<li class="d-flex">'+'<img src='+"assets/images/time-svgrepo-com 1.svg"+''>'+item.duration+'</li>'+'<li class="d-flex">'+'<img src='"+assets/images/video-svgrepo-com 1.svg+"''>'+item.courses+'</li>'+'<li class="d-flex">'+'<img src='"+assets/images/Group.svg+"'>'+item.sales+'</li>'+'</ul>'+'</div>''
+
+
+      // }
+
+          let courseData = [
+  {
+    src: "assets/images/little-girl-participating-online-classes 1.png",
+    category: "UI/UX Design",
+    title: "UI/UX Design for Beginners",
+    price: "$98",
+    duration: "22hr 30min",
+    courses: "34 Courses",
+    sales: "250 Sales",
+    href: "#",
+    buttonText: "Join Course"
+  },
+  {
+    src: "assets/images/image 7.png",
+    category: "UI/UX Design",
+    title: "UI/UX Design for Beginners",
+    price: "$98",
+    duration: "22hr 30min",
+    courses: "34 Courses",
+    sales: "250 Sales",
+    href: "#",
+    buttonText: "Join Course"
+  },
+  {
+    src: "assets/images/image 6.png",
+    category: "UI/UX Design",
+    title: "UI/UX Design for Beginners",
+    price: "$98",
+    duration: "22hr 30min",
+    courses: "34 Courses",
+    sales: "250 Sales",
+    href: "#",
+    buttonText: "Join Course"
+  }
+];
+
+let courseGrid = document.getElementById("course-grid");
+
+courseData.forEach(function (item) {
+  courseGrid.innerHTML +=
+    '<article class="course-card pos-r">' +
+      '<img src="' + item.src + '" alt="' + item.title + '">' +
+      '<span class="category d-flex">' + item.category +
+        '<ul class="list-stars d-flex">' +
+          '<li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li>' +
+          '<li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li>' +
+          '<li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li>' +
+          '<li><img src="assets/images/star-svgrepo-com (1) 5.svg" alt=""></li>' +
+          '<li><img src="assets/images/star-svgrepo-com (1) 1.svg" alt=""></li>' +
+        '</ul>' +
+      '</span>' +
+      '<h3>' + item.title + '</h3>' +
+      '<div class="price">' + item.price + '</div>' +
+      '<div class="meta">' +
+        '<ul class="meta-list d-flex">' +
+          '<li class="d-flex"><img src="assets/images/time-svgrepo-com 1.svg" alt="">' + item.duration + '</li>' +
+          '<li class="d-flex"><img src="assets/images/video-svgrepo-com 1.svg" alt="">' + item.courses + '</li>' +
+          '<li class="d-flex"><img src="assets/images/Group.svg" alt="">' + item.sales + '</li>' +
+        '</ul>' +
+      '</div>' +
+      '<button class="Join-course cta-btn pos-a">'+'<a href="'+ item.href +'">'+ item.buttonText +'</a>'+'</button>'+
+    '</article>';
+});
+    </script>
 
 
 <!-- premium -->
@@ -208,7 +280,34 @@
         </div>
       </div>
      </div>
+     </div>
     </section>
+
+        <section id="premium-section" class="premium">
+    </section>
+
+<script>
+  let premiumData= {
+img:"assets/images/OBJECTS2.png",
+titleStart:"Premium",
+titleColored:"Learning",
+titleEnd:"Experience",
+
+feature1icon:"assets/images/hearts 1.svg",
+feature1title:"Easily Accessible",
+feature1text:"Learning Will fell Very Comfortable With Courslab.",
+
+feature2icon:"assets/images/jigsaw 1.svg",
+feature2title:"Fun learning experience",
+feature2text:"Learning Will fell Very Comfortable With Courslab.",
+  };
+
+  let premiumSection= document.getElementById("premium-section");
+  premiumSection.innerHTML=
+  '<section id="premium-section" class="premium">'+'<div class="container-premium d-flex">'+'<div class="premium-art">'+'<img src="'+premiumData.img+'">'+'</div>'+'<div class="premium-copy">'+'<h2>'+premiumData.titleStart+' <span>'+premiumData.titleColored+'</span> '+premiumData.titleEnd+'</h2>'+'<div class="item d-flex">'+'<div class="img-item d-flex">'+'<img src="'+premiumData.feature1icon+'">'+'</div>'+'<div class="content-item">'+'<h3>'+premiumData.feature1title+'</h3>'+'<p>'+premiumData.feature1text+'</p>'+'</div>'+'</div>'+'<div class="item d-flex">'+'<div class="img-item d-flex">'+'<img src="'+premiumData.feature2icon+'">'+'</div>'+'<div class="content-item">'+'<h3>'+premiumData.feature2title+'</h3>'+'<p>'+premiumData.feature1text+'</p>'+'</div>'+'</div>'+'</div>'+'</div>'+'</section>';
+
+</script>
+
 
 
     <!-- testimonials -->
@@ -414,7 +513,8 @@ ullamco laboris nisi ut allquip ex commodo.</p>
     </div>
     </section>
 
-    
+
+    <!-- newsletter -->
     <section class="newsletter pos-r">
       <div class="newsletter-container d-flex pos-r">
         <h2>Subscribe to our newsletter</h2>
