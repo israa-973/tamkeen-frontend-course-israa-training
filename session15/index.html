@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,35 +46,6 @@
                         <a href="#"><img src="assets/images/Vector-search.svg" alt="Vector-search" /></a>
                     </ul>
                 </nav>
-                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav> -->
             </div>
         </div>
         <section class="hero-section">
@@ -150,14 +124,14 @@
             <div id="carouselMultiple" class="carousel slide" data-bs-ends="stop"
                 style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
                 <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
-                        data-bs-slide="prev" style="--bs-carousel-control-icon-width: 2rem;">
-                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <button class="btn-icon btn-sm p-5" type="button" data-bs-target="#carouselMultiple"
+                        data-bs-slide="prev">
+                        <i class="carousel-icon-left fa-solid fa-chevron-left fa-lg"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
-                        data-bs-slide="next" style="--bs-carousel-control-icon-width: 2rem;">
-                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <button class="btn-icon btn-sm p-5" type="button" data-bs-target="#carouselMultiple"
+                        data-bs-slide="next">
+                        <i class="carousel-icon-right fa-solid fa-chevron-right fa-lg"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -210,80 +184,252 @@
 
         <!-- benefits-section -->
         <section class="benefits-section">
-            <div class="benefits-container">
-                <div class="section-content">
-                    <h2>Why choose Us?</h2>
-                    <p>our services have been trusted by world travelers.</p>
+            <div class="benefits-top">
+                <div class="benefits-container">
+                    <div class="section-content">
+                        <h2>Why choose Us?</h2>
+                        <p>our services have been trusted by world travelers.</p>
+                    </div>
                 </div>
-                <div class="carousel-benefits">
-            <div id="carouselMultiple" class="carousel slide" data-bs-ends="stop"
-                style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
-                        data-bs-slide="prev" style="--bs-carousel-control-icon-width: 2rem;">
-                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <div class="btn-icon-btns d-flex justify-content-between align-items-center">
+                    <button class="btn-icon btn-sm benefits-arrow prev p-5" type="button"
+                        data-bs-target="#carouselBenefits" data-bs-slide="prev">
+                        <i class="carousel-icon-left fa-solid fa-chevron-left fa-lg"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
-                        data-bs-slide="next" style="--bs-carousel-control-icon-width: 2rem;">
-                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <button class="btn-icon btn-sm benefits-arrow next p-5" type="button"
+                        data-bs-target="#carouselBenefits" data-bs-slide="next">
+                        <i class="carousel-icon-right fa-solid fa-chevron-right fa-lg"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="carousel-inner ">
-                    <div class="carousel-item">
-                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
-                            <h5 class="mt-2 mb-0">Best Service</h5>
-                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
-                            </p>
-                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
+            </div>
+            <div class="benefits-container">
+                <div class="carousel-benefits">
+                    <div id="carouselBenefits" class="carousel slide" data-bs-ends="stop"
+                        style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                                        <h5 class="mt-2 mb-0">Best Service</h5>
+                                        <p class="card-text fg-2">our service is reliable and convenient, our service is
+                                            quality.
+                                        </p>
+                                        <a href="#" v class="fg-3">Learn more <img src="assets/images/Vector 3.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                                        <h5 class="mt-2 mb-0">Best Service</h5>
+                                        <p class="card-text fg-2">our service is reliable and convenient, our service is
+                                            quality.
+                                        </p>
+                                        <a href="#" class="fg-3">Learn more <img src="assets/images/Vector 3.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                                        <h5 class="mt-2 mb-0">Best Service</h5>
+                                        <p class="card-text fg-2">our service is reliable and convenient, our service is
+                                            quality.
+                                        </p>
+                                        <a href="#" class="fg-3">Learn more <img src="assets/images/Vector 3.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                                        <h5 class="mt-2 mb-0">Best Service</h5>
+                                        <p class="card-text fg-2">our service is reliable and convenient, our service is
+                                            quality.
+                                        </p>
+                                        <a href="#" class="fg-3">Learn more<img src="assets/images/Vector 3.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                   </div>
-                   <div class="carousel-item">
-                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
-                            <h5 class="mt-2 mb-0">Best Service</h5>
-                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
-                            </p>
-                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="carousel-item">
-                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
-                            <h5 class="mt-2 mb-0">Best Service</h5>
-                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
-                            </p>
-                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="carousel-item">
-                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
-                            <h5 class="mt-2 mb-0">Best Service</h5>
-                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
-                            </p>
-                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
-                        </div>
-                    </div>
-                   </div>
                 </div>
             </div>
-                </div>
         </section>
 
+        <!-- partners-section -->
+        <section class="partners-section" id="partners">
+            <div class="partners-container">
+                <div class="section-heading">
+                    <h2>Our tour partner</h2>
+                    <p>There are many variation of passage of lorem ipsum available but the majority have suffered
+                        alteration </p>
+                </div>
+                <ul class="partner-list d-flex">
+                    <li class="partner-list-item"><img class="partner-list-logo" src="assets/images/Katana.png" alt="">
+                    </li>
+                    <li class="partner-list-item"><img class="partner-list-logo" src="assets/images/travava.png" alt="">
+                    </li>
+                    <li class="partner-list-item"><img class="partner-list-logo" src="assets/images/bigui.png" alt="">
+                    </li>
+                    <li class="partner-list-item"><img class="partner-list-logo" src="assets/images/Booking.com.png"
+                            alt=""></li>
+                    <li class="partner-list-item"><img class="partner-list-logo" src="assets/images/Jakmaen.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- testimonials-section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="testimonials-content">
+                <p class="testimonial-word">TESTIMONIAL</p>
+                <h2>What our client say</h2>
+                <p>Create a visual identity for your company and a overall brand</p>
+            </div>
+            <div id="carouselTestimonials" class="carousel slide carousel-testimonials" data-bs-ends="stop"
+                style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"></h5>
+                    <div>
+                        <button class="btn-icon btn-sm testimonial-btn" type="button"
+                            data-bs-target="#carouselTestimonials" data-bs-slide="prev"
+                            style="--bs-carousel-control-icon-width: 1.1rem;">
+                            <span class="carousel-icon-prev" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="btn-icon btn-sm testimonial-btn" type="button"
+                            data-bs-target="#carouselTestimonials" data-bs-slide="next"
+                            style="--bs-carousel-control-icon-width: 1.1rem;">
+                            <span class="carousel-icon-next" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-inner testimonial-list">
+                    <div class="carousel-item pos-r">
+                        <img class="testimonial-card-avatar" src="assets/images/unsplash_IF9TK5Uy-KI.png" alt="">
+                        <article class="testimonial-card pos-a">
+                            <div class="testimonial-card-content">
+                                <h3 class="testimonial-card-name">Sara Jay</h3>
+                                <p class="testimonial-card-role">Traveler</p>
+                            </div>
+                            <div class="testimonial-card-rating d-flex">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                            </div>
+                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
+                                the brands overall goal. We then need to dive.</blockquote>
+                        </article>
+                    </div>
+                    <div class="carousel-item pos-r">
+                        <img class="testimonial-card-avatar" src="assets/images/unsplash_DItYlc26zVI.png" alt="">
+                        <article class="testimonial-card pos-a">
+                            <div class="testimonial-card-content">
+                                <h3 class="testimonial-card-name">Cristian Daniel</h3>
+                                <p class="testimonial-card-role">Traveler</p>
+                            </div>
+                            <div class="testimonial-card-rating d-flex">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                            </div>
+                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
+                                the brands overall goal. We then need to dive.</blockquote>
+                        </article>
+                    </div>
+                    <div class="carousel-item pos-r">
+                        <img class="testimonial-card-avatar" src="assets/images/unsplash_KIPqvvTOC1s.png" alt="">
+                        <article class="testimonial-card pos-a">
+                            <div class="testimonial-card-content">
+                                <h3 class="testimonial-card-name">Kausar Hasan</h3>
+                                <p class="testimonial-card-role">Traveler</p>
+                            </div>
+                            <div class="testimonial-card-rating d-flex">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                            </div>
+                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
+                                the brands overall goal. We then need to dive.</blockquote>
+                        </article>
+                    </div>
+                    <div class="carousel-item pos-r">
+                        <img class="testimonial-card-avatar" src="assets/images/unsplash_IF9TK5Uy-KI.png" alt="">
+                        <article class="testimonial-card pos-a">
+                            <div class="testimonial-card-content">
+                                <h3 class="testimonial-card-name">Sara Jay</h3>
+                                <p class="testimonial-card-role">Traveler</p>
+                            </div>
+                            <div class="testimonial-card-rating d-flex">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                            </div>
+                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
+                                the brands overall goal. We then need to dive.</blockquote>
+                        </article>
+                    </div>
+                    <div class="carousel-item pos-r">
+                        <img class="testimonial-card-avatar" src="assets/images/unsplash_DItYlc26zVI.png" alt="">
+                        <article class="testimonial-card pos-a">
+                            <div class="testimonial-card-content">
+                                <h3 class="testimonial-card-name">Cristian Daniel</h3>
+                                <p class="testimonial-card-role">Traveler</p>
+                            </div>
+                            <div class="testimonial-card-rating d-flex">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                            </div>
+                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
+                                the brands overall goal. We then need to dive.</blockquote>
+                        </article>
+                    </div>
+                    <div class="carousel-item pos-r">
+                        <img class="testimonial-card-avatar" src="assets/images/unsplash_KIPqvvTOC1s.png" alt="">
+                        <article class="testimonial-card pos-a">
+                            <div class="testimonial-card-content">
+                                <h3 class="testimonial-card-name">Kausar Hasan</h3>
+                                <p class="testimonial-card-role">Traveler</p>
+                            </div>
+                            <div class="testimonial-card-rating d-flex">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                                <img src="assets/images/Star 1.png" alt="">
+                            </div>
+                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
+                                the brands overall goal. We then need to dive.</blockquote>
+                        </article>
+                    </div>
 
 
-
-
+                </div>
+            </div>
+        </section>
 
         <!-- newsletter-section -->
         <section class="newsletter d-flex">
@@ -342,10 +488,7 @@
             creativechroma)</div>
     </footer>
 
-
-
     <!-- Optional JavaScript -->
-
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
         crossorigin="anonymous"></script>
