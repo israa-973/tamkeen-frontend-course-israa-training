@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<!-- body -->
+
+<body>
+
+
+    <!-- header -->
+    <header>
+        <div class="site-header">
+            <div class="container-header d-flex">
+                <div class="site-logo"><a href="#"><img src="assets/images/logo1 1.svg" alt="logo" /></a></div>
+                <nav class="main-nav">
+                    <ul class="main-nav-list d-flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a class="d-flex" href="#"><span>Package</span><img src="assets/images/Vector.svg"
+                                    alt="" /></a></li>
+                        <li><a class="d-flex" href="#"><span>Destination</span><img src="assets/images/Vector.svg"
+                                    alt="" /></a></li>
+                        <li><a class="d-flex" href="#"><span>Blog</span><img src="assets/images/Vector.svg"
+                                    alt="" /></a></li>
+                        <li><a href="#">Contact</a></li>
+                        <a href="#"><img src="assets/images/Vector-search.svg" alt="Vector-search" /></a>
+                    </ul>
+                </nav>
+                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+            </div>
+        </div>
+        <section class="hero-section">
+            <div class="container-hero d-flex">
+                <h1>Make in<br>your journey.</h1>
+                <p>Explore the world with what you love beautiful natural beauty.</p>
+                <form class="search-box">
+                    <div>
+                        <button class="form-control combobox-toggle" type="button" data-bs-toggle="combobox"
+                            data-bs-name="option" data-bs-placeholder="Location">
+                            <span class="combobox-value">Location</span>
+                            <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z"
+                                    fill="currentcolor" />
+                            </svg>
+                        </button>
+                        <div class="menu">
+                            <button class="menu-item" type="button" data-bs-value="1">Damascus</button>
+                            <button class="menu-item" type="button" data-bs-value="2">Bali</button>
+                            <button class="menu-item" type="button" data-bs-value="3">Paris</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="form-control combobox-toggle" type="button" data-bs-toggle="combobox"
+                            data-bs-name="option" data-bs-placeholder="Date">
+                            <span class="combobox-value">Date</span>
+                            <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z"
+                                    fill="currentcolor" />
+                            </svg>
+                        </button>
+                        <div class="menu">
+                            <button class="menu-item" type="button" data-bs-value="1">Today</button>
+                            <button class="menu-item" type="button" data-bs-value="2">Tomorrow</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="form-control combobox-toggle" type="button" data-bs-toggle="combobox"
+                            data-bs-name="option" data-bs-placeholder="People">
+                            <span class="combobox-value">People</span>
+                            <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z"
+                                    fill="currentcolor" />
+                            </svg>
+                        </button>
+                        <div class="menu">
+                            <button class="menu-item" type="button" data-bs-value="1">1 Person</button>
+                            <button class="menu-item" type="button" data-bs-value="2">2 People</button>
+                            <button class="menu-item" type="button" data-bs-value="2">3 People</button>
+                        </div>
+                    </div>
+                    <button class="explore">Explore now</button>
+                </form>
+                <div class="hero-popular-places d-flex">
+                    <span>Popular Place: </span>
+                    <p>Bali, Istanbul, Rome, Paris.</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- carousel-section -->
+        <section class="carousel-section">
+            <div class="content-section">
+                <h2>Explore new worlds with exotic natural scenery</h2>
+                <p>Explore the world with what you love beautiful natural beauty.</p>
+            </div>
+            <div id="carouselMultiple" class="carousel slide" data-bs-ends="stop"
+                style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
+                        data-bs-slide="prev" style="--bs-carousel-control-icon-width: 2rem;">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
+                        data-bs-slide="next" style="--bs-carousel-control-icon-width: 2rem;">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carousel-inner d-flex">
+                    <div class="carousel-item pos-r"><img src="assets/images/unsplash_sELcHR_bGVs.png"
+                            class="d-block w-100 rounded-5" alt="...">
+                        <div class="carousel-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item image pos-r"><img src="assets/images/Group 45.png"
+                            class="d-block w-100 rounded-5" alt="...">
+                        <div class="carousel-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item pos-r"><img src="assets/images/Group 46.png"
+                            class="d-block w-100 rounded-5" alt="...">
+                        <div class="carousel-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item pos-r"><img src="assets/images/unsplash_sELcHR_bGVs.png"
+                            class="d-block w-100 rounded-5" alt="...">
+                        <div class="carousel-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item pos-r"><img src="assets/images/Group 45.png"
+                            class="d-block w-100 rounded-5" alt="...">
+                        <div class="carousel-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item pos-r"><img src="assets/images/Group 46.png"
+                            class="d-block w-100 rounded-5" alt="...">
+                        <div class="carousel-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- benefits-section -->
+        <section class="benefits-section">
+            <div class="benefits-container">
+                <div class="section-content">
+                    <h2>Why choose Us?</h2>
+                    <p>our services have been trusted by world travelers.</p>
+                </div>
+                <div class="carousel-benefits">
+            <div id="carouselMultiple" class="carousel slide" data-bs-ends="stop"
+                style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
+                        data-bs-slide="prev" style="--bs-carousel-control-icon-width: 2rem;">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple"
+                        data-bs-slide="next" style="--bs-carousel-control-icon-width: 2rem;">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item">
+                     <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                            <h5 class="mt-2 mb-0">Best Service</h5>
+                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
+                            </p>
+                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="carousel-item">
+                     <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                            <h5 class="mt-2 mb-0">Best Service</h5>
+                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
+                            </p>
+                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="carousel-item">
+                     <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                            <h5 class="mt-2 mb-0">Best Service</h5>
+                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
+                            </p>
+                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="carousel-item">
+                     <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="assets/images/Group 31.png" class="card-img" alt="...">
+                            <h5 class="mt-2 mb-0">Best Service</h5>
+                            <p class="card-text fg-2">our service is reliable and convenient, our service is quality.
+                            </p>
+                            <a class="fg-3">Learn more <img src="assets/images/Vector 3.png" alt=""></a>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+                </div>
+        </section>
+
+
+
+
+
+
+        <!-- newsletter-section -->
+        <section class="newsletter d-flex">
+            <div class="newsletter-container d-flex">
+                <h2>Subcribe to get special price</h2>
+                <p>Dont wanna miss something? subscribe right now and get special promotion and monthly newsletter</p>
+                <form class="d-flex">
+                    <input type="text" placeholder="Type your email here">
+                    <button class="cta-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer d-flex">
+            <ul class="footer-logo">
+                <a href="#" class="brand"><img src="assets/images/logo 2.png" alt=""></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra condimentum.</p>
+            </ul>
+            <ul class="contact-information d-flex">
+                <li>
+                    <h3>Contact Information</h3>
+                </li>
+                <li class="Contact-icons d-flex"><img src="assets/images/ic_baseline-place.svg" alt=""><span>732 Despard
+                        St, Atlanta</span></li>
+                <li class="Contact-icons d-flex"><img src="assets/images/carbon_phone-filled.svg" alt="">+97 888 8888
+                </li>
+                <li class="Contact-icons d-flex"><img src="assets/images/fluent_mail-20-filled.svg"
+                        alt="">info@traveller.com</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Quick Link</h3>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <a href="#">Tours</a>
+                <a href="#">Contact </a>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Follow Us</h3>
+                </li>
+                <div class="social-icons d-flex">
+                    <li><a href="#"><img src="assets/images/face.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/twi.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/yout.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/inst.png" alt=""></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="copyright-notice d-flex">Copyright © All rights reserved (Website Developed & Managed by
+            creativechroma)</div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
