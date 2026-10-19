@@ -242,17 +242,16 @@ header {
   transition: 0.5s
 }
 
+.card i {
+  font-size: 83px;
+}
+
 .card:hover {
   transform: translateY(-10px);
   transition: 0.5s;
+  color: var(--co-dark-bl);
 }
 
-
-
-.card img {
-  width: 83px;
-  height: 83px;
-}
 
 .card h3 {
   font-size: 48px;
@@ -286,6 +285,12 @@ header {
   width: 100%;
   margin: 0 auto;
   justify-content: center;
+  transition: 0.5s;
+}
+
+.img-siti-sarah img:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 
 .content-siti-sarah {
@@ -295,7 +300,8 @@ header {
 }
 
 .content-siti-sarah:hover i {
-  transform: rotate(180deg);
+  color: var(--co-dark-bl);
+  transform: translateY(-10px);
   transition: all 0.3s;
 }
 
@@ -666,16 +672,17 @@ footer .social-icons i:hover {
 
 /* @media */
 @media screen and (max-width: 991px) {
- .container-team-work {
+  .container-team-work {
     flex-wrap: wrap;
   }
-.nav-links{
-  gap: 6px;
-}
 
-.nav-logo{
- opacity: 0;
-}
+  .nav-links {
+    gap: 6px;
+  }
+
+  .nav-logo {
+    opacity: 0;
+  }
 }
 
 
@@ -706,9 +713,9 @@ footer .social-icons i:hover {
     visibility: visible;
   }
 
-  .nav-logo{
- opacity: 1;
-}
+  .nav-logo {
+    opacity: 1;
+  }
 
   .nav-links li {
     width: 100%;
