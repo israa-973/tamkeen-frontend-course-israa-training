@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,10 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,66 +29,314 @@
 </head>
 
 <body>
-    <header class="hero-section">
-        <nav class="navbar">
-            <a href="#" class="nav-logo"><img src="assets/images/logo1 2.svg" alt="REBEL ROVER"></a>
+    <!-- header -->
+    <header class="pos-r">
+        <!-- hero-section -->
+        <div class="hero-section d-flex">
+            <!-- navbar -->
+            <nav class="navbar d-flex pos-a">
+                <a href="#" class="nav-logo"><img src="assets/images/logo1 2.svg" alt="REBEL ROVER"></a>
 
-            <button class="menu-toggle" id="mobile-menu" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#">Package <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Premium Tour</a></li>
-                        <li><a href="#">Budget Trip</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Destination <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Asia</a></li>
-                        <li><a href="#">Europe</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Latest News</a></li>
-                        <li><a href="#">Travel Tips</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-                <li class="search-item"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
-            <h1>About Us</h1>
-            <p class="breadcrumb">
-                <a href="#">Home</a>
-                <i class="fa-solid fa-chevron-right"></i>
-                About Us
-            </p>
-        </div>
+                <ul class="nav-links d-flex" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="dropdown">
+                        <a class="d-flex" href="#">Package <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Premium Tour</a></li>
+                            <li><a href="#">Budget Trip</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="d-flex" href="#">Destination <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Asia</a></li>
+                            <li><a href="#">Europe</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="d-flex" href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Latest News</a></li>
+                            <li><a href="#">Travel Tips</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="search-item"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </nav>
+            <!-- About Us -->
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p class="breadcrumb">
+                    <a href="#">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About Us
+                </p>
+            </div>
     </header>
 
+    <main>
+        <!-- Team Work -->
+        <section>
+            <div class="container-team-work d-flex" id="cardsTeamWork">
+            </div>
+        </section>
+
+        <!-- Siti Sarah -->
+        <section>
+            <div class="container-siti-sarah d-flex">
+                <div class="img-siti-sarah item1 d-flex"><img src="assets/images/unsplash_7BjmDICVloE.png" alt=""></div>
+                <div class="content-siti-sarah d-flex item1">
+                    <div class="icon-siti-sarah"><i class="fa-solid fa-quote-left"></i></div>
+                    <div class="desc-siti-sarah">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor
+                        sapien et urna tincidunt fringilla. Vivamus at augue interdum, blandit arcu quis, laoreet ipsum.
+                        In eu ipsum urna. Suspendisse suscipit est et neque.</div>
+                    <div class="desc-siti-sarah">Mauris tempor tellus ante, ut fermentum erat gravida vel. Class aptent
+                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec justo
+                        dui. Ut et consequat dui, a malesuada ipsum. Pellentesque nec turpis viverra, blandit mi a,
+                        accumsan justo.</div>
+                    <div>
+                        <h4>Siti Sarah</h4>
+                        <p>Founder Travosca</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="content-gallery">
+                <h4 class="desc-gallery">Team Members</h4>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slid pos-r">
+                        <img src="assets/images/per1.jpg" alt="">
+                        <span class="country-name pos-a">Reem</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slid pos-r">
+                        <img src="assets/images/per2.jpg" alt="">
+                        <span class="country-name pos-a">James</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slid pos-r">
+                        <img src="assets/images/per3.jpg" alt="">
+                        <span class="country-name pos-a">Sami</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slid pos-r">
+                        <img src="assets/images/per4.jpg" alt="">
+                        <span class="country-name pos-a">Leen</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slid pos-r">
+                        <img src="assets/images/per5.jpg" alt="">
+                        <span class="country-name pos-a">Sali</span>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <!-- Statistics -->
+        <section class="Statistics">
+            <div class="container-statistics d-flex">
+                <div class="card-statistics d-flex">
+                    <div class="icon-statistics"><i class="fa-solid fa-users"></i></div>
+                    <div class="number-statistics ">
+                        <h5>126 +</h5>
+                        <p>Satisfied Client</p>
+                    </div>
+                </div>
+                <div class="card-statistics d-flex">
+                    <div class="icon-statistics"><i class="fa-solid fa-user"></i></div>
+                    <div class="number-statistics">
+                        <h5>230 +</h5>
+                        <p>New Traveller</p>
+                    </div>
+                </div>
+                <div class="card-statistics d-flex">
+                    <div class="icon-statistics"><i class="fa-solid fa-mountain"></i></div>
+                    <div class="number-statistics">
+                        <h5>230 +</h5>
+                        <p>Destination</p>
+                    </div>
+                </div>
+                <div class="card-statistics d-flex">
+                    <div class="icon-statistics"><i class="fa-solid fa-award"></i></div>
+                    <div class="number-statistics">
+                        <h5>230 +</h5>
+                        <p>Award</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery – Unforgettable Moment -->
+        <section>
+            <div class="container-gallery">
+                <div class="content-gallery">
+                    <p class="title-gallery">Gallery</p>
+                    <h4 class="desc-gallery">Unforgettable moment</h4>
+                </div>
+                <div class="sides-gallery d-flex">
+                    <div class="over gallery-side1 pos-r">
+                        <img src="assets/images/unsplash_R98l5I6OFQY.png" alt="">
+                        <span class="country-name pos-a">Bali</span>
+                    </div>
+                    <div class="gallery-side2 d-flex">
+                        <div class="over pos-r">
+                            <img src="assets/images/unsplash_jG3I8b5iyHI.png" alt="">
+                            <span class="country-name pos-a">Dubai</span>
+                        </div>
+                        <div class="gallery-side3 d-flex">
+                            <div class="over pos-r"><img src="assets/images/unsplash_Hf4Ap1-ef40.png" alt="">
+                                <span class="country-name pos-a">Paris</span>
+                            </div>
+                            <div class="over pos-r"><img src="assets/images/unsplash_hFXZ5cNfkOk.png" alt="">
+                                <span class="country-name pos-a">Italy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- newsletter-section -->
+        <section class="newsletter d-flex">
+            <div class="newsletter-container d-flex">
+                <h2>Subcribe to get special price</h2>
+                <p>Dont wanna miss something? subscribe right now and get special promotion and monthly newsletter</p>
+                <form class="d-flex">
+                    <input type="text" placeholder="Type your email here">
+                    <button class="cta-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-footer d-flex">
+            <ul class="footer-logo">
+                <a href="#" class="brand"><img src="assets/images/logo 3.svg" alt=""></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra condimentum.</p>
+            </ul>
+            <ul class="contact-information d-flex">
+                <li>
+                    <h3>Contact Information</h3>
+                </li>
+                <li class="Contact-icons d-flex"><i class="fa-solid fa-location-dot"></i><span>732 Despard
+                        St, Atlanta</span></li>
+                <li class="Contact-icons d-flex"><i class="fa-solid fa-phone"></i>+97 888 8888
+                </li>
+                <li class="Contact-icons d-flex"><i class="fa-solid fa-envelope"></i>info@traveller.com</li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Quick Link</h3>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Follow Us</h3>
+                </li>
+                <div class="social-icons d-flex">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="copyright-notice d-flex">Copyright © All rights reserved (Website Developed & Managed by
+            creativechroma)</div>
+    </footer>
 
     <script>
+        // **************
+        // header "burger menu"
         const mobileMenuBtn = document.getElementById('mobile-menu');
-const navLinks = document.getElementById('nav-links');
+        const navLinks = document.getElementById('nav-links');
 
-mobileMenuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  
-  mobileMenuBtn.classList.toggle('toggle-effect');
-});
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
 
+            mobileMenuBtn.classList.toggle('toggle-effect');
+        });
+
+
+        // *******************
+        // Team Work "array of objects"
+        let cardsData = [
+            {
+                src: "assets/images/Vector1.svg",
+                category: "Great team work",
+                title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor nunc non neque euismod porttitor. Nullam lacus est, tincidunt eget sapien eget, maximus convallis massa. Curabitur quis tellus a tortor egestas viverra. ",
+            },
+            {
+                src: "assets/images/Vector2.svg",
+                category: "Our vision",
+                title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.. ",
+            },
+            {
+                src: "assets/images/Vector3.svg",
+                category: "Our mision",
+                title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.. ",
+            },
+        ];
+        let cardsTeamWork = document.getElementById("cardsTeamWork");
+        cardsData.forEach(function (item) {
+            cardsTeamWork.innerHTML +=
+                '<div class="card d-flex">' + '<div class="img-team-work">'
+                + '<img src="' + item.src + '">' + '</div>' + '<div class="category-team-work">'
+                + '<h3>' + item.category + '</h3>' + '</div>' + '<div class="description-team-work">'
+                + '<p>' + item.title + '</p>' + '</div>' + '</div>'
+        });
+
+
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spacebetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spacebetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spacebetween: 30,
+                }
+            }
+        });
     </script>
 </body>
 
