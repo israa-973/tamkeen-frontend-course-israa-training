@@ -133,6 +133,7 @@ header {
 
 .nav-links {
   align-items: center;
+  text-wrap: nowrap;
   gap: 30px;
 }
 
@@ -219,90 +220,6 @@ header {
 .menu-toggle.toggle-effect span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
-
-  .hero-content h1 {
-    font-size: 40px;
-  }
-
-  .nav-logo img {
-    width: 180px;
-  }
-
-  .nav-links {
-    text-wrap: nowrap;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 40%;
-    background-color: #52738ac8;
-    padding: 40px 0;
-    gap: 26px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    border-radius: 0 0 0 20px;
-  }
-
-  .nav-links.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links a {
-    display: block;
-    width: 100%;
-    font-size: var(--fo-size-18);
-  }
-
-  .dropdown-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-    background-color: rgba(255, 255, 255, 0.08);
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown-menu li a {
-    color: #ffffff;
-  }
-
-  .container-team-work {
-    flex-wrap: wrap;
-  }
-
-  .container-siti-sarah {
-    flex-wrap: wrap;
-  }
-
-  .sides-gallery {
-    flex-wrap: wrap;
-  }
-
-}
-
 
 
 /* Team Work */
@@ -743,4 +660,71 @@ footer .social-icons i:hover {
   background-color: #000;
   justify-content: center;
   padding: var(--p-40);
+}
+
+/* @media */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    background-color: #52738ac8;
+    padding: 40px 0;
+    gap: 26px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    border-radius: 0 0 0 20px;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: var(--fo-size-18);
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    color: #ffffff;
+  }
+
+  .container-team-work {
+    flex-wrap: wrap;
+  }
+
+  .container-siti-sarah {
+    flex-wrap: wrap;
+  }
+
+  .sides-gallery {
+    flex-wrap: wrap;
+  }
+
 }
