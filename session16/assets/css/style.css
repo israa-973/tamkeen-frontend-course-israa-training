@@ -74,6 +74,7 @@ img {
   --p-40: 40px;
   --co-gray: #878787;
   --co-dark-bl: #003a92;
+  --fo-size-18: 18px;
 }
 
 /* header */
@@ -87,7 +88,7 @@ header {
 
 /* hero-section */
 .hero-section {
-  max-width: 1440px;
+  max-width: var(--m-w);
   margin: 0 auto;
   height: 860px;
   align-items: center;
@@ -106,7 +107,7 @@ header {
 }
 
 .breadcrumb {
-  font-size: 18px;
+  font-size: var(--fo-size-18);
   margin-top: 15px;
 }
 
@@ -119,7 +120,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
-  background: rgba(0, 0, 0, 0.4);
+  background: #52738ac8;
   width: 100%;
   top: 0;
   left: 0;
@@ -141,7 +142,7 @@ header {
 
 .nav-links a {
   color: #fff;
-  font-size: 18px;
+  font-size: var(--fo-size-18);
   font-weight: 400;
   padding: 8px 12px;
   transition: color 0.3s ease;
@@ -181,7 +182,7 @@ header {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #f5f7fa;
+  background-color: #b5d9f3e8;
   color: var(--co-dark-bl);
 }
 
@@ -233,12 +234,13 @@ header {
   }
 
   .nav-links {
+    text-wrap: nowrap;
     flex-direction: column;
     position: absolute;
     top: 100%;
     right: 0;
     width: 40%;
-    background-color: rgba(83, 111, 136, 0.97);
+    background-color: #52738ac8;
     padding: 40px 0;
     gap: 26px;
     opacity: 0;
@@ -260,7 +262,7 @@ header {
   .nav-links a {
     display: block;
     width: 100%;
-    font-size: 18px;
+    font-size: var(--fo-size-18);
   }
 
   .dropdown-menu {
@@ -320,7 +322,15 @@ header {
   justify-content: center;
   gap: 16px;
   text-align: center;
+  transition: 0.5s
 }
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+
 
 .card img {
   width: 83px;
@@ -329,10 +339,12 @@ header {
 
 .card h3 {
   font-size: 48px;
+  margin: 0;
 }
 
 .card p {
-  font-size: 18px;
+  font-size: var(--fo-size-18);
+  margin: 0;
 }
 
 
@@ -365,8 +377,14 @@ header {
   justify-content: center;
 }
 
+.content-siti-sarah:hover i {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
 .icon-siti-sarah i {
   font-size: 80px;
+  transition: all 0.3s;
 }
 
 .content-siti-sarah h4 {
@@ -375,7 +393,7 @@ header {
 }
 
 .content-siti-sarah p {
-  font-size: 18px;
+  font-size: var(--fo-size-18);
   margin: 0;
 }
 
@@ -390,21 +408,25 @@ header {
   padding: var(--p-40);
 }
 
+.slide {}
 
-.swiper-slide .slid {
-  text-align: center;
-}
-
-.swiper-slide .slid span {
-  left: 80px;
-}
 
 .swiper-slide img {
-  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
   height: 500px;
   border-radius: 20px;
 }
 
+.swiper-slide:hover span {
+  transform: translateY(-20px);
+  color: #bde0fa;
+  transition: all 0.5s;
+}
+
+.swiper-slide span {
+  transition: all 0.5s;
+}
 
 
 /* Statistics */
@@ -436,7 +458,15 @@ header {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  transition: 0.5s;
 }
+
+.card-statistics:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+  color: #d2eafc;
+}
+
 
 .card-statistics h5 {
   margin: 0;
@@ -445,7 +475,7 @@ header {
 
 .card-statistics p {
   margin: 0;
-  font-size: 18px;
+  font-size: var(--fo-size-18);
 }
 
 .icon-statistics {
@@ -467,7 +497,7 @@ header {
 }
 
 img {
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .content-gallery {
@@ -516,8 +546,8 @@ img {
 }
 
 .container-gallery img:hover {
-  scale: calc(1.1);
-  transition: all 0.4s;
+  scale: calc(1.07);
+  transition: all 0.5s;
 }
 
 
@@ -564,6 +594,7 @@ form {
   background-color: #fff;
   padding: 8px;
   max-width: 676px;
+  width: stretch;
 }
 
 input {
@@ -686,9 +717,19 @@ footer .social-icons i:hover {
 }
 
 .Contact-icons i {
+  margin-right: 4px;
+}
+
+.Contact-icons a:hover i {
+  transform: translateY(-4px);
+  transition: 0.5s;
+  color: var(--co-dark-bl);
+}
+
+.Contact-icons i {
   font-size: 23px;
   color: #3d3d3d;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .social-icons {
