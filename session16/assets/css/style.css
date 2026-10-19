@@ -325,7 +325,9 @@ header {
   padding: var(--p-40);
 }
 
-.slide {}
+.slide {
+  width: fit-content;
+}
 
 
 .swiper-slide img {
@@ -335,7 +337,7 @@ header {
   border-radius: 20px;
 }
 
-.swiper-slide:hover span {
+.swiper-slide .slide:hover span {
   transform: translateY(-20px);
   color: #bde0fa;
   transition: all 0.5s;
