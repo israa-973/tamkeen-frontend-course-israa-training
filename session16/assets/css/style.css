@@ -665,6 +665,22 @@ footer .social-icons i:hover {
 }
 
 /* @media */
+@media screen and (max-width: 991px) {
+ .container-team-work {
+    flex-wrap: wrap;
+  }
+.nav-links{
+  gap: 6px;
+}
+
+.nav-logo{
+ opacity: 0;
+}
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: flex;
@@ -689,6 +705,10 @@ footer .social-icons i:hover {
     opacity: 1;
     visibility: visible;
   }
+
+  .nav-logo{
+ opacity: 1;
+}
 
   .nav-links li {
     width: 100%;
@@ -715,10 +735,6 @@ footer .social-icons i:hover {
 
   .dropdown-menu li a {
     color: #ffffff;
-  }
-
-  .container-team-work {
-    flex-wrap: wrap;
   }
 
   .container-siti-sarah {
