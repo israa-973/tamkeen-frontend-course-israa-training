@@ -889,7 +889,8 @@ gap: 24px;
 
 .carousel-section .swiperCarousel {
     padding-top: 80px;      
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .content-section {
@@ -1044,8 +1045,6 @@ transform: translate(180px , -320px);
 
 
 /* partners section */
-.partners-section {}
-
 .partners-container {
     max-width: var(--m-w);
     margin: 0 auto;
@@ -1163,7 +1162,6 @@ transform: translate(180px , -320px);
     font-size: 18px;
     color: #858585;
     text-align: center;
-    ov
 }
 
 .carousel-item  .testimonial-card-rating {
@@ -1184,7 +1182,7 @@ text-align: left;
     margin: 20px 0 ;
 }
 
-.swiper-button-prev , .swiper-button-next{
+.testimonials-section .swiper-button-prev , .testimonials-section .swiper-button-next{
    color: var(--co-gray);
     width: 70px;
     height: 70px;
@@ -1197,13 +1195,13 @@ text-align: left;
 
 }
 
-.swiper-button-next{
+.testimonials-section .swiper-button-next{
     transform: translate(-180px , -320px);
 
 }
 
-.swiper-button-prev{
-    
+.testimonials-section .swiper-button-prev{
+
 transform: translate(180px , -320px);
 
 }

@@ -47,31 +47,31 @@
             breakpoints: {
                 0: {
                     slidesPerView: 1,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 480: {
                     slidesPerView: 1.5,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 576: {
                     slidesPerView: 2,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 768: {
                     slidesPerView: 2.5,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 1080: {
                     slidesPerView: 3,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 1200: {
                     slidesPerView: 3.5,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 1400: {
                     slidesPerView: 4,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
             }
         });
@@ -88,23 +88,23 @@
             breakpoints: {
                 0: {
                     slidesPerView: 1,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 768: {
                     slidesPerView: 1.5,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 1080: {
                     slidesPerView: 2,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 1200: {
                     slidesPerView: 2.5,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
                 1400: {
                     slidesPerView: 3,
-                    spacebetween: 10,
+                    spaceBetween: 10,
                 },
             }
         });
