@@ -141,7 +141,77 @@
 
         let cardsBenefits = document.getElementById("cardsBenefits");
 
-        cardData.forEach(function (item) {
-            cardsBenefits.innerHTML +=
-                '<div class="cards-item">' + '<div class="card">' + '<div class="card-body">' + '<img src="'+ item.src +'">'+'</img>' + '<h5>' + item.category + '</h5>' + '<p class="card-text">' + item.title + '</p>' + '<a href="' + item.href + '">' + item.buttonText + '<i class="fa-solid fa-arrow-right">'+'</i>'+'</a>' + '</div>' + '</div>' + '</div>'
-        });
+        if (cardsBenefits) {
+            cardData.forEach(function (item) {
+                cardsBenefits.innerHTML +=
+                    '<div class="cards-item">' + '<div class="card">' + '<div class="card-body">' + '<img src="'+ item.src +'">' + '<h5>' + item.category + '</h5>' + '<p class="card-text">' + item.title + '</p>' + '<a href="' + item.href + '">' + item.buttonText + '<i class="fa-solid fa-arrow-right">'+'</i>'+'</a>' + '</div>' + '</div>' + '</div>'
+            });
+        }
+        
+
+
+
+// Dark mode
+// Find the elements.
+// const themeButton = document.getElementById("theme-button");
+// const pageBody = document.body;
+
+// Read the previously saved choice.
+// const savedTheme = localStorage.getItem("theme");
+
+// Restore dark mode if it was saved.
+// if (savedTheme === "dark") {
+//   pageBody.classList.add("dark");
+// }
+
+// Wait for the user to click.
+// themeButton.addEventListener("click", function () {
+//   // Switch the class.
+//   pageBody.classList.toggle("dark");
+
+  // Save the new choice.
+//   if (pageBody.classList.contains("dark")) {
+//     localStorage.setItem("theme", "dark");
+//   } else {
+//     localStorage.setItem("theme", "light");
+//   }
+// });
+
+
+
+const themeButton = document.getElementById("theme-toggle");
+const pageBody = document.body;
+
+// نقرأ الاختيار الذي حفظه المتصفح سابقًا
+const savedTheme = localStorage.getItem("theme");
+
+// دالة وظيفتها تحديث شكل الأيقونة حسب الوضع الحالي
+function updateIcon() {
+  if (pageBody.classList.contains("dark")) {
+    themeButton.textContent = "☀️";   // الوضع داكن، نعرض شمسًا
+  } else {
+    themeButton.textContent = "🌙";   // الوضع فاتح، نعرض قمرًا
+  }
+}
+
+// إذا كان الاختيار السابق داكنًا، نضيف الكلاس إلى body
+if (savedTheme === "dark") {
+  pageBody.classList.add("dark");
+}
+
+updateIcon();   // جديد: يضبط الأيقونة عند فتح الصفحة
+
+// عند الضغط على الزر
+themeButton.addEventListener("click", function () {
+  // إذا لم يكن dark، يضيفه. وإذا كان موجودًا، يحذفه.
+  pageBody.classList.toggle("dark");
+
+  // نحفظ الوضع الحالي
+  if (pageBody.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+  updateIcon();   // جديد: يغيّر الأيقونة بعد كل ضغطة
+});
+
