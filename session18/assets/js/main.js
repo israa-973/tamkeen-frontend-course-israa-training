@@ -78,6 +78,39 @@
 
 
 
+
+// swiperCarousel
+        const swiperCarousel = new Swiper('.swiperCarousel', {
+            navigation: {
+                nextEl: ".swiperCarousel .swiper-button-next",
+                prevEl: ".swiperCarousel .swiper-button-prev"
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spacebetween: 10,
+                },
+                768: {
+                    slidesPerView: 1.5,
+                    spacebetween: 10,
+                },
+                1080: {
+                    slidesPerView: 2,
+                    spacebetween: 10,
+                },
+                1200: {
+                    slidesPerView: 2.5,
+                    spacebetween: 10,
+                },
+                1400: {
+                    slidesPerView: 3,
+                    spacebetween: 10,
+                },
+            }
+        });
+
+
+
         // cardsBenefits
           let cardData = [
             {

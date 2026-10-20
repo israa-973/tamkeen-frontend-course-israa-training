@@ -326,8 +326,6 @@ max-width: var(--m-w);
 
 
 /* swiper */
-.swiper {}
-
 .swiper-wrapper {
   max-width: var(--m-w);
   margin: 100px auto;
@@ -779,7 +777,6 @@ footer .social-icons i:hover {
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
     padding-top: 70px;
     text-align: center;
     color: #fff;
@@ -787,13 +784,15 @@ margin-bottom: 300px;
 }
 
 .benefits-container {
-    max-width: 1136px;
+    max-width: var(--m-w);
     margin: 0 auto;
     padding: 0 40px;
+    transform: translateY(140px);
 }
 
 .section-content {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+   
 }
 
 .benefits-container .section-content h2 {
@@ -816,7 +815,6 @@ margin-bottom: 300px;
     padding-top: 20px;
     padding-bottom: 40px;
     overflow: hidden;
-       width: ((100% / 3) - (48px /3));
    background-color: #fff;
    padding: 20px;
 }
@@ -848,9 +846,7 @@ margin-bottom: 300px;
 
 .cards-item {
     transition: 0.5s;
-  
 }
-
 
 .cards-item:hover {
     transform: translateY(-10px);
@@ -861,8 +857,10 @@ margin-bottom: 300px;
     justify-content: space-between;
 gap: 24px;
     border-radius: 10px;
-    
+}
 
+.cards-benefits .cards-item{
+  width: calc((100% / 3) - (48px / 3));
 }
 
 .benefits-section .card-img {
@@ -885,8 +883,13 @@ gap: 24px;
 /* carousel-section */
 .carousel-section {
     max-width: var(--m-w);
-    margin: 60px auto;
+    margin: 0 auto;
     padding: var(--p-40);
+}
+
+.carousel-section .swiperCarousel {
+    padding-top: 80px;      
+    padding-bottom: 100px; 
 }
 
 .content-section {
@@ -905,24 +908,21 @@ gap: 24px;
     color: var(--co-gray);
 }
 
-.carousel-section .carousel-inner {
-    gap: 14px;
+.swiper-wrapper .carousel-section {
     overflow: hidden;
     padding-top: 40px;
     padding-bottom: 150px;
 }
 
-.btn-icon {
-    background-color: #fff;
-    box-shadow: 0px 8px 50px 0px #e2e2e2;
-    border: 1px solid #E8E8E8;
-    margin-bottom: 40px;
+.carousel-section .slide-item {
+    border-radius: 20px;
 }
 
 .carousel-section .card-img {
     overflow: hidden;
+    border-radius: 20px;
     width: 100%;
-    height: 100%;
+    height: 360px;
 }
 
 .carousel-section .card-img img {
@@ -930,41 +930,37 @@ gap: 24px;
     height: 100%;
     object-fit: cover;
     transform: scale(1.05);
-    transition: 0.5s;
-
-}
-
-.carousel-icon-left,
-.carousel-icon-right {
-    color: #737373;
+    transition: all 0.4s ease;
 }
 
 
-.carousel-item-content h6 {
+.carousel-section .slide-item-content h6 {
     font-size: 24px;
+    margin: 0;
 }
 
-.carousel-item-content p {
+.carousel-section .slide-item-content p {
     color: var(--co-gray);
 }
 
-
-.carousel-item-content {
+.carousel-section .slide-item-content {
     background-color: #fff;
     padding: 40px 20px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     box-shadow: 0 4px 15px #00000010;
-    bottom: 0px;
-    transform: translateY(60%);
-    opacity: 0;
-    transition: 0.5s;
-    text-align: left;
+    bottom: 0;
     right: 0;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.4s ease;
+    text-align: left;
 }
 
-.carousel-item-content .quma {
-    top: -20px;
-    right: 20px;
+
+
+.slide-item-content .quma {
+    top: -40px;
+    right: 60px;
     background-color: #fff;
     box-shadow: 0px 4px 15px 1px #00000010;
     border-radius: 50%;
@@ -975,20 +971,76 @@ gap: 24px;
     padding: 20px 20px 0px 20px;
 }
 
-.carousel-item-content span {
-    font-size: 60px;
-    color: #000;
+.slide-item-content .quma span {
+   font-size: 60px;
+    color: #222;
 }
 
-.carousel-section .carousel-item:hover .carousel-item-content {
-    transform: translateY(150px);
+.carousel-section .slide-item:hover .slide-item-content {
+    transform: translateY(-4px);
     opacity: 1;
 }
 
-.carousel-section .carousel-item:hover .card-img img {
+.carousel-section .slide-item:hover .card-img img {
     transform: scale(1);
 }
 
+
+.carousel-section .swiper-button-prev,
+.carousel-section .swiper-button-next {
+    position: absolute;
+    top: 15px;
+    margin-top: 0;
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    color: #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    z-index: 10;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* موضع السهم الأيسر والأيمن */
+.carousel-section .swiper-button-prev {
+    left: 20px;
+    right: auto;
+}
+
+.carousel-section .swiper-button-next {
+    right: 20px;
+    left: auto;
+}
+
+/* تصغير سهم Swiper الافتراضي ليتناسب مع المربع */
+.carousel-section .swiper-button-prev::after,
+.carousel-section .swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* .carousel-section .swiper-button-prev , .swiperCarousel-button-next{
+   color: var(--co-gray);
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 2px 0px 10px 6px #00000010;
+    border: 0.1px solid var(--co-gray);
+    border-radius: 8px;
+    padding: 16px;
+    position: absolute;
+
+}
+
+.carousel-section .swiper-button-next{
+    transform: translate(-180px , -320px);
+
+}
+
+.carousel-section .swiper-button-prev{ 
+transform: translate(180px , -320px);
+
+} */
 
 
 /* partners section */
@@ -1182,6 +1234,15 @@ transform: translate(180px , -320px);
   .nav-logo {
     opacity: 0;
   }
+
+    .cards-benefits{
+flex-wrap: wrap;
+justify-content: center;
+  }
+
+  .cards-benefits .cards-item{
+    width: 40%;
+  }
 }
 
 
@@ -1249,6 +1310,15 @@ transform: translate(180px , -320px);
 
   .sides-gallery {
     flex-wrap: wrap;
+  }
+
+      .cards-benefits{
+flex-wrap: wrap;
+justify-content: center;
+  }
+
+  .cards-benefits .cards-item{
+    width: 100%;
   }
 
 }

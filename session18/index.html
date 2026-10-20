@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Home</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
@@ -20,7 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    
+
 
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -76,45 +76,86 @@
                 <p>Explore the world with what you love beautiful natural beauty.</p>
                 <form class="search-box">
                     <ul class="nav-links d-flex" id="nav-links">
-                    <li class="dropdown">
-                        <a class="d-flex" href="#">Package <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Premium Tour</a></li>
-                            <li><a href="#">Budget Trip</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="d-flex" href="#">Destination <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Asia</a></li>
-                            <li><a href="#">Europe</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="d-flex" href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Latest News</a></li>
-                            <li><a href="#">Travel Tips</a></li>
-                        </ul>
-                    </li>
-                     </ul>
+                        <li class="dropdown">
+                            <a class="d-flex" href="#">Package <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Premium Tour</a></li>
+                                <li><a href="#">Budget Trip</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="d-flex" href="#">Destination <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Asia</a></li>
+                                <li><a href="#">Europe</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="d-flex" href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Travel Tips</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <button class="explore">Explore now</button>
                 </form>
-                    <div class="hero-popular-places d-flex">
+                <div class="hero-popular-places d-flex">
                     <span>Popular Place: </span>
                     <p>Bali, Istanbul, Rome, Paris.</p>
                 </div>
-                </div>
+            </div>
     </header>
-
-
-
-
 
     <!-- main -->
     <main>
 
-<!-- benefits-section -->
+        <!-- carousel-section -->
+        <section class="carousel-section">
+            <div class="content-section">
+                <h2>Explore new worlds with exotic natural scenery</h2>
+                <p>Explore the world with what you love beautiful natural beauty.</p>
+            </div>
+
+            <div class="swiperCarousel pos-r">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item pos-r">
+                        <div class="card-img"><img src="assets/images/unsplash_sELcHR_bGVs.png" alt="Bali, Indonesia">
+                        </div>
+                        <div class="slide-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers.</p>
+                            <div class="quma pos-a d-flex"><span>“</span></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-item pos-r">
+                        <div class="card-img"><img src="assets/images/Group 45.png" alt="Bali, Indonesia"></div>
+                        <div class="slide-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers.</p>
+                            <div class="quma pos-a d-flex"><span>“</span></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-item pos-r">
+                        <div class="card-img"><img src="assets/images/Group 46.png" alt="Bali, Indonesia"></div>
+                        <div class="slide-item-content pos-a">
+                            <h6>Bali, Indonesia.</h6>
+                            <p>Bali is a beautiful tourist spot and is visited by many travelers.</p>
+                            <div class="quma pos-a d-flex"><span>“</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- benefits-section -->
         <section class="benefits-section">
             <div class="benefits-container">
                 <div class="section-content">
@@ -123,70 +164,6 @@
                 </div>
                 <div class="cards-benefits d-flex" id="cardsBenefits">
                 </div>
-            </div>
-        </section>
-
-         <!-- carousel-section -->
-        <section class="carousel-section">
-            <div class="content-section">
-                <h2>Explore new worlds with exotic natural scenery</h2>
-                <p>Explore the world with what you love beautiful natural beauty.</p>
-            </div>
-            <div class="swiper carousel slide">
-                <div class="swiper-wrapper carousel-inner d-flex">
-                    <div class="swiper-slide carousel-item pos-r">
-                        <div class="card-img"><img src="assets/images/unsplash_sELcHR_bGVs.png"></div>
-                        <div class="carousel-item-content pos-a">
-                            <h6>Bali, Indonesia.</h6>
-                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
-                            <div class="quma pos-a d-flex"><span d-flex>“</span></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide carousel-item image pos-r">
-                        <div class="card-img"><img src="assets/images/Group 45.png"></div>
-                        <div class="carousel-item-content pos-a">
-                            <h6>Bali, Indonesia.</h6>
-                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
-                            <div class="quma pos-a d-flex"><span d-flex>“</span></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide carousel-item pos-r">
-                        <div class="card-img"><img src="assets/images/Group 46.png"></div>
-                        <div class="carousel-item-content pos-a">
-                            <h6>Bali, Indonesia.</h6>
-                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
-                            <div class="quma pos-a d-flex"><span d-flex>“</span></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide carousel-item pos-r">
-                        <div class="card-img"><img src="assets/images/unsplash_sELcHR_bGVs.png"></div>
-                        <div class="carousel-item-content pos-a">
-                            <h6>Bali, Indonesia.</h6>
-                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
-                            <div class="quma pos-a d-flex"><span d-flex>“</span></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide carousel-item image pos-r">
-                        <div class="card-img"><img src="assets/images/Group 45.png"></div>
-                        <div class="carousel-item-content pos-a">
-                            <h6>Bali, Indonesia.</h6>
-                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
-                            <div class="quma pos-a d-flex"><span d-flex>“</span></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide carousel-item pos-r">
-                        <div class="card-img"><img src="assets/images/Group 46.png"></div>
-                        <div class="carousel-item-content pos-a">
-                            <h6>Bali, Indonesia.</h6>
-                            <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
-                            <div class="quma pos-a d-flex"><span d-flex>“</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-buttons">
-    <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  </div>
             </div>
         </section>
 
@@ -220,126 +197,144 @@
                 <h2>What our client say</h2>
                 <p>Create a visual identity for your company and a overall brand</p>
             </div>
-                <div class="swiper">
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide testimonial-list"><div class="carousel-item pos-r d-flex">
-                        <img class="testimonial-card-avatar" src="assets/images/unsplash_IF9TK5Uy-KI.png" alt="">
-                        <article class="testimonial-card pos-a">
-                            <div class="testimonial-card-content">
-                                <h3 class="testimonial-card-name">Sara Jay</h3>
-                                <p class="testimonial-card-role">Traveler</p>
-                            </div>
-                            <div class="testimonial-card-rating d-flex">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                            </div>
-                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
-                                the brands overall goal. We then need to dive.</blockquote>
-                        </article>
-                    </div></div>
-                    <div class="swiper-slide testimonial-list"><div class="carousel-item pos-r d-flex">
-                        <img class="testimonial-card-avatar" src="assets/images/unsplash_DItYlc26zVI.png" alt="">
-                        <article class="testimonial-card pos-a">
-                            <div class="testimonial-card-content">
-                                <h3 class="testimonial-card-name">Cristian Daniel</h3>
-                                <p class="testimonial-card-role">Traveler</p>
-                            </div>
-                            <div class="testimonial-card-rating d-flex">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                            </div>
-                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
-                                the brands overall goal. We then need to dive.</blockquote>
-                        </article>
-                    </div></div>
-                    <div class="swiper-slide testimonial-list"><div class="carousel-item pos-r d-flex">
-                        <img class="testimonial-card-avatar" src="assets/images/unsplash_KIPqvvTOC1s.png" alt="">
-                        <article class="testimonial-card pos-a">
-                            <div class="testimonial-card-content">
-                                <h3 class="testimonial-card-name">Kausar Hasan</h3>
-                                <p class="testimonial-card-role">Traveler</p>
-                            </div>
-                            <div class="testimonial-card-rating d-flex">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                            </div>
-                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
-                                the brands overall goal. We then need to dive.</blockquote>
-                        </article>
-                    </div></div>
-                    <div class="swiper-slide testimonial-list"><div class="carousel-item pos-r d-flex">
-                        <img class="testimonial-card-avatar" src="assets/images/unsplash_IF9TK5Uy-KI.png" alt="">
-                        <article class="testimonial-card pos-a">
-                            <div class="testimonial-card-content">
-                                <h3 class="testimonial-card-name">Sara Jay</h3>
-                                <p class="testimonial-card-role">Traveler</p>
-                            </div>
-                            <div class="testimonial-card-rating d-flex">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                            </div>
-                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
-                                the brands overall goal. We then need to dive.</blockquote>
-                        </article>
-                    </div></div>
-                    <div class="swiper-slide testimonial-list"><div class="carousel-item pos-r d-flex">
-                        <img class="testimonial-card-avatar" src="assets/images/unsplash_DItYlc26zVI.png" alt="">
-                        <article class="testimonial-card pos-a">
-                            <div class="testimonial-card-content">
-                                <h3 class="testimonial-card-name">Cristian Daniel</h3>
-                                <p class="testimonial-card-role">Traveler</p>
-                            </div>
-                            <div class="testimonial-card-rating d-flex">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                            </div>
-                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
-                                the brands overall goal. We then need to dive.</blockquote>
-                        </article>
-                    </div></div>
-                    <div class="swiper-slide testimonial-list"><div class="carousel-item pos-r d-flex">
-                        <img class="testimonial-card-avatar" src="assets/images/unsplash_KIPqvvTOC1s.png" alt="">
-                        <article class="testimonial-card pos-a">
-                            <div class="testimonial-card-content">
-                                <h3 class="testimonial-card-name">Kausar Hasan</h3>
-                                <p class="testimonial-card-role">Traveler</p>
-                            </div>
-                            <div class="testimonial-card-rating d-flex">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                                <img src="assets/images/Star 1.png" alt="">
-                            </div>
-                            <blockquote class="testimonial-card-quote">Before we define any approach, we need to deline
-                                the brands overall goal. We then need to dive.</blockquote>
-                        </article>
-                    </div></div>             
-  </div>
-  <div class="swiper-buttons">
-    <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  </div>
-</div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide testimonial-list">
+                        <div class="carousel-item pos-r d-flex">
+                            <img class="testimonial-card-avatar" src="assets/images/unsplash_IF9TK5Uy-KI.png" alt="">
+                            <article class="testimonial-card pos-a">
+                                <div class="testimonial-card-content">
+                                    <h3 class="testimonial-card-name">Sara Jay</h3>
+                                    <p class="testimonial-card-role">Traveler</p>
+                                </div>
+                                <div class="testimonial-card-rating d-flex">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                </div>
+                                <blockquote class="testimonial-card-quote">Before we define any approach, we need to
+                                    deline
+                                    the brands overall goal. We then need to dive.</blockquote>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-list">
+                        <div class="carousel-item pos-r d-flex">
+                            <img class="testimonial-card-avatar" src="assets/images/unsplash_DItYlc26zVI.png" alt="">
+                            <article class="testimonial-card pos-a">
+                                <div class="testimonial-card-content">
+                                    <h3 class="testimonial-card-name">Cristian Daniel</h3>
+                                    <p class="testimonial-card-role">Traveler</p>
+                                </div>
+                                <div class="testimonial-card-rating d-flex">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                </div>
+                                <blockquote class="testimonial-card-quote">Before we define any approach, we need to
+                                    deline
+                                    the brands overall goal. We then need to dive.</blockquote>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-list">
+                        <div class="carousel-item pos-r d-flex">
+                            <img class="testimonial-card-avatar" src="assets/images/unsplash_KIPqvvTOC1s.png" alt="">
+                            <article class="testimonial-card pos-a">
+                                <div class="testimonial-card-content">
+                                    <h3 class="testimonial-card-name">Kausar Hasan</h3>
+                                    <p class="testimonial-card-role">Traveler</p>
+                                </div>
+                                <div class="testimonial-card-rating d-flex">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                </div>
+                                <blockquote class="testimonial-card-quote">Before we define any approach, we need to
+                                    deline
+                                    the brands overall goal. We then need to dive.</blockquote>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-list">
+                        <div class="carousel-item pos-r d-flex">
+                            <img class="testimonial-card-avatar" src="assets/images/unsplash_IF9TK5Uy-KI.png" alt="">
+                            <article class="testimonial-card pos-a">
+                                <div class="testimonial-card-content">
+                                    <h3 class="testimonial-card-name">Sara Jay</h3>
+                                    <p class="testimonial-card-role">Traveler</p>
+                                </div>
+                                <div class="testimonial-card-rating d-flex">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                </div>
+                                <blockquote class="testimonial-card-quote">Before we define any approach, we need to
+                                    deline
+                                    the brands overall goal. We then need to dive.</blockquote>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-list">
+                        <div class="carousel-item pos-r d-flex">
+                            <img class="testimonial-card-avatar" src="assets/images/unsplash_DItYlc26zVI.png" alt="">
+                            <article class="testimonial-card pos-a">
+                                <div class="testimonial-card-content">
+                                    <h3 class="testimonial-card-name">Cristian Daniel</h3>
+                                    <p class="testimonial-card-role">Traveler</p>
+                                </div>
+                                <div class="testimonial-card-rating d-flex">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                </div>
+                                <blockquote class="testimonial-card-quote">Before we define any approach, we need to
+                                    deline
+                                    the brands overall goal. We then need to dive.</blockquote>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-list">
+                        <div class="carousel-item pos-r d-flex">
+                            <img class="testimonial-card-avatar" src="assets/images/unsplash_KIPqvvTOC1s.png" alt="">
+                            <article class="testimonial-card pos-a">
+                                <div class="testimonial-card-content">
+                                    <h3 class="testimonial-card-name">Kausar Hasan</h3>
+                                    <p class="testimonial-card-role">Traveler</p>
+                                </div>
+                                <div class="testimonial-card-rating d-flex">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                    <img src="assets/images/Star 1.png" alt="">
+                                </div>
+                                <blockquote class="testimonial-card-quote">Before we define any approach, we need to
+                                    deline
+                                    the brands overall goal. We then need to dive.</blockquote>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </section>
 
-            <!-- newsletter-section -->
+        <!-- newsletter-section -->
         <section class="newsletter d-flex">
             <div class="newsletter-container d-flex">
                 <h2>Subcribe to get special price</h2>
@@ -399,6 +394,7 @@
     </footer>
 
     <!-- js -->
-    <script  src="assets/js/main.js"  type="text/javascript" ></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
+
 </html>
