@@ -339,11 +339,14 @@ max-width: var(--m-w);
 }
 
 
-.swiper-slide img {
-  max-width: 400px;
-  margin: 0 auto;
-  height: 500px;
+.swiper-slide {
+  height: 400px;
+  width: 400px;
   border-radius: 20px;
+}
+
+.swiper-slide img{
+border-radius: 20px;
 }
 
 .swiper-slide .slide:hover span {
@@ -956,6 +959,7 @@ gap: 24px;
     opacity: 0;
     transition: 0.5s;
     text-align: left;
+    right: 0;
 }
 
 .carousel-item-content .quma {
