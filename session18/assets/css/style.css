@@ -1448,3 +1448,8 @@ padding: 20px;
     height: 80px;
 }
 
+body.dark .footer-logo img{
+  filter: brightness(0.4) invert(1) saturate(2);
+
+}
+
