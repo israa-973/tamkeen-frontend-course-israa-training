@@ -90,19 +90,19 @@
                     slidesPerView: 1,
                     spaceBetween: 10,
                 },
-                768: {
+                576: {
                     slidesPerView: 1.5,
                     spaceBetween: 10,
                 },
-                1080: {
+                768: {
                     slidesPerView: 2,
                     spaceBetween: 10,
                 },
-                1200: {
+                1080: {
                     slidesPerView: 2.5,
                     spaceBetween: 10,
                 },
-                1400: {
+                1200: {
                     slidesPerView: 3,
                     spaceBetween: 10,
                 },
