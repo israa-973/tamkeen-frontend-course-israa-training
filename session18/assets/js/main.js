@@ -9,7 +9,7 @@
         });
 
 
-        // *******************
+
         // Team Work "array of objects"
         let cardsData = [
             {
@@ -28,17 +28,17 @@
                 title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.. ",
             },
         ];
-        // let cardsTeamWork = document.getElementById("cardsTeamWork");
-        // cardsData.forEach(function (item) {
-        //     cardsTeamWork.innerHTML +=
-        //         '<div class="card d-flex">' + '<div class="img-team-work">'
-        //         + '<i class="' + item.src + '"></i>' + '</div>' + '<div class="category-team-work">'
-        //         + '<h3>' + item.category + '</h3>' + '</div>' + '<div class="description-team-work">'
-        //         + '<p>' + item.title + '</p>' + '</div>' + '</div>'
-        // });
+        let cardsTeamWork = document.getElementById("cardsTeamWork");
+        cardsData.forEach(function (item) {
+           cardsTeamWork.innerHTML +=
+                '<div class="card d-flex">' + '<div class="img-team-work">'
+                + '<i class="' + item.src + '"></i>' + '</div>' + '<div class="category-team-work">'
+                + '<h3>' + item.category + '</h3>' + '</div>' + '<div class="description-team-work">'
+                + '<p>' + item.title + '</p>' + '</div>' + '</div>'
+        });
 
 
-
+// cardsTeamWork photos
         const swiper = new Swiper('.swiper', {
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -150,68 +150,34 @@
         
 
 
-
-// Dark mode
-// Find the elements.
-// const themeButton = document.getElementById("theme-button");
-// const pageBody = document.body;
-
-// Read the previously saved choice.
-// const savedTheme = localStorage.getItem("theme");
-
-// Restore dark mode if it was saved.
-// if (savedTheme === "dark") {
-//   pageBody.classList.add("dark");
-// }
-
-// Wait for the user to click.
-// themeButton.addEventListener("click", function () {
-//   // Switch the class.
-//   pageBody.classList.toggle("dark");
-
-  // Save the new choice.
-//   if (pageBody.classList.contains("dark")) {
-//     localStorage.setItem("theme", "dark");
-//   } else {
-//     localStorage.setItem("theme", "light");
-//   }
-// });
-
-
-
+// Dark-Mode
 const themeButton = document.getElementById("theme-toggle");
 const pageBody = document.body;
 
-// نقرأ الاختيار الذي حفظه المتصفح سابقًا
 const savedTheme = localStorage.getItem("theme");
 
-// دالة وظيفتها تحديث شكل الأيقونة حسب الوضع الحالي
 function updateIcon() {
   if (pageBody.classList.contains("dark")) {
-    themeButton.textContent = "☀️";   // الوضع داكن، نعرض شمسًا
+    themeButton.textContent = "☀️";  
   } else {
-    themeButton.textContent = "🌙";   // الوضع فاتح، نعرض قمرًا
+    themeButton.textContent = "🌙"; 
   }
 }
 
-// إذا كان الاختيار السابق داكنًا، نضيف الكلاس إلى body
 if (savedTheme === "dark") {
   pageBody.classList.add("dark");
 }
 
-updateIcon();   // جديد: يضبط الأيقونة عند فتح الصفحة
+updateIcon(); 
 
-// عند الضغط على الزر
 themeButton.addEventListener("click", function () {
-  // إذا لم يكن dark، يضيفه. وإذا كان موجودًا، يحذفه.
   pageBody.classList.toggle("dark");
 
-  // نحفظ الوضع الحالي
   if (pageBody.classList.contains("dark")) {
     localStorage.setItem("theme", "dark");
   } else {
     localStorage.setItem("theme", "light");
   }
-  updateIcon();   // جديد: يغيّر الأيقونة بعد كل ضغطة
+  updateIcon();
 });
 
