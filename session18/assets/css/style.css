@@ -1328,3 +1328,117 @@ justify-content: center;
     font-size: 16px;
   }
 }
+
+
+
+
+
+/* ================= Dark Mode ================= */
+body { transition: background 0.3s, color 0.3s; }
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f1419;
+  --surface: #1c232b;
+  --text: #e8eaed;
+  --muted: #a0a7b0;
+  --co-gray: #a0a7b0;
+  --co-dark-bl: #73c3fc;
+}
+
+[data-theme="dark"] body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* الأسطح البيضاء ← داكنة */
+[data-theme="dark"] .dropdown-menu,
+[data-theme="dark"] .search-box,
+[data-theme="dark"] form,
+[data-theme="dark"] .benefits-section .card,
+[data-theme="dark"] .carousel-section .slide-item-content,
+[data-theme="dark"] .slide-item-content .quma,
+[data-theme="dark"] .carousel-section .swiper-button-prev,
+[data-theme="dark"] .carousel-section .swiper-button-next,
+[data-theme="dark"] .testimonials-section .swiper-button-prev,
+[data-theme="dark"] .testimonials-section .swiper-button-next,
+[data-theme="dark"] .testimonial-card {
+  background-color: var(--surface);
+}
+
+/* الأفاتار يبقى فوق الكارت بعد إضافة خلفية له */
+[data-theme="dark"] .testimonial-card-avatar {
+  position: relative;
+  z-index: 1;
+}
+
+/* النصوص */
+[data-theme="dark"] .benefits-section .card-body { color: var(--text); }
+[data-theme="dark"] .cards-benefits p,
+[data-theme="dark"] .testimonial-card-role { color: var(--muted); }
+[data-theme="dark"] .slide-item-content .quma span { color: var(--text); }
+[data-theme="dark"] footer h3 { color: #f1f3f5; }
+[data-theme="dark"] input { color: var(--text); }
+
+/* أيقونات الفوتر */
+[data-theme="dark"] footer .social-icons i,
+[data-theme="dark"] .Contact-icons i { color: #c5cbd3; }
+
+[data-theme="dark"] footer .social-icons i:hover,
+[data-theme="dark"] .Contact-icons a:hover i { color: var(--co-dark-bl); }
+
+/* القوائم المنسدلة وصندوق البحث */
+[data-theme="dark"] .dropdown-menu li a:hover { background-color: #1e3a5f; }
+[data-theme="dark"] .search-box button:hover { background-color: #27313b; }
+[data-theme="dark"] .search-box .explore { background-color: #e8eaed; color: #111; }
+[data-theme="dark"] .search-box .explore:hover { background-color: var(--co-dark-bl); }
+
+/* زر الاشتراك */
+[data-theme="dark"] .newsletter button { background-color: #e8eaed; color: #111; }
+[data-theme="dark"] .newsletter button:hover { background-color: var(--co-dark-bl); color: #111; }
+
+/* تعتيم الخلفيات المصوّرة بدون لمس روابط الصور */
+[data-theme="dark"] .home-header,
+[data-theme="dark"] .about-us-header,
+[data-theme="dark"] .Statistics,
+[data-theme="dark"] .newsletter,
+[data-theme="dark"] .benefits-section {
+  background-color: #8a8a8a;
+  background-blend-mode: multiply;
+}
+
+/* تخفيف سطوع الصور */
+[data-theme="dark"] main img { filter: brightness(0.9); }
+
+/* الشعارات */
+[data-theme="dark"] .partner-list-item {
+  background: #e8eaed;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+[data-theme="dark"] .footer-logo img { filter: brightness(0) invert(1); }
+
+/* زر التبديل */
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #111;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px #00000026;
+  transition: transform 0.3s;
+}
+#theme-toggle:hover { transform: scale(1.1); }
+
+[data-theme="dark"] #theme-toggle {
+  background: var(--surface);
+  color: var(--text);
+  border-color: #3a4450;
+}
