@@ -21,10 +21,10 @@
 <body class="bg-body text-body">
 
   <!-- header -->
-  <header>
+  <header class="position-fixed start-0 end-0">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg w-100 py-3 py-lg-0 navbar-dark">
-      <div class="container-fluid px-3 px-lg-5">
+      <div class="container">
         <a class="navbar-brand fw-bold" href="#">Just<span class="text-main">Stay</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,9 +64,13 @@
         </div>
       </div>
     </nav>
-    <!-- hero-section -->
-    <section class="hero d-flex align-items-end">
-      <div class="container-fluid hero-content mb-5 px-3 px-lg-5">
+  </header>
+
+  <!-- main -->
+  <main>
+ <!-- hero-section -->
+    <section class="hero">
+      <div class="container hero-content mb-5">
         <h6 class="text-white">Welcome To</h6>
         <h1 class="display-5 fw-bold text-white py-4 lh-base">Hotel Just<span class="text-main">Stay</span><br>Ahmedabad
           India</h1>
@@ -79,11 +83,6 @@
         <button type="button" class="btn btn-outline-light py-2 px-3 rounded-3">Explore More</button>
       </div>
     </section>
-  </header>
-
-  <!-- main -->
-  <main>
-
     <!-- About Us  -->
     <section class="py-5">
       <div class="container container-about-us">
@@ -134,7 +133,7 @@
 
     <!-- stats -->
     <section class="container-fluid stats pt-5 text-center text-white">
-      <div class="row">
+      <div class="container row mx-auto">
         <div class="col-6 col-md-3 mb-5">
           <h3 class="fw-bold">8</h3>
           <p>Years of Service</p>
@@ -157,8 +156,11 @@
 
   <!-- footer -->
   <footer></footer>
+
+  <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
 
 </body>
+</html>
