@@ -1,3 +1,5 @@
+
+// dark mode
 const toggle = document.getElementById('darkModeToggle');
 const body = document.querySelector('body');
 const toggleLabel = document.getElementById('toggleLabel');
@@ -46,6 +48,7 @@ cardsData.forEach(function (item) {
 });
 
 
+// *********************
 // Swiper Testimonial
 const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
@@ -75,7 +78,14 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-
-
-
+// **********************
+// window.scrollY
+window.addEventListener("scroll", function () {
+    const nav = document.getElementById("mainNav");
+    if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+});
 

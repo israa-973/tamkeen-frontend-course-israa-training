@@ -27,9 +27,21 @@ body[data-bs-theme="dark"] {
     --line-color: #444444;
 }
 
+header {
+    z-index: 8;
+}
+
 /* header */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+
+.nav-link.active {
+    color: gold;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.704);
 }
 
 .text-main {
@@ -124,8 +136,8 @@ input:checked+.custom-slider:before {
 }
 
 .btn-orange:hover {
-    background-color: var(--surface-bg);
-    color: var(--page-text);
+    background-color: #f1f1f1;
+    color: #1e1e1e;
 }
 
 /* about-us */
@@ -206,27 +218,64 @@ input:checked+.custom-slider:before {
     background-color: var(--page-bg);
 }
 
+
+/* our-rooms */
+.container-our-rooms {}
+
+.container-our-rooms .content-card img {
+    transition: all 0.4s;
+}
+
+.container-our-rooms .content-card:hover img {
+    transform: scale(1.04);
+    box-shadow: 0 0 30px var(--col-orang);
+    transition: all 0.4s;
+}
+
 /* our-services */
+.container-our-services {
+    padding-top: 40px;
+}
+
 .container-our-services i {
     color: var(--col-orang);
     font-size: 40px;
 }
 
-.active-card {
-    background-color: var(--col-orang);
+.container-our-services .content-card p{
+    color: var(--muted-text);
 }
 
-.active-card i,
-.active-card h5 {
-    color: var(--page-bg);
+.container-our-services .content-card {
+    transition: all 0.4s;
 }
 
+.container-our-services .content-card:hover{
+  background-color: var(--col-orang);
+  transition: all 0.4s;
+}
 
-.active-card p {
-    color: var(--surface-bg);
+.container-our-services .content-card:hover i{
+   color: var(--page-bg); 
+   transition: all 0.4s;
+}
+
+.container-our-services .content-card:hover h5{
+   color: var(--page-bg); 
+   transition: all 0.4s;
+}
+
+.container-our-services .content-card:hover p{
+  color: var(--surface-bg);
+  transition: all 0.4s;
 }
 
 /* testimonial */
+.container-testimonial {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .container-testimonial .quote-icon {
     transform: rotate(180deg);
     color: var(--col-orang);
@@ -245,6 +294,25 @@ input:checked+.custom-slider:before {
 
 .desc-testimonial {
     max-width: 250px;
+}
+
+.swiper-slide {
+    margin-bottom: 60px;
+}
+
+/* footer */
+
+footer ul li a {
+    transition: all 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--col-orang) !important;
+    transition: all 0.3s;
+}
+
+footer {
+    margin-bottom: 40px;
 }
 
 /* @media */
