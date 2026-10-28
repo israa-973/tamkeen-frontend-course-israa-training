@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenEdge</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<!-- body -->
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#">HavenEdge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Properties">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-text d-flex align-items-center flex-wrap flex-lg-nowrap gap-2">
+                    <a href="#" class="number"><i class="fa-solid fa-phone fs-5 me-2"></i><span class="ms-2">(555)
+                            123-4567</span></a>
+                    <i class="fa-solid fa-heart fs-4"></i>
+                    <div class="dropdown choosing-language">
+                        <button class="btn btn-link text-decoration-none text-muted dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-globe fs-4"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="about.html">English</a></li>
+                            <li><a class="dropdown-item" href="about-ar.html">العربية</a></li>
+                        </ul>
+                    </div>
+                    <!-- custom-switch -->
+                    <div class="theme-switch-container mb-lg-0 me-2">
+                        <label class="custom-switch" for="darkModeToggleNav">
+                            <input type="checkbox" id="darkModeToggleNav">
+                            <span class="custom-slider d-flex justify-content-between align-items-center w-100">
+                                <i class="bi bi-sun-fill switch-icon sun-icon"></i>
+                                <i class="bi bi-moon-stars-fill switch-icon moon-icon"></i>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn-list-property px-lg-4 py-lg-2 px-3 py-1 fs-lg-5 fs-6">List Property</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main data-bs-spy="scroll">
+        <!-- hero-swipper -->
+        <section class="hero pos-r" id="About">
+            <div class="swiper hero-swiper pos-a">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/e0007a3e48115973a58ff6cb23be84cf.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container hero-content pos-r text-center text-white">
+                <h2>HavenEdge Real Estate</h2>
+                <p class="hero-content-p mx-auto lh-lg">At HavenEdge Real Estate, we believe a home is more than just
+                    bricks and walls — it’s where your story begins.Founded in 2020, our mission is to simplify the real
+                    estate journey through stress-free.</p>
+            </div>
+        </section>
+
+        <!-- section-aboutUs -->
+        <section class="container about-us">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="our-feature mb-4">
+                        <h5>Our Vision</h5>
+                        <p class="text-muted">To become most trusted and innovative real estate platform, connecting
+                            people with the homes and investments that truly matter.</p>
+                    </div>
+                    <div class="our-feature">
+                        <h5>Our Mission</h5>
+                        <p class="text-muted">Empower buyers, sellers, and investors through verified listings, expert
+                            consultancy, and digital convenience — all in one place.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                    <img class="img-fluid w-100 img-our-feature" src="assets/images/image-our.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- section-Why Choose Us -->
+        <section class="why-choose-us my-5">
+            <div class="title text-center">
+                <h4>Why Choose Us</h4>
+            </div>
+            <div class="container cards-why-choose-us" id="cardsWhyChooseUs">
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="border-top border-black py-5" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="navbar-brand fw-bold fs-4" href="#">HavenEdge</a>
+                    <p class="lh-lg">Your trusted partner in finding the perfect property. Making real estate
+                        simple and accessible.</p>
+                    <ul class="d-flex gap-4 px-0">
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="pb-2">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Properties</a></li>
+                        <li class="mb-2"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="pb-2">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Buy Property</a></li>
+                        <li class="mb-2"><a href="#">Sell Property</a></li>
+                        <li class="mb-2"><a href="#">Rent Property</a></li>
+                        <li class="mb-2"><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="pb-2">Newsletter</h5>
+                    <p class="mb-2">Subscribe to get the latest property updates</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control email-input" aria-label="Sizing example input"
+                            placeholder="Your email" aria-describedby="inputGroup-sizing-default">
+                        <span class="input-group-text input-footer" id="inputGroup-sizing-default">Subscribe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 mb-4">
+            <div class="text-center"><span class="fw-bold">© 2025 HavenEdge. </span><span>All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js">
+    </script>
+</body>
+
+</html>

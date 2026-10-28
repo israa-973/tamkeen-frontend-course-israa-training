@@ -27,32 +27,6 @@
     <!-- header -->
     <header>
         <!-- navbar -->
-        <div class="navbar-text-top pos-f d-flex justify-content-center align-items-center flex-wrap flex-lg-nowrap gap-2">
-            <a href="#" class="number"><span class="me-2 text-muted">(555)123-4567</span><i
-                    class="fa-solid fa-phone mx-2 text-muted"></i></a>
-            <i class="fa-solid fa-heart me-2"></i>
-            <div class="dropdown choosing-language">
-                <button class="btn btn-link text-decoration-none text-muted dropdown-toggle" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-globe"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="index.html">English</a></li>
-                    <li><a class="dropdown-item" href="index-ar.html">العربية</a></li>
-                </ul>
-            </div>
-            <!-- custom-switch -->
-            <div class="theme-switch-container mb-lg-0 ms-2">
-                <label class="custom-switch" for="darkModeToggle">
-                    <input type="checkbox" id="darkModeToggle" class="dark-mode-toggle">
-                    <span class="custom-slider d-flex justify-content-between align-items-center w-100">
-                        <i class="bi bi-sun-fill switch-icon sun-icon"></i>
-                        <i class="bi bi-moon-stars-fill switch-icon moon-icon"></i>
-                    </span>
-                </label>
-            </div>
-            <button class="btn-list-property px-lg-4 py-lg-2 px-3 py-1 fs-lg-5 fs-6">قائمة العقارات</button>
-        </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand fw-bold fs-4" href="#">HavenEdge</a>
@@ -63,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Home">الرئيسية</a>
+                            <a class="nav-link" href="#Home">الرئيسية</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Properties">العقارات</a>
@@ -92,7 +66,7 @@
                     <!-- custom-switch -->
                     <div class="theme-switch-container mb-lg-0 ms-2">
                         <label class="custom-switch" for="darkModeToggleNav">
-                            <input type="checkbox" id="darkModeToggleNav" class="dark-mode-toggle">
+                            <input type="checkbox" id="darkModeToggleNav">
                             <span class="custom-slider d-flex justify-content-between align-items-center w-100">
                                 <i class="bi bi-sun-fill switch-icon sun-icon"></i>
                                 <i class="bi bi-moon-stars-fill switch-icon moon-icon"></i>
@@ -105,7 +79,7 @@
         </nav>
     </header>
     <!-- main -->
-    <main>
+    <main data-bs-spy="scroll">
         <!-- hero-swipper -->
         <section class="hero pos-r" id="Home">
             <div class="swiper hero-swiper pos-a">

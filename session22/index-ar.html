@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenEdge</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- style-ar-css -->
+    <link rel="stylesheet" href="assets/css/style-ar.css">
+</head>
+<!-- body -->
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#">HavenEdge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Properties">العقارات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-ar.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-text d-flex align-items-center flex-wrap flex-lg-nowrap gap-2">
+                    <a href="#" class="number"><span>(555)123-4567</span><i class="fa-solid fa-phone fs-5 mx-2"></i></a>
+                    <i class="fa-solid fa-heart fs-4"></i>
+                    <div class="dropdown choosing-language">
+                        <button class="btn btn-link text-decoration-none text-muted dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-globe fs-4"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="index.html">English</a></li>
+                            <li><a class="dropdown-item" href="index-ar.html">العربية</a></li>
+                        </ul>
+                    </div>
+                    <!-- custom-switch -->
+                    <div class="theme-switch-container mb-lg-0 ms-2">
+                        <label class="custom-switch" for="darkModeToggleNav">
+                            <input type="checkbox" id="darkModeToggleNav">
+                            <span class="custom-slider d-flex justify-content-between align-items-center w-100">
+                                <i class="bi bi-sun-fill switch-icon sun-icon"></i>
+                                <i class="bi bi-moon-stars-fill switch-icon moon-icon"></i>
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn-list-property px-lg-4 py-lg-2 px-3 py-1 fs-lg-5 fs-6">قائمة العقارات</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main data-bs-spy="scroll">
+        <!-- hero-swipper -->
+        <section class="hero pos-r" id="Home">
+            <div class="swiper hero-swiper pos-a">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/images/e0007a3e48115973a58ff6cb23be84cf.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/d6ad01236febe28d0e04d7f2c61baa29.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/5611bc4bd16273d99cebe93b239c1693.jpg" alt="">
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination container"></div>
+            </div>
+            <div class="container hero-content pos-r text-center text-white">
+                <h2>مرحبًا بك في HavenEdge</h2>
+                <p>اكتشف الفخامة والراحة والقيمة في مكان واحد. اعثر بسهولة على منزلك أو شقتك أو عقارك الاستثماري القادم.
+                </p>
+                <div class="row search-forms g-3 align-items-center">
+                    <div class="col-lg-3 col-6 dropdown search-item">
+                        <button class="btn dropdown-toggle border-secondary" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الموقع
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">دمشق</a></li>
+                            <li><a class="dropdown-item" href="#">حلب</a></li>
+                            <li><a class="dropdown-item" href="#">اللاذقية</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 dropdown search-item">
+                        <button class="btn dropdown-toggle border-secondary" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            نوع العقار
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">شقة</a></li>
+                            <li><a class="dropdown-item" href="#">فيلا</a></li>
+                            <li><a class="dropdown-item" href="#">قصر</a></li>
+                            <li><a class="dropdown-item" href="#">أرض</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 dropdown search-item">
+                        <button class="btn border-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            نطاق السعر
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">500$ - 1000$</a></li>
+                            <li><a class="dropdown-item" href="#">1100$ - 2200$</a></li>
+                            <li><a class="dropdown-item" href="#">2300$ +</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 search-item">
+                        <button class="btn search" type="button"><i class="fa-solid fa-magnifying-glass"></i>
+                            بحث
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features -->
+        <section class="container section-features">
+            <div class="row g-4" id="cardsFeatures">
+            </div>
+        </section>
+
+        <!--  Properties -->
+        <section class="container section-properties" id="Properties">
+            <!-- title-section -->
+            <div class="section-label text-center my-5">
+                <h2 class="container-title fw-bold">العقارات المميزة</h2>
+                <span class="text-desc mt-3">عقارات مميزة
+                    تصفّح مجموعتنا المختارة بعناية من العقارات الراقية المعروضة للبيع والإيجار.</span>
+            </div>
+            <div class="row g-4 justify-content-center cards">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card pos-r">
+                        <img src="assets/images/Image1.png" class="card-img-top">
+                        <span class="badge py-2 px-2 rounded-pill pos-a">للبيع</span>
+                        <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Family Home</h5>
+                            <div class="card-location"><i class="fa-solid fa-location-dot ms-2"></i><span>Beverly
+                                    Hills,CA</span></div>
+                        </div>
+                        <ul class="d-flex ps-3 pe-3 my-0 gap-3">
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>4</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>3</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-square ms-2"></i><span>3,200 sqft</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="card-link fw-bold">$1,250,000</span>
+                                <button class="card-button rounded py-2 px-3"><a href="#">عرض التفاصيل</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card pos-r">
+                        <img src="assets/images/Image2.png" class="card-img-top">
+                        <span class="badge py-2 px-2 rounded-pill pos-a">للإيجار</span>
+                        <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Penthouse</h5>
+                            <div class="card-location"><i class="fa-solid fa-location-dot ms-2"></i><span>Manhattan,
+                                    NY</span></div>
+                        </div>
+                        <ul class="d-flex ps-3 pe-3 my-0 gap-3">
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>2</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>2</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-square ms-2"></i><span>1,800 sqft</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="card-link fw-bold">$3,500 / شهرياً</span>
+                                <button class="card-button rounded py-2 px-3"><a href="#">عرض التفاصيل</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card pos-r">
+                        <img src="assets/images/Image3.png" class="card-img-top">
+                        <span class="badge py-2 px-2 rounded-pill pos-a">للبيع</span>
+                        <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
+                        <div class="card-body">
+                            <h5 class="card-title">Cozy Suburban House</h5>
+                            <div class="card-location"><i class="fa-solid fa-location-dot ms-2"></i><span>Austin,
+                                    TX</span>
+                            </div>
+                        </div>
+                        <ul class="d-flex ps-3 pe-3 my-0 gap-3">
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>3</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>2</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-square ms-2"></i><span>2,400 sqft</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="card-link fw-bold">$650,000</span>
+                                <button class="card-button rounded py-2 px-3"><a href="#">عرض التفاصيل</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card pos-r">
+                        <img src="assets/images/Image4.png" class="card-img-top">
+                        <span class="badge py-2 px-2 rounded-pill pos-a">للإيجار</span>
+                        <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
+                        <div class="card-body">
+                            <h5 class="card-title">Downtown Apartment</h5>
+                            <div class="card-location"><i class="fa-solid fa-location-dot ms-2"></i><span>Seattle,
+                                    WA</span>
+                            </div>
+                        </div>
+                        <ul class="d-flex ps-3 pe-3 my-0 gap-3">
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>1</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>1</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-square ms-2"></i><span>850 sqft</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="card-link fw-bold">$2,200 / شهرياً</span>
+                                <button class="card-button rounded py-2 px-3"><a href="#">عرض التفاصيل</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card pos-r">
+                        <img src="assets/images/Image5.png" class="card-img-top">
+                        <span class="badge py-2 px-2 rounded-pill pos-a">للبيع</span>
+                        <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
+                        <div class="card-body">
+                            <h5 class="card-title">Beachfront Villa</h5>
+                            <div class="card-location"><i class="fa-solid fa-location-dot ms-2"></i><span>Miami,
+                                    FL</span>
+                            </div>
+                        </div>
+                        <ul class="d-flex ps-3 pe-3 my-0 gap-3">
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>5</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>4</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-square ms-2"></i><span>$2,800,000
+                                    sqft</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="card-link fw-bold">$1,250,000</span>
+                                <button class="card-button rounded py-2 px-3"><a href="#">عرض التفاصيل</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card pos-r">
+                        <img src="assets/images/Image6.png" class="card-img-top">
+                        <span class="badge py-2 px-2 rounded-pill pos-a">للبيع</span>
+                        <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
+                        <div class="card-body">
+                            <h5 class="card-title">Mountain Retreat</h5>
+                            <div class="card-location"><i
+                                    class="fa-solid fa-location-dot ms-2"></i><span>Aspen,CO</span>
+                            </div>
+                        </div>
+                        <ul class="d-flex ps-3 pe-3 my-0 gap-3">
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>4</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>3</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-square ms-2"></i><span>3,800 sqft</span>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="border-top pt-3 d-flex justify-content-between align-items-center">
+                                <span class="card-link fw-bold">$1,850,000</span>
+                                <button class="card-button rounded py-2 px-3"><a href="#">عرض التفاصيل</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-5"><button class="card-button rounded py-2 px-4"><a href="#">عرض جميع
+                        العقارات</a></button></div>
+
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer class="border-top border-black py-5" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="navbar-brand fw-bold fs-4" href="#">HavenEdge</a>
+                    <p class="lh-lg">شريكك الموثوق للعثور على العقار المثالي. نسهّل عليك التعامل مع العقارات ونجعلها في
+                        متناولك.</p>
+                    <ul class="d-flex gap-4 px-0">
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="pb-2">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#Home">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#About">من نحن</a></li>
+                        <li class="mb-2"><a href="#Properties">العقارات</a></li>
+                        <li class="mb-2"><a href="#Contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="pb-2">الخدمات</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">شراء عقار</a></li>
+                        <li class="mb-2"><a href="#">بيع عقار</a></li>
+                        <li class="mb-2"><a href="#">استئجار عقار</a></li>
+                        <li class="mb-2"><a href="#">إدارة العقارات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h5 class="pb-2">النشرة البريدية</h5>
+                    <p class="mb-2">اشترك ليصلك أحدث مستجدات العقارات.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control email-input" aria-label="Sizing example input"
+                            placeholder="بريدك الإلكتروني" aria-describedby="inputGroup-sizing-default">
+                        <span class="input-group-text input-footer" id="inputGroup-sizing-default">اشترك</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 mb-4">
+            <div class="text-center"><span>جميع الحقوق محفوظة.</span><span class="fw-bold">© 2025 HavenEdge. </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

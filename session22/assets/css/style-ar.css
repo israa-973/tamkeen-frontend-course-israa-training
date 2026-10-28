@@ -1,0 +1,33 @@
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: "cairo";
+}
+
+.input-group input {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: 8px !important;
+    border-top-left-radius: unset;
+    border-top-right-radius: 8px !important;
+}
+
+.input-footer {
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+}
+
+ul {
+    padding: 0;
+}
+
+.search-forms .dropdown-menu {
+    text-align: right;
+}
+
+.dropdown-toggle::after {
+    margin-right: 0.255em;
+}

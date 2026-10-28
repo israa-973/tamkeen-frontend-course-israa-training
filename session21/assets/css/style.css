@@ -1,5 +1,3 @@
-
-
 body {
     font-family: "inter";
     background-color: var(--page-bg);
@@ -170,16 +168,16 @@ input:checked+.custom-slider:before {
 
 .hero-content {
     z-index: 6;
-    height: 100%;
     top: 40%;
-    
+
 }
 
-.hero-content h2{
-        font-size: 60px;
-    }
-.hero-content p{
-margin-bottom: 60px;
+.hero-content h2 {
+    font-size: 60px;
+}
+
+.hero-content p {
+    margin-bottom: 60px;
 }
 
 .search-forms {
@@ -210,7 +208,7 @@ margin-bottom: 60px;
     color: var(--bg-card);
 }
 
-.search-forms .search i{
+.search-forms .search i {
     margin-left: 8px;
 }
 
@@ -229,16 +227,16 @@ margin-bottom: 60px;
     width: 100%;
 }
 
-.dropdown-toggle{
+.dropdown-toggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.fa-heart:hover{
+.fa-heart:hover {
     cursor: pointer;
-color: var(--col-orang);
+    color: var(--col-orang);
 }
 
 
@@ -330,11 +328,12 @@ color: var(--col-orang);
     overflow: hidden;
 }
 
-.card img{
+.card img {
     transition: all 0.4s;
 }
-.card:hover img{
-transform: scale(1.03);
+
+.card:hover img {
+    transform: scale(1.03);
     box-shadow: 0 0 20px var(--col-orang);
     transition: all 0.4s;
 }
@@ -414,7 +413,7 @@ footer i:hover {
         margin-bottom: 8px;
     }
 
-    .hero-content h2{
+    .hero-content h2 {
         font-size: 36px;
     }
 }
