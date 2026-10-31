@@ -76,6 +76,8 @@ body[data-bs-theme="dark"] {
     --bg-card: #000000;
 }
 
+
+
 /* custom-switch */
 .theme-switch-container {
     display: flex;
@@ -85,8 +87,8 @@ body[data-bs-theme="dark"] {
 .custom-switch {
     position: relative;
     display: inline-block;
-    width: 68px;
-    height: 34px;
+     width: 60px;
+    height: 30px;
 }
 
 .custom-switch input {
@@ -114,10 +116,10 @@ body[data-bs-theme="dark"] {
 .custom-slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 22px;
+    width: 22px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: rgb(255, 228, 187);
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
@@ -128,6 +130,7 @@ body[data-bs-theme="dark"] {
 
 .switch-icon {
     z-index: 2;
+    font-size: 14px;
 }
 
 input:checked+.custom-slider {
@@ -136,7 +139,7 @@ input:checked+.custom-slider {
 }
 
 input:checked+.custom-slider:before {
-    transform: translateX(33px);
+    transform: translateX(28px);
 }
 
 .sun-icon {
@@ -433,6 +436,14 @@ footer i:hover {
 .img-our-feature {
     object-fit: cover;
     height: auto;
+    transition: all 0.4s ease;
+    border-radius: 34px;
+}
+
+.img-our-feature:hover{
+box-shadow: 0 0 10px rgba(255, 68, 0, 0.43);
+transition: all 0.4s ease;
+scale: calc(1.01);
 }
 
 /* why-choose-us */
@@ -442,7 +453,14 @@ footer i:hover {
     background-color: var(--bg-card);
     border-radius: 8px;
     border-top: 3px solid var(--col-orang);
+    transition: all 0.4s ease;
 }
+
+.card-why-choose-us:hover{
+box-shadow: 0 -15px 15px -10px rgba(255, 68, 0, 0.43);
+transition: all 0.4s ease;
+}
+
 
 
 
