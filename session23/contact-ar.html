@@ -22,7 +22,7 @@
 </head>
 <!-- body -->
 
-<body data-bs-spy="scroll" data-bs-target="#my-nav">
+<body>
 
     <!-- header -->
     <header>
@@ -79,48 +79,55 @@
         </nav>
     </header>
     <!-- main -->
-     <main class="pt-5">
+    <main class="pt-5">
         <section class="container contact-section text-center pt-5">
             <div class="title-contact pt-5">
-                <h2>Let’s Talk About Your Next Move</h2>
-                <p>At HavenEdge Real Estate, we believe every great property journey begins with a conversation. Whether you’re looking to buy, sell, rent, or invest, our team is ready to help you every step of the way.</p>
+                <h2> فلنتحدث عن خطوتك القادمة.</h2>
+                <p>في HavenEdge العقارية، نؤمن بأن كل رحلة عقارية عظيمة تبدأ بمحادثة. سواء كنت تبحث عن الشراء، البيع،
+                    التأجير، أو الاستثمار، فإن فريقنا مستعد لمساعدتك في كل خطوة على الطريق.
+                </p>
             </div>
             <div class="row my-5">
                 <div class="col-lg-6 col-12 flex-column gap-4">
-<div class="row mb-4">
-  <div class="col">
-    <input type="text" class="form-control p-2" placeholder="First name" aria-label="First name">
-  </div>
-  <div class="col">
-    <input type="text" class="form-control p-2" placeholder="Last name" aria-label="Last name">
-  </div>
-</div>
-<div class="row mb-4">
-    <div class="col">
-      <input type="email" class="form-control p-2" placeholder="Email" id="inputEmail3">
-    </div>
-  </div>
-  <div class="row mb-4">
-    <div class="col">
-      <input type="password" class="form-control p-2" placeholder="Password" id="inputPassword3">
-    </div>
-  </div>
-  <div class="row mb-4">
-    <div class="col">
-  <textarea class="form-control p-2" placeholder="Your Message" id="floatingTextarea2" style="height: 150px"></textarea>
-</div>
-  </div>
-  <div class="row  mb-4">
-    <div class="d-grid">
-       <button class="btn btn-send p-2" type="button">Send Message</button>
-    </div>
-  </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" class="form-control p-2" placeholder="الاسم الأول"
+                                aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control p-2" placeholder="اسم العائلة"
+                                aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="email" class="form-control p-2" placeholder="البريد الإلكتروني"
+                                id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="password" class="form-control p-2" placeholder="كلمة المرور"
+                                id="inputPassword3">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <textarea class="form-control p-2" placeholder="رسالتك" id="floatingTextarea2"
+                                style="height: 150px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row  mb-4">
+                        <div class="d-grid">
+                            <button class="btn btn-send p-2" type="button"> إرسال الرسالة</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-12 d-flex flex-column gap-4">
                     <div class="card-contact d-flex gap-4 align-items-start p-4">
                         <i class="fa-solid fa-phone p-2 d-flex"></i>
                         <div class="d-flex flex-column align-items-start">
-                            <h6>Phone</h6>
+                            <h6>الهاتف</h6>
                             <a href="#">(555) 123-4567</a>
                             <a href="#">(555) 987-6543</a>
                         </div>
@@ -128,7 +135,7 @@
                     <div class="card-contact d-flex gap-4 align-items-start p-4">
                         <i class="fa-solid fa-envelope p-2 d-flex"></i>
                         <div class="d-flex flex-column align-items-start">
-                            <h6>Email</h6>
+                            <h6>البريد الإلكتروني</h6>
                             <a href="#">info@havenedge.com</a>
                             <a href="#">support@havenedge.com</a>
                         </div>
@@ -136,16 +143,17 @@
                     <div class="card-contact d-flex gap-4 align-items-start p-4">
                         <i class="fa-solid fa-location-dot p-2 d-flex"></i>
                         <div class="d-flex flex-column align-items-start">
-                            <h6>Office</h6>
-                            <a href="#">123 Real Estate Avenue<br>Los Angeles, CA 90001</a>
+                            <h6>المكتب / العنوان</h6>
+                            <a class="d-flex flex-column align-items-start" href="#"><span>90001
+                                    كاليفورنيا</span><span>شارع العقارات، لوس أنجلوس</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-     </main>
+    </main>
 
-     <!-- footer -->
+    <!-- footer -->
     <footer class="border-top border-black py-5" id="Contact">
         <div class="container">
             <div class="row">
@@ -163,10 +171,11 @@
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
                     <h5 class="pb-2">روابط سريعة</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#Home">الرئيسية</a></li>
-                        <li class="mb-2"><a href="About-us-ar.html">من نحن</a></li>
-                        <li class="mb-2"><a href="#Properties">العقارات</a></li>
-                        <li class="mb-2"><a href="#Contact">تواصل معنا</a></li>
+                        <li class="mb-2"><a href="index-ar.html">الرئيسية</a></li>
+                        <li class="mb-2"><a href="about-ar.html">من نحن</a></li>
+                        <li class="mb-2"><a href="properties-ar.html">العقارات</a></li>
+                        <li class="mb-2"><a href="contact-ar.html">تواصل معنا</a></li>
+                        <li class="mb-2"><a href="faq-ar.html">الأسئلة الشائعة</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">

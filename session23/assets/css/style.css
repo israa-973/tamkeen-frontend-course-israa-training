@@ -64,7 +64,7 @@ button:hover a {
     --max-w: 1400px;
     --overlay: #12121200;
     --bg-card: #fafafa;
-    --bg-dark:#11161e17;
+    --bg-dark: #11161e17;
 }
 
 /* dark-mode */
@@ -77,7 +77,7 @@ body[data-bs-theme="dark"] {
     --line-color: #444444;
     --overlay: #12121272;
     --bg-card: #000000;
-    --bg-dark:#11161E;
+    --bg-dark: #11161E;
 }
 
 
@@ -91,7 +91,7 @@ body[data-bs-theme="dark"] {
 .custom-switch {
     position: relative;
     display: inline-block;
-     width: 60px;
+    width: 60px;
     height: 30px;
 }
 
@@ -444,10 +444,10 @@ footer i:hover {
     border-radius: 34px;
 }
 
-.img-our-feature:hover{
-box-shadow: 0 0 10px rgba(255, 68, 0, 0.43);
-transition: all 0.4s ease;
-scale: calc(1.01);
+.img-our-feature:hover {
+    box-shadow: 0 0 10px rgba(255, 68, 0, 0.43);
+    transition: all 0.4s ease;
+    scale: calc(1.01);
 }
 
 /* why-choose-us */
@@ -460,105 +460,136 @@ scale: calc(1.01);
     transition: all 0.4s ease;
 }
 
-.card-why-choose-us:hover{
-box-shadow: 0 -15px 15px -10px rgba(255, 68, 0, 0.43);
-transition: all 0.4s ease;
+.card-why-choose-us:hover {
+    box-shadow: 0 -15px 15px -10px rgba(255, 68, 0, 0.43);
+    transition: all 0.4s ease;
 }
 
 
 
 /* contact */
-.contact-section .title-contact p{
-max-width: 55%;
-margin: 0 auto;
+.contact-section .title-contact p {
+    max-width: 55%;
+    margin: 0 auto;
 }
 
-.contact-section .card-contact i{
-background-color: var(--page-bg);
-color: var(--col-orang);
-border-radius: 8px;
-font-size: 20px;
-width: 40px;
-height: 40px;
-align-items:center ;
-justify-content: center;
+.contact-section .card-contact i {
+    background-color: var(--page-bg);
+    color: var(--col-orang);
+    border-radius: 8px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-contact{
+.card-contact {
     background-color: var(--bg-card);
     border-radius: 8px;
+    transition: all 0.4s ease;
 }
 
-.card-contact a{
+.card-contact:hover {
+    box-shadow: 0 0 10px rgba(255, 68, 0, 0.43);
+    transition: all 0.4s ease;
+}
+
+.card-contact a {
     color: var(--page-text);
     font-weight: 200;
 }
 
-.card-contact a:hover{
+.card-contact a:hover {
     color: var(--col-orang);
 }
 
-.form-control{
+.form-control {
     background-color: var(--bg-card);
     border: 1px solid var(--muted-text);
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: var(--muted-text);
 }
 
-.btn-send{
+.btn-send {
     background-color: var(--col-orang);
 }
 
-.btn-send:hover{
+.btn-send:hover {
     background-color: var(--page-text);
     color: var(--bg-card);
 }
 
 /* about-us */
-.bg-img{
+.bg-img {
     width: fit-content;
     height: fit-content;
-}
-.bg-img::after{
-content: "";
-position: absolute;
-inset: 0;
-background-color: var(--overlay);
-z-index: 444;
+    transition: all 0.4s ease;
 }
 
-.FAQ-section{
-background-color: var(--bg-dark);
+.bg-img:hover {
+    box-shadow: 0 0 10px rgba(255, 68, 0, 0.43);
+    transition: all 0.4s ease;
+    scale: calc(1.01);
+
 }
 
-.accordion-item{
-   background-color: var(--page-bg);
+.bg-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--overlay);
+    z-index: 444;
 }
 
-.accordion-button{
- background-color: var(--bg-card);
- transition: all 0.4s;
+.FAQ-section {
+    background-color: var(--bg-dark);
 }
 
-.accordion-button:hover{
+.accordion-item {
+    background-color: var(--page-bg);
+}
+
+.accordion-button {
+    background-color: var(--bg-card);
+    transition: all 0.4s;
+}
+
+.accordion-button:hover {
     background-color: #ff593cb7;
     transition: all 0.4s;
 }
 
-.about-us-content{
+.about-us-content {
     background-color: var(--bg-card);
     border-radius: 8px;
-    border-top:3px solid var(--col-orang) ;
+    border-top: 3px solid var(--col-orang);
+    transition: all 0.4s ease;
 }
 
-.accordion-button:not(.collapsed){
+.about-us-content:hover {
+    box-shadow: 0 -15px 15px -10px rgba(255, 68, 0, 0.43);
+    transition: all 0.4s ease;
+}
+
+.accordion-button:not(.collapsed) {
     color: var(--page-text);
     background-color: var(--bg-card);
-        box-shadow:0 0 5px 0 var(--col-orang);
+    box-shadow: 0 0 5px 0 var(--col-orang);
 }
 
+.accordion-button:not(.collapsed)::after {
+    color: var(--page-text)
+}
+
+.accordion-button::after {
+    content: "\f078";
+    font: var(--fa-font-solid);
+    background-image: none !important;
+    color: var(--col-orang);
+}
 
 @media (max-width: 991px) {
     .navbar-text {

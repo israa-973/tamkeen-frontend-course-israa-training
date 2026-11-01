@@ -31,3 +31,8 @@ ul {
 .dropdown-toggle::after {
     margin-right: 0.255em;
 }
+
+.accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+}
