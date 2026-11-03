@@ -524,7 +524,7 @@ footer i:hover {
 
 /* about-us */
 .bg-img {
-    width: fit-content;
+    width: 45%;
     height: fit-content;
     transition: all 0.4s ease;
 }
@@ -542,6 +542,10 @@ footer i:hover {
     inset: 0;
     background-color: var(--overlay);
     z-index: 444;
+}
+
+.about-us-content{
+    width: 53%;
 }
 
 .FAQ-section {
@@ -591,6 +595,28 @@ footer i:hover {
     color: var(--col-orang);
 }
 
+
+.button-schedule-tour{
+    background-color: var(--page-text)
+}
+
+.link-back{
+     color: var(--col-orang)
+}
+
+.link-back:hover{
+    color: var(--page-text);
+}
+
+.card-img-propertie img{
+    height: 400px;
+    object-fit: cover;
+}
+
+.fa-check{
+    color: green;
+}
+
 @media (max-width: 991px) {
     .navbar-text {
         order: -1;
@@ -607,5 +633,13 @@ footer i:hover {
 
     .hero-content-p {
         width: 90%;
+    }
+
+    .bg-img{
+        width: fit-content;
+    }
+
+    .about-us-content{
+        width: fit-content;
     }
 }
