@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
@@ -12,15 +12,14 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
     <!-- google fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- style-ar-css -->
+    <link rel="stylesheet" href="assets/css/style-ar.css">
 </head>
-
 <!-- body -->
 
 <body>
@@ -38,22 +37,21 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index-ar.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="properties.html">Properties</a>
+                            <a class="nav-link" href="properties-ar.html">العقارات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about-ar.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact-ar.html">تواصل معنا</a>
                         </li>
                     </ul>
                 </div>
                 <div class="navbar-text d-flex align-items-center flex-wrap flex-lg-nowrap gap-2">
-                    <a href="#" class="number"><i class="fa-solid fa-phone fs-5 me-2"></i><span class="ms-2">(555)
-                            123-4567</span></a>
+                    <a href="#" class="number"><span>(555)123-4567</span><i class="fa-solid fa-phone fs-5 mx-2"></i></a>
                     <i class="fa-solid fa-heart fs-4"></i>
                     <div class="dropdown choosing-language">
                         <button class="btn btn-link text-decoration-none text-muted dropdown-toggle" type="button"
@@ -61,12 +59,12 @@
                             <i class="fa-solid fa-globe fs-4"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="propertie.html">English</a></li>
-                            <li><a class="dropdown-item" href="propertie-ar.html">العربية</a></li>
+                            <li><a class="dropdown-item" href="property.html">English</a></li>
+                            <li><a class="dropdown-item" href="property-ar.html">العربية</a></li>
                         </ul>
                     </div>
                     <!-- custom-switch -->
-                    <div class="theme-switch-container mb-lg-0 me-2">
+                    <div class="theme-switch-container mb-lg-0 ms-2">
                         <label class="custom-switch" for="darkModeToggleNav">
                             <input type="checkbox" id="darkModeToggleNav">
                             <span class="custom-slider d-flex justify-content-between align-items-center w-100">
@@ -75,57 +73,55 @@
                             </span>
                         </label>
                     </div>
-                    <button class="btn-list-property px-lg-4 py-lg-2 px-3 py-1 fs-lg-5 fs-6">List Property</button>
+                    <button class="btn-list-property px-lg-4 py-lg-2 px-3 py-1 fs-lg-5 fs-6">قائمة العقارات</button>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- main -->
+
+ <!-- main -->
     <main class="pt-5">
         <div class="container pt-5 mt-5 mt-lg-0">
             <a href="properties.html" class="link-back">
-                <i class="fa-solid fa-arrow-left me-2"></i>
-                <span>Back to Properties</span>
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+                <span>العودة إلى العقارات</span>
             </a>
             <div class="row g-4 py-5">
                 <div class="col-lg-8">
                     <div class="pos-r">
-                        <div class="card-img-propertie mb-4">
+                        <div class="card-img-property mb-4">
                             <img src="assets/images/Image6.png" class="img-fluid rounded w-100 card-img-top">
-                            <span class="badge py-2 px-2 rounded-pill pos-a">For Sale</span>
+                            <span class="badge py-2 px-2 rounded-pill pos-a">للبيع</span>
                             <span class="icon-heart pos-a d-flex"><i class="fa-regular fa-heart"></i></span>
                         </div>
                         <div class="card p-2">
                             <div class="card-body">
-                            <h5 class="card-title mb-3">Mountain Retreat</h5>
+                            <h5 class="card-title mb-3">الملاذ الجبلي</h5>
                             <div class="card-location mb-2"><i class="fa-solid fa-location-dot me-2"></i><span>Beverly
                                     Hills,CA</span></div>
                         </div>
                         <ul class="d-flex ps-3 pe-3 gap-4">
-                            <li class="list-group-item"><i class="fa-solid fa-bed me-2"></i><span>4 Beds</span></li>
-                            <li class="list-group-item"><i class="fa-solid fa-bath me-2"></i><span>3 Baths</span></li>
-                            <li class="list-group-item "><i class="fa-solid fa-square me-2"></i><span>3,200 sqft</span>
+                            <li class="list-group-item"><i class="fa-solid fa-bed ms-2"></i><span>4 غرف نوم</span></li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath ms-2"></i><span>3 حمامات</span></li>
+                            <li class="list-group-item "><i class="fa-solid fa-square ms-2"></i><span>3,200 قدم مربع</span>
                             </li>
                         </ul>
                         <span class="border-bottom mx-3 mt-2"></span>
                         <div class="card-body">
-                            <h4 class="card-title mb-3 py-2">Description</h4>
-                            <p class="card-text lh-lg">Stunning mountain retreat with ski-in/ski-out access. Features vaulted
-                                ceilings, stone fireplace, and panoramic mountain views.</p>
-                            <h4 class="card-title mb-3 py-2">Features</h4>
+                            <h4 class="card-title mb-3 py-2">الوصف</h4>
+                            <p class="card-text lh-lg">• ملاذ جبلي مذهل مع إمكانية الدخول والخروج المباشر للتزلج. يتميز بأسقف مقببة، ومدفأة حجرية، وإطلالات بانورامية على الجبل.</p>
+                            <h4 class="card-title mb-3 py-2">الميزات</h4>
                             <div class="row g-4">
-                                <span class="col-lg-4 col-6"><i class="fa-solid fa-check me-2"></i><span>Mountain
-                                        Views</span></span>
-                                <span class="col-lg-4 col-6"><i class="fa-solid fa-check me-2"></i><span>Ski
-                                        Access</span></span>
+                                <span class="col-lg-4 col-6"><i class="fa-solid fa-check ms-2"></i><span>إطلالات جبلية</span></span>
+                                <span class="col-lg-4 col-6"><i class="fa-solid fa-check ms-2"></i><span>الوصول للتزلج</span></span>
                                 <span class="col-lg-4 col-6"><i
-                                        class="fa-solid fa-check me-2"></i><span>Fireplace</span></span>
+                                        class="fa-solid fa-check ms-2"></i><span>مدفأة حجرية</span></span>
                                 <span class="col-lg-4 col-6"><i
-                                        class="fa-solid fa-check me-2"></i><span>Hot Tub</span></span>
+                                        class="fa-solid fa-check ms-2"></i><span>جاكوزي</span></span>
                                 <span class="col-lg-4 col-6"><i
-                                        class="fa-solid fa-check me-2"></i><span>Vaulted Ceilings</span></span>
+                                        class="fa-solid fa-check ms-2"></i><span>أسقف مقببة</span></span>
                                 <span class="col-lg-4 col-6"><i
-                                        class="fa-solid fa-check me-2"></i><span>Game Room</span></span>
+                                        class="fa-solid fa-check ms-2"></i><span>غرفة ألعاب</span></span>
                             </div>
                         </div>
                         </div>
@@ -134,19 +130,19 @@
                 <div class="col-lg-4">
                     <div class="card p-4">
                     <h3 class="card-link mb-4 fs-bold">$1,850,000</h3>
-                    <h6 class="my-2">Contact Agent</h6>
-                    <h6 class="my-2">Robert Taylor</h6>
-                    <p class="my-2"><i class="fa-solid fa-phone me-2"></i>(555) 678-9012</p>
-                    <p class="my-2"><i class="fa-solid fa-envelope me-2"></i>robert@havenedge.com</p>
+                    <h6 class="my-2">الاتصال بالوكيل</h6>
+                    <h6 class="my-2">روبرت تايلور</h6>
+                    <p class="my-2"><i class="fa-solid fa-phone ms-2"></i>(555) 678-9012</p>
+                    <p class="my-2"><i class="fa-solid fa-envelope ms-2"></i>robert@havenedge.com</p>
                     <span class="border-bottom my-3"></span>
                     <form class="mt-3">
-                        <input type="text" class="form-control bg-transparent py-2 py-lg-3 mb-3" placeholder="Your Name">
-                        <input type="text" class="form-control bg-transparent py-2 py-lg-3 mb-3" placeholder="Your Email">
-                        <input type="text" class="form-control bg-transparent py-2 py-lg-3 mb-3" placeholder="Your Phone">
-                        <textarea class="form-control bg-transparent py-2 py-lg-3 mb-3" rows="4">I'm interested in this property. Please contact me</textarea>
+                        <input type="text" class="form-control bg-transparent py-2 py-lg-3 mb-3" placeholder="اسمك">
+                        <input type="text" class="form-control bg-transparent py-2 py-lg-3 mb-3" placeholder="بريدك الإلكتروني">
+                        <input type="text" class="form-control bg-transparent py-2 py-lg-3 mb-3" placeholder="رقم هاتفك">
+                        <textarea class="form-control bg-transparent py-2 py-lg-3 mb-3" rows="4">أنا مهتم بهذا العقار. يرجى الاتصال بي</textarea>
                     </form>
-                    <button type="submit" class="card-button rounded mb-2 py-2 py-lg-3"><a href="#">Request Information</a></button>
-                    <button type="button" class="button-schedule-tour text-white rounded py-2 py-lg-3"><a href="#">Schedule Tour</a></button>
+                    <button type="submit" class="card-button rounded mb-2 py-2 py-lg-3"><a href="#">طلب المعلومات</a></button>
+                    <button type="button" class="button-schedule-tour text-white rounded py-2 py-lg-3"><a href="#">جدولة الجولة / حجز موعد زيارة</a></button>
                 </div>
                 </div>
             </div>
@@ -159,8 +155,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
                     <a class="navbar-brand fw-bold fs-4" href="#">HavenEdge</a>
-                    <p class="lh-lg">Your trusted partner in finding the perfect property. Making real estate
-                        simple and accessible.</p>
+                    <p class="lh-lg">شريكك الموثوق للعثور على العقار المثالي. نسهّل عليك التعامل مع العقارات ونجعلها في
+                        متناولك.</p>
                     <ul class="d-flex gap-4 px-0">
                         <li><i class="fa-brands fa-facebook-f"></i></li>
                         <li><i class="fa-brands fa-twitter"></i></li>
@@ -169,37 +165,37 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <h5 class="pb-2">Quick Links</h5>
+                    <h5 class="pb-2">روابط سريعة</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="about.html">About Us</a></li>
-                        <li class="mb-2"><a href="properties.html">Properties</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact</a></li>
-                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                        <li class="mb-2"><a href="index-ar.html">الرئيسية</a></li>
+                        <li class="mb-2"><a href="about-ar.html">من نحن</a></li>
+                        <li class="mb-2"><a href="properties-ar.html">العقارات</a></li>
+                        <li class="mb-2"><a href="contact-ar.html">تواصل معنا</a></li>
+                        <li class="mb-2"><a href="faq-ar.html">الأسئلة الشائعة</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <h5 class="pb-2">Services</h5>
+                    <h5 class="pb-2">الخدمات</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Buy Property</a></li>
-                        <li class="mb-2"><a href="#">Sell Property</a></li>
-                        <li class="mb-2"><a href="#">Rent Property</a></li>
-                        <li class="mb-2"><a href="#">Property Management</a></li>
+                        <li class="mb-2"><a href="#">شراء عقار</a></li>
+                        <li class="mb-2"><a href="#">بيع عقار</a></li>
+                        <li class="mb-2"><a href="#">استئجار عقار</a></li>
+                        <li class="mb-2"><a href="#">إدارة العقارات</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 mt-4">
-                    <h5 class="pb-2">Newsletter</h5>
-                    <p class="mb-2">Subscribe to get the latest property updates</p>
+                    <h5 class="pb-2">النشرة البريدية</h5>
+                    <p class="mb-2">اشترك ليصلك أحدث مستجدات العقارات.</p>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control email-input" aria-label="Sizing example input"
-                            placeholder="Your email" aria-describedby="inputGroup-sizing-default">
-                        <span class="input-group-text input-footer" id="inputGroup-sizing-default">Subscribe</span>
+                            placeholder="بريدك الإلكتروني" aria-describedby="inputGroup-sizing-default">
+                        <span class="input-group-text input-footer" id="inputGroup-sizing-default">اشترك</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container mt-5 mb-4">
-            <div class="text-center"><span class="fw-bold">© 2025 HavenEdge. </span><span>All rights reserved.</span>
+            <div class="text-center"><span>جميع الحقوق محفوظة.</span><span class="fw-bold">© 2025 HavenEdge. </span>
             </div>
         </div>
     </footer>

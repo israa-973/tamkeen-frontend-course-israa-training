@@ -608,7 +608,7 @@ footer i:hover {
     color: var(--page-text);
 }
 
-.card-img-propertie img{
+.card-img-property img{
     height: 400px;
     object-fit: cover;
 }
