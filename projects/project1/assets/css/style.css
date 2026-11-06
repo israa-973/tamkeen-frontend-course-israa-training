@@ -32,6 +32,12 @@ button {
     position: fixed;
 }
 
+.title-section p {
+    width: 80%;
+    letter-spacing: 0.4px;
+    font-size: 18px;
+}
+
 
 /* dark-mode */
 :root {
@@ -41,10 +47,10 @@ button {
     --page-bg: #1F2937;
     --page-text: #f1f1f1;
     --muted-text: #E2E2E2;
-    --surface-bg: #1e1e1e;
+    --surface-bg: #464652a3;
     --line-color: #4e4e5c;
     --overlay: #12121272;
-    --bg-card: #000000;
+    --bg-card: #11161E;
     --bg-dark: #11161E;
     --bg-light: #e2e2e22c;
     --light: #ffffff0e;
@@ -61,7 +67,7 @@ body[data-bs-theme="light"] {
     --surface-bg: #f1f1f1;
     --line-color: #e3e3e3;
     --overlay: #12121200;
-    --bg-card: #fafafa;
+    --bg-card: #fff;
     --bg-dark: #11161e17;
     --bg-light: #E2E2E2;
     --light: #fff;
@@ -86,6 +92,7 @@ body[data-bs-theme="light"] {
 
 .bg-nav {
     background-color: var(--nav-bg);
+    z-index: 100
 }
 
 .nav-link {
@@ -215,7 +222,7 @@ input:checked+.custom-slider:before {
 
 .img-brand {
     background-color: #F7F7F8;
-    opacity: 70%;
+    opacity: 60%;
     transition: all 0.4s;
 }
 
@@ -224,6 +231,7 @@ input:checked+.custom-slider:before {
     transition: all 0.4s;
 }
 
+/* video Player */
 .video-card {
     overflow: hidden;
     cursor: pointer;
@@ -266,8 +274,111 @@ input:checked+.custom-slider:before {
     border: 4px solid #ffffff4d;
 }
 
+/* Benefits */
+.card-number {
+    border-radius: 12px;
+    padding: 50px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--line-color);
+}
+
+.number {
+    font-size: 80px;
+}
+
+.benefit-link {
+    background-color: var(--surface-bg);
+    display: inline-block;
+    border: 1px solid #c1c1c158;
+}
+
+.benefit-link i {
+
+    padding: 10px;
+    color: var(--col-primary);
+    rotate: calc(-45deg);
+}
 
 
+
+/* Our Courses */
+.btn-badge {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--bg-light);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.btn-get-it {
+    background-color: var(--surface-bg);
+}
+
+.btn-get-it:hover {
+    background-color: var(--line-color);
+}
+
+
+
+/* swiper */
+.testimonial-swiper .swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+    background: #bdbdbd;
+    opacity: 1;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+    background: #6258e8;
+}
+
+
+
+/* Our Pricing */
+
+.our-pricing-section .btn-group{
+    background-color: var(--light);
+}
+
+.our-pricing-section .btn-yearly:hover{
+    background-color: var(--bg-dark);
+}
+
+.our-pricing-section .our-plans{
+background-color: var(--page-bg);
+}
+
+.our-pricing-section .plan-badge{
+    background-color: #fed69949;
+    border: 1px solid #FFF9F0;
+    color: #000;
+}
+
+.feature-icon{
+    background-color: #6258e877;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.btn-get-started{
+    border-radius:0px 0px 8px 8px ;
+}
+
+.features-inner{
+    border-radius:  8px 8px 0 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--line-color);  
+}
+
+.our-pricing-section .card-number{
+    border: none;
+    box-shadow: 0 0 20px 0px #8b8b8b1c;
+}
+
+
+
+
+/* media */
 @media (max-width: 991px) {
     .nav-top {
         order: -1;
@@ -284,5 +395,13 @@ input:checked+.custom-slider:before {
 
     .btn-login {
         padding: 6px 12px;
+    }
+
+    .title-section p {
+        font-size: 16px;
+    }
+
+    .number {
+        font-size: 40px;
     }
 }

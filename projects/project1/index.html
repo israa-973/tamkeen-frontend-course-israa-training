@@ -31,7 +31,8 @@
         <div class="container-fluid pos-f top-0 bg-nav">
             <div class="promo-bar text-center p-lg-3 p-2 m-lg-3 m-2 mb-lg-0 mb-0 rounded fs-lg-5 fs-6 text-white">
                 <span>Free
-                    Courses 🌟 Sale Ends Soon, Get It Now</span><i class="fa-solid fa-arrow-right ms-2"></i></div>
+                    Courses 🌟 Sale Ends Soon, Get It Now</span><i class="fa-solid fa-arrow-right ms-2"></i>
+            </div>
             <nav class="navbar pb-0 pb-lg-2 navbar-expand-lg mx-lg-3 mx-2 border-bottom" id="my-nav">
                 <div class="container-lg">
                     <a class="navbar-brand p-0 mx-0 mx-xl-3" href="index.html"><img src="assets/imgs/Logo.svg"
@@ -61,6 +62,7 @@
                                     </span>
                                 </label>
                             </div>
+                            <!-- choosing-language -->
                             <div class="dropdown choosing-language">
                                 <button class="btn btn-sm btn-outline-secondary fw-bold dropdown-toggle mx-lg-4 mx-2"
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,6 +74,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- main-btns -->
                         <div class="d-flex align-items-center gap-lg-4 gap-2">
                             <a href="#" class="text-body fw-medium">Sign Up</a>
                             <a href="#" class="btn btn-main btn-login px-lg-4 px-3 text-white">Login</a>
@@ -86,7 +89,7 @@
     <!-- main -->
     <main class="py-5">
         <!-- Hero Section -->
-        <section class="py-5 my-5">
+        <section class="hero-section py-5 mt-5">
             <div class="container text-center my-5">
                 <div class="hero-badge d-flex align-items-center justify-content-center p-2 p-lg-3 rounded my-4">
                     <span class="d-flex align-items-center justify-content-center rounded me-2 text-white badge-bolt"><i
@@ -122,36 +125,455 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="video-card pos-r rounded" data-bs-toggle="modal" data-bs-target="#videoPlayerModal">
-                        <img src="assets/imgs/Container.png" class="img-fluid w-100 video-img pos-r"
-                            alt="Video Preview">
-                        <i class="fa-solid fa-play pos-a"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="videoPlayerModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-dark border-0">
-                    <div class="modal-header border-0  justify-content-end">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/uDU4endrdkY?si=71RuaGpKUnzrDDUc"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- video Player -->
+        <section class="video-player-section mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="video-card pos-r rounded" data-bs-toggle="modal" data-bs-target="#videoPlayerModal">
+                            <img src="assets/imgs/Container.png" class="img-fluid w-100 video-img pos-r"
+                                alt="Video Preview">
+                            <i class="fa-solid fa-play pos-a"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="modal fade" id="videoPlayerModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark border-0">
+                        <div class="modal-header border-0  justify-content-end">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/uDU4endrdkY?si=71RuaGpKUnzrDDUc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>Benefits</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p><button class="btn btn-outline px-3 py-1 py-lg-2">View All</button>
+                    </span>
+                </div>
+                <div class="row justify-content-between g-3" id="cardsBenefits">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Courses -->
+        <section class="our-courses-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>Our Courses</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p><button class="btn btn-outline px-3 py-1 py-lg-2">View All</button>
+                    </span>
+                </div>
+                <div class="row justify-content-between g-3">
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-lg-4 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">4 Weeks</button>
+                                    <button class="btn-badge py-2">Beginner</button></span>
+                                <span>By John Smith</span>
+                            </div>
+                            <h4>Web Design Fundamentals</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
+                                    principles. Develop the skills to create visually appealing and user-friendly
+                                    websites.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">4 Weeks</button>
+                                    <button class="btn-badge py-2">Beginner</button></span>
+                                <span>By John Smith</span>
+                            </div>
+                            <h4>Web Design Fundamentals</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
+                                    principles. Develop the skills to create visually appealing and user-friendly
+                                    websites.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-lg-4 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">4 Weeks</button>
+                                    <button class="btn-badge py-2">Beginner</button></span>
+                                <span>By John Smith</span>
+                            </div>
+                            <h4>Web Design Fundamentals</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
+                                    principles. Develop the skills to create visually appealing and user-friendly
+                                    websites.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">4 Weeks</button>
+                                    <button class="btn-badge py-2">Beginner</button></span>
+                                <span>By John Smith</span>
+                            </div>
+                            <h4>Web Design Fundamentals</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
+                                    principles. Develop the skills to create visually appealing and user-friendly
+                                    websites.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Testimonials -->
+        <section class="our-testimonials-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>Our Testimonials</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p><button class="btn btn-outline px-3 py-1 py-lg-2">View All</button>
+                    </span>
+                </div>
+                <div class="swiper testimonial-swiper py-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile1.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Sarah L</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile2.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Jason M</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile3.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Emily R</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile4.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Michael K</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile1.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Sarah L</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile2.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Jason M</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile3.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Emily R</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            The mobile app development course was fantastic! The step-by-step
+                                            tutorials and hands-on projects helped me grasp the concepts easily.
+                                            I'm now building my own app. Great course!
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile4.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>Michael K</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                Read Full Story
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Pricing -->
+        <section class="our-pricing-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>Our Pricing</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p>
+                        <div class="btn-group p-2" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-main rounded">Monthly</button>
+                            <button type="button" class="btn btn-yearly rounded ms-2">Yearly</button>
+                        </div>
+                    </span>
+                </div>
+                <div class=" my-5">
+                    <div class="row justify-content-between g-3 card-number">
+                        <div class="col-lg-6 col-12">
+                            <div class="our-plans rounded border p-lg-4 p-3">
+                                <div class="plan-badge p-2 rounded text-center">Free Plan</div>
+                                <div class="plan-price text-center">
+                                    <span class="number">$0</span><span class="period">/month</span>
+                                </div>
+                                <div class="features-box">
+                                    <div class="features-inner p-lg-5 p-4">
+                                        <h5 class="features-title text-center pb-lg-4 pb-3">Available Features</h5>
+
+                                        <ul class="m-0 p-0">
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Access to selected free courses.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Limited course materials and resources.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Basic community support.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>No certification upon completion.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Ad-supported platform.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon bg-light border py-0 text-dark me-2"><i
+                                                        class="bi bi-x"></i></span>
+                                                <span>Access to exclusive Pro Plan community forums.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon bg-light border py-0 text-dark me-2"><i
+                                                        class="bi bi-x"></i></span>
+                                                <span>Early access to new courses and updates.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-get-started w-100 btn-main">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="our-plans rounded border p-lg-4 p-3">
+                                <div class="plan-badge p-2 rounded text-center">Free Plan</div>
+                                <div class="plan-price text-center">
+                                    <span class="number">$0</span><span class="period">/month</span>
+                                </div>
+                                <div class="features-box">
+                                    <div class="features-inner p-lg-5 p-4">
+                                        <h5 class="features-title text-center pb-lg-4 pb-3">Available Features</h5>
+                                        <ul class="m-0 p-0">
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Access to selected free courses.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Limited course materials and resources.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Basic community support.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>No certification upon completion.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>Ad-supported platform.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i
+                                                        class="bi bi-x"></i></span>
+                                                <span>Access to exclusive Pro Plan community forums.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i
+                                                        class="bi bi-x"></i></span>
+                                                <span>Early access to new courses and updates.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-get-started w-100 btn-main">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
