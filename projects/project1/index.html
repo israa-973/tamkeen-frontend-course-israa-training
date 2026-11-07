@@ -129,35 +129,19 @@
         <!-- video Player -->
         <section class="video-player-section mb-5">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="video-card pos-r rounded" data-bs-toggle="modal" data-bs-target="#videoPlayerModal">
-                            <img src="assets/imgs/Container.png" class="img-fluid w-100 video-img pos-r"
-                                alt="Video Preview">
-                            <i class="fa-solid fa-play pos-a"></i>
+                <div class="video-container video-wrapper pos-r overflow-hidden rounded">
+                    <video id="myVideo" poster="assets/imgs/Container.png" class="w-100 d-block" controls>
+                        <source src="assets/imgs/7706637-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <div class="video-overlay pos-a top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" onclick="playNativeVideo()">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center custom-play-btn">
+                            <i class="fa-solid fa-play"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="videoPlayerModal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content bg-dark border-0">
-                        <div class="modal-header border-0  justify-content-end">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body p-0">
-                            <div class="ratio ratio-16x9">
-                                <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/uDU4endrdkY?si=71RuaGpKUnzrDDUc"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
         <!-- Benefits -->
@@ -208,17 +192,17 @@
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="card-number h-100 p-3">
-                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <img class="img-fluid w-100" src="assets/imgs/Image2.png" alt="Our Course image">
                             <div class="d-flex justify-content-between align-items-center my-4"><span><button
-                                        class="btn-badge py-2 me-2">4 Weeks</button>
-                                    <button class="btn-badge py-2">Beginner</button></span>
-                                <span>By John Smith</span>
+                                        class="btn-badge py-2 me-2">6 Weeks</button>
+                                    <button class="btn-badge py-2">Intermediate</button></span>
+                                <span>By Emily Johnson</span>
                             </div>
-                            <h4>Web Design Fundamentals</h4>
+                            <h4>UI/UX Design</h4>
                             <span class="d-flex justify-content-between align-items-start fw-light">
-                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
-                                    principles. Develop the skills to create visually appealing and user-friendly
-                                    websites.
+                                <p>Master the art of creating intuitive user interfaces (UI) and enhancing user
+                                    experiences (UX). Learn design principles, wireframing, prototyping, and usability
+                                    testing techniques.
                                 </p>
                             </span>
                             <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
@@ -226,16 +210,51 @@
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="card-number h-100 p-lg-4 p-3">
-                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <img class="img-fluid w-100" src="assets/imgs/Image3.png" alt="Our Course image">
                             <div class="d-flex justify-content-between align-items-center my-4"><span><button
-                                        class="btn-badge py-2 me-2">4 Weeks</button>
-                                    <button class="btn-badge py-2">Beginner</button></span>
-                                <span>By John Smith</span>
+                                        class="btn-badge py-2 me-2">8 Weeks</button>
+                                    <button class="btn-badge py-2">Intermediate</button></span>
+                                <span>By David Brown</span>
                             </div>
-                            <h4>Web Design Fundamentals</h4>
+                            <h4>Mobile App Development</h4>
                             <span class="d-flex justify-content-between align-items-start fw-light">
-                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
-                                    principles. Develop the skills to create visually appealing and user-friendly
+                                <p>Dive into the world of mobile app development. Learn to build native iOS and Android
+                                    applications using industry-leading frameworks like Swift and Kotlin.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image4.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">10 Weeks</button>
+                                    <button class="btn-badge py-2">Beginner</button></span>
+                                <span>By Sarah Thompson</span>
+                            </div>
+                            <h4>Graphic Design for Beginners</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>Discover the fundamentals of graphic design, including typography, color theory,
+                                    layout design, and image manipulation techniques. Create visually stunning designs
+                                    for print and digital media.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image5.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">10 Weeks</button>
+                                    <button class="btn-badge py-2">Intermediate</button></span>
+                                <span>By Michael Adams</span>
+                            </div>
+                            <h4>Front-End Web Development</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and
+                                    popular frameworks like Bootstrap and React. Build interactive and responsive
                                     websites.
                                 </p>
                             </span>
@@ -244,17 +263,17 @@
                     </div>
                     <div class="col-lg-6 col-12">
                         <div class="card-number h-100 p-3">
-                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <img class="img-fluid w-100" src="assets/imgs/Image6.png" alt="Our Course image">
                             <div class="d-flex justify-content-between align-items-center my-4"><span><button
-                                        class="btn-badge py-2 me-2">4 Weeks</button>
-                                    <button class="btn-badge py-2">Beginner</button></span>
-                                <span>By John Smith</span>
+                                        class="btn-badge py-2 me-2">6 Weeks</button>
+                                    <button class="btn-badge py-2">Advance</button></span>
+                                <span>By Jennifer Wilson</span>
                             </div>
-                            <h4>Web Design Fundamentals</h4>
+                            <h4>Advanced JavaScript</h4>
                             <span class="d-flex justify-content-between align-items-start fw-light">
-                                <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
-                                    principles. Develop the skills to create visually appealing and user-friendly
-                                    websites.
+                                <p>Take your JavaScript skills to the next level. Explore advanced concepts like
+                                    closures, prototypes, asynchronous programming, and ES6 features. Build complex
+                                    applications with confidence.
                                 </p>
                             </span>
                             <button class="btn btn-get-it border w-100 py-3">Get it Now</button>
@@ -706,11 +725,11 @@
                     <div class="contact-info d-flex flex-column gap-3">
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-envelope"></i>
-                            <a href="#" class="footer-link fw-light">info@qlearn.com</a>
+                            <a href="mailto:info@qlearn.com" class="footer-link fw-light">info@qlearn.com</a>
                         </div>
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-phone"></i>
-                            <a href="#" class="footer-link fw-light">+963 955 000 000</a>
+                            <a href="tel:+963 955 000 000" class="footer-link fw-light">+963 955 000 000</a>
                         </div>
                         <div class="d-flex align-items-center gap-2">
                             <i class="fa-solid fa-location-dot"></i>
@@ -734,9 +753,10 @@
                 <div class="col-lg-3 col-md-4 col-12 d-flex flex-column gap-3">
                     <h6 class="footer-heading">Social Profiles</h6>
                     <div class="d-flex gap-3">
-                        <a href="#" class="social-box border"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="social-box border"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="social-box border"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="fb://profile/6815841748" class="social-box border"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="twitter://813286" class="social-box border"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="linkedin.com" class="social-box border"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

@@ -232,46 +232,34 @@ input:checked+.custom-slider:before {
 }
 
 /* video Player */
-.video-card {
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.4s;
+.video-overlay{
+cursor: pointer; 
+background: rgba(0, 0, 0, 0.128);
 }
 
-.video-card:hover {
-    transform: scale(1.01);
-    transition: all 0.4s;
+.video-overlay:hover .custom-play-btn {
+  transform: scale(1.08);
+  background-color: rgba(255, 255, 255, 0.27) !important;
 }
 
-.video-card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0000003c;
+.hide-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-.video-img {
-    max-height: 550px;
-    object-fit: cover;
+.custom-play-btn{
+width: 65px; 
+height: 65px; 
+background-color: rgba(255, 255, 255, 0.202); 
+border: 3px solid rgba(255, 255, 255, 0.17); 
+transition: all 0.2s ease;
 }
 
 .fa-play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    width: 70px;
-    height: 70px;
-    background-color: #ffffff34;
-    border-radius: 50%;
-    color: #fff;
-    border: 4px solid #ffffff4d;
+   font-size: 30px;
+    color: #ffffff; 
+    margin-left: 4px;
 }
 
 /* Benefits */

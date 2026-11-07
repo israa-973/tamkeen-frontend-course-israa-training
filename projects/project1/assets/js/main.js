@@ -138,3 +138,27 @@ const swiper = new Swiper('.swiper', {
 },
       });
 
+
+
+function playNativeVideo() {
+  var video = document.getElementById("myVideo");
+  var overlay = document.querySelector(".video-overlay");
+
+  // تشغيل الفيديو
+  video.play();
+
+  // إخفاء طبقة زر التشغيل (الكلاس موجود في CSS باسم hide-overlay)
+  overlay.classList.add("hide-overlay");
+}
+
+var myVideo = document.getElementById("myVideo");
+var videoOverlay = document.querySelector(".video-overlay");
+
+// عند انتهاء الفيديو: إظهار زر التشغيل مرة أخرى والعودة لصورة الغلاف
+myVideo.addEventListener("ended", function () {
+  videoOverlay.classList.remove("hide-overlay");
+  myVideo.load();
+});
+
+
+
