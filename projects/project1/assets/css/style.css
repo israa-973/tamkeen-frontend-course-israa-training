@@ -336,46 +336,156 @@ input:checked+.custom-slider:before {
 
 /* Our Pricing */
 
-.our-pricing-section .btn-group{
+.our-pricing-section .btn-group {
     background-color: var(--light);
 }
 
-.our-pricing-section .btn-yearly:hover{
+.our-pricing-section .btn-yearly:hover {
     background-color: var(--bg-dark);
 }
 
-.our-pricing-section .our-plans{
-background-color: var(--page-bg);
+.our-pricing-section .our-plans {
+    background-color: var(--page-bg);
 }
 
-.our-pricing-section .plan-badge{
+.our-pricing-section .plan-badge {
     background-color: #fed69949;
     border: 1px solid #FFF9F0;
     color: #000;
 }
 
-.feature-icon{
+.feature-icon {
     background-color: #6258e877;
     padding: 2px;
     border-radius: 4px;
 }
 
-.btn-get-started{
-    border-radius:0px 0px 8px 8px ;
+.btn-get-started {
+    border-radius: 0px 0px 8px 8px;
 }
 
-.features-inner{
-    border-radius:  8px 8px 0 0;
+.features-inner {
+    border-radius: 8px 8px 0 0;
     background-color: var(--bg-card);
-    border: 1px solid var(--line-color);  
+    border: 1px solid var(--line-color);
 }
 
-.our-pricing-section .card-number{
+.card-container {
+    border-radius: 12px;
+    padding: 50px;
+    background-color: var(--bg-card);
     border: none;
     box-shadow: 0 0 20px 0px #8b8b8b1c;
 }
 
 
+
+/* FAQ */
+.support-link {
+    color: var(--page-text);
+}
+
+.support-link:hover {
+    color: var(--col-primary);
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.faq-icon-box {
+    background-color: #6258e877;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.enrollment-process {
+    background-color: var(--nav-bg);
+    color: var(--page-text);
+}
+
+.enrollment-process i {
+    background-color: var(--bg-card);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-icon-box i {
+    padding: 8px;
+    font-size: 12px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg-dark);
+    color: var(--page-text);
+    margin-bottom: 20px;
+}
+
+.accordion-button:not(.collapsed) .fa-plus {
+    rotate: calc(45deg);
+}
+
+.accordion-button {
+    text-wrap: wrap;
+    line-height: 26px;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--bg-card);
+}
+
+.logo-box {
+    background-color: var(--col-primary);
+    width: 43px;
+    height: 43px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--muted-text);
+}
+
+.footer-link:hover {
+    color: #9799fa;
+
+}
+
+.copyright-text {
+    color: var(--muted-text);
+}
+
+.social-box {
+    background-color: var(--surface-bg);
+    width: 43px;
+    height: 43px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.social-box:hover {
+    box-shadow: 0 0 10px 2px #36378e63;
+    transform: translatey(-2px);
+    transition: all 0.3s;
+}
+
+.social-box i {
+    color: var(--page-text);
+    font-size: 20px;
+}
 
 
 /* media */
@@ -403,5 +513,9 @@ background-color: var(--page-bg);
 
     .number {
         font-size: 40px;
+    }
+
+    .enrollment-process {
+        font-size: 15px;
     }
 }
