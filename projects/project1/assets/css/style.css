@@ -488,7 +488,9 @@ footer {
     font-size: 20px;
 }
 
-.border-e{
+/* courses-page */
+
+.courses-page-section .border-e{
     border-right:1px solid var(--bg-light) ;
 }
 
@@ -533,7 +535,7 @@ footer {
 /* media */
 @media (max-width: 765px) {
 
-.border-e{
+.courses-page-section .border-e{
     border-right:none ;
 }
 }
