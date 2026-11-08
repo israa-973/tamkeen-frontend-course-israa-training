@@ -488,6 +488,10 @@ footer {
     font-size: 20px;
 }
 
+.border-e{
+    border-right:1px solid var(--bg-light) ;
+}
+
 
 /* media */
 @media (max-width: 991px) {
@@ -519,4 +523,17 @@ footer {
     .enrollment-process {
         font-size: 15px;
     }
+
+    .middle-e{
+        border: none;
+    }
+}
+
+
+/* media */
+@media (max-width: 765px) {
+
+.border-e{
+    border-right:none ;
+}
 }
