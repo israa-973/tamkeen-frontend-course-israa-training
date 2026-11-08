@@ -111,10 +111,10 @@ if (cardsBenefits) {
     cardsData.forEach(item => {
         cardsBenefits.innerHTML += `
     <div class="col-lg-4 col-md-6 col-12"><div class="card-number h-100 p-lg-4 p-3">
-<h2 class="number text-end fw-bold">${item.number[lang]}</h2>
+<h2 class="number direction fw-bold">${item.number[lang]}</h2>
 <p class="fw-bold">${item.title[lang]}</p>
 <p>${item.desc[lang]}</p>
-<div class="text-end"><a class="benefit-link rounded" href="#"><i class="fa-solid fa-arrow-right"></i></a></div>
+<div class="direction"><a class="benefit-link rounded" href="#"><i class="fa-solid fa-arrow-right"></i></a></div>
     </div></div>
     `;
     });
@@ -123,41 +123,35 @@ if (cardsBenefits) {
 
 
 const swiper = new Swiper('.swiper', {
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-                1400: {
-                    slidesPerView: 2,
-        grid: {
-          rows: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        1400: {
+            slidesPerView: 2,
+            grid: {
+                rows: 1,
+            },
         },
     },
-},
-      });
+});
 
 
 
 function playNativeVideo() {
-  var video = document.getElementById("myVideo");
-  var overlay = document.querySelector(".video-overlay");
-
-  // تشغيل الفيديو
-  video.play();
-
-  // إخفاء طبقة زر التشغيل (الكلاس موجود في CSS باسم hide-overlay)
-  overlay.classList.add("hide-overlay");
+    var video = document.getElementById("myVideo");
+    var overlay = document.querySelector(".video-overlay");
+    video.play();
+    overlay.classList.add("hide-overlay");
 }
-
 var myVideo = document.getElementById("myVideo");
 var videoOverlay = document.querySelector(".video-overlay");
 
-// عند انتهاء الفيديو: إظهار زر التشغيل مرة أخرى والعودة لصورة الغلاف
 myVideo.addEventListener("ended", function () {
-  videoOverlay.classList.remove("hide-overlay");
-  myVideo.load();
+    videoOverlay.classList.remove("hide-overlay");
+    myVideo.load();
 });
 
 

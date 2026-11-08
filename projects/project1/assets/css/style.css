@@ -81,8 +81,9 @@ body[data-bs-theme="light"] {
 
 
 /* navbar */
+
 .navbar-brand img {
-    width: 140px;
+    width: 120px;
     height: 50px;
 }
 
@@ -102,6 +103,10 @@ body[data-bs-theme="light"] {
 
 .nav-link:hover {
     background-color: var(--bg-light);
+}
+
+.dropdown-toggle::after {
+    margin-left: 4px;
 }
 
 .btn-main {
@@ -232,33 +237,33 @@ input:checked+.custom-slider:before {
 }
 
 /* video Player */
-.video-overlay{
-cursor: pointer; 
-background: rgba(0, 0, 0, 0.128);
+.video-overlay {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.128);
 }
 
 .video-overlay:hover .custom-play-btn {
-  transform: scale(1.08);
-  background-color: rgba(255, 255, 255, 0.27) !important;
+    transform: scale(1.08);
+    background-color: rgba(255, 255, 255, 0.27) !important;
 }
 
 .hide-overlay {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
-.custom-play-btn{
-width: 65px; 
-height: 65px; 
-background-color: rgba(255, 255, 255, 0.202); 
-border: 3px solid rgba(255, 255, 255, 0.17); 
-transition: all 0.2s ease;
+.custom-play-btn {
+    width: 65px;
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0.202);
+    border: 3px solid rgba(255, 255, 255, 0.17);
+    transition: all 0.2s ease;
 }
 
 .fa-play {
-   font-size: 30px;
-    color: #ffffff; 
+    font-size: 30px;
+    color: #ffffff;
     margin-left: 4px;
 }
 
@@ -285,6 +290,10 @@ transition: all 0.2s ease;
     padding: 10px;
     color: var(--col-primary);
     rotate: calc(-45deg);
+}
+
+.benefits-section .direction {
+    text-align: right;
 }
 
 
@@ -346,6 +355,10 @@ transition: all 0.2s ease;
     background-color: #6258e877;
     padding: 2px;
     border-radius: 4px;
+}
+
+.feature-icon {
+    font-size: 20px;
 }
 
 .btn-get-started {

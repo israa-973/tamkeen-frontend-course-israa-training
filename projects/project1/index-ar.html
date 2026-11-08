@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEARN</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -29,17 +29,743 @@
 
     <!-- header -->
     <header>
-
+        <!-- navbar -->
+        <div class="container-fluid pos-f top-0 bg-nav">
+            <div class="promo-bar text-center p-lg-3 p-2 m-lg-3 m-2 mb-lg-0 mb-0 rounded fs-lg-5 fs-6 text-white">
+                <a href="" class="text-white">دورات مجانية 🌟 ينتهي العرض قريباً، احصل عليها الآن<i
+                        class="fa-solid fa-arrow-left me-2"></i></a>
+            </div>
+            <nav class="navbar pb-0 pb-lg-2 navbar-expand-lg border-bottom" id="my-nav">
+                <div class="container-lg">
+                    <a class="navbar-brand p-0 mx-0 mx-xl-3" href="index.html"><img src="assets/imgs/Logo.svg"
+                            alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav p-0 gap-lg-2">
+                            <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">الدورات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">الأسعار</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-top d-flex align-items-between">
+                        <div class="d-flex align-items-center">
+                            <!-- custom-switch -->
+                            <div class="theme-switch-container">
+                                <label class="custom-switch" for="darkModeToggleNav">
+                                    <input type="checkbox" id="darkModeToggleNav">
+                                    <span class="custom-slider d-flex justify-content-between align-items-center w-100">
+                                        <i class="bi bi-sun-fill switch-icon sun-icon"></i>
+                                        <i class="bi bi-moon-stars-fill switch-icon moon-icon"></i>
+                                    </span>
+                                </label>
+                            </div>
+                            <!-- choosing-language -->
+                            <div class="dropdown choosing-language">
+                                <button class="btn btn-sm btn-outline-secondary fw-bold dropdown-toggle mx-lg-4 mx-2"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-globe fs-4"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="index.html">English</a></li>
+                                    <li><a class="dropdown-item" href="index-ar.html">العربية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- main-btns -->
+                        <div class="d-flex align-items-center justify-content-center gap-lg-2 gap-2">
+                            <a href="#" class="text-body fw-medium">تسجيل جديد</a>
+                            <a href="#" class="btn btn-main btn-login px-lg-3 px-2 text-white">تسجيل الدخول</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- main -->
-    <main>
+    <main class="py-5">
+        <!-- Hero Section -->
+        <section class="hero-section py-5 mt-5">
+            <div class="container text-center my-5">
+                <div class="hero-badge d-flex align-items-center justify-content-center p-2 p-lg-3 rounded my-4">
+                    <span class="d-flex align-items-center justify-content-center rounded me-2 text-white badge-bolt"><i
+                            class="fa-solid fa-bolt fs-lg-4 fs-5"></i></span>
+                    <h1 class="m-0 fw-bold h2 h1-lg"><span class="text-purple fw-bold h2 h1-lg">أطلق</span> العنان
+                        لإمكانياتك الإبداعية</h1>
+                </div>
+                <h2 class="fw-bold mb-3 fs-lg-3 fs-4">مع دورات التصميم والتطوير عبر الإنترنت.</h2>
+                <p class="mb-4 lead fs-lg-5 fs-6"> تعلّم على يد خبراء المجال وعزز مهاراتك.</p>
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-5">
+                    <a href="#" class="btn btn-main px-4">استكشف الدورات</a>
+                    <a href="#" class="btn btn-outline px-4">عرض الأسعار</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="bg-body-tertiary border rounded-4 p-4 shadow-sm">
+                    <div class="row align-items-center justify-content-between text-center py-lg-2 py-lg-3 g-lg-4 g-3">
+                        <div class="col border-end"><img class="img-brand rounded px-3 py-lg-2 py-1"
+                                src="assets/imgs/Logo1.png" alt="logo zapier"></div>
+                        <div class="col border-end"><img class="img-brand rounded px-3 px-lg-3 py-lg-2 py-1"
+                                src="assets/imgs/Logo2.png" alt="logo spotify"></div>
+                        <div class="col border-end"><img class="img-brand rounded px-3 py-lg-2 py-1"
+                                src="assets/imgs/Logo3.png" alt="logo zoom"></div>
+                        <div class="col border-end"><img class="img-brand rounded px-3 py-lg-2 py-1"
+                                src="assets/imgs/Logo4.png" alt="logo amazon"></div>
+                        <div class="col border-end"><img class="img-brand rounded px-3 py-lg-2 py-1"
+                                src="assets/imgs/Logo5.png" alt="logo adobe"></div>
+                        <div class="col border-end"><img class="img-brand rounded px-3 py-lg-2 py-1"
+                                src="assets/imgs/Logo6.png" alt="logo notion"></div>
+                        <div class="col "><img class="img-brand rounded px-3 py-lg-2 py-1" src="assets/imgs/Logo7.png"
+                                alt="logo netflix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- video Player -->
+        <section class="video-player-section mb-5">
+            <div class="container">
+                <div class="video-container video-wrapper pos-r overflow-hidden rounded">
+                    <video id="myVideo" poster="assets/imgs/Container.png" class="w-100 d-block" controls>
+                        <source src="assets/imgs/7706637-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <div class="video-overlay pos-a top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                        onclick="playNativeVideo()">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center custom-play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>الميزات</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p><button class="btn btn-outline px-3 py-1 py-lg-2">عرض الكل</button>
+                    </span>
+                </div>
+                <div class="row justify-content-between g-3" id="cardsBenefits">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Courses -->
+        <section class="our-courses-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>دوراتنا</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p><button class="btn btn-outline px-3 py-1 py-lg-2">View All</button>
+                    </span>
+                </div>
+                <div class="row justify-content-between g-3">
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-lg-4 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">4 أسابيع</button>
+                                    <button class="btn-badge py-2">مبتدئ</button></span>
+                                <span>تقديم: جون سميث</span>
+                            </div>
+                            <h4>أساسيات تصميم المواقع</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>تعلّم أساسيات تصميم الويب، بما في ذلك HTML وCSS ومبادئ التصميم المتجاوب. طوّر
+                                    المهارات اللازمة لإنشاء مواقع إلكترونية جذابة بصرياً وسهلة الاستخدام.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">احصل عليها الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image2.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">6 أسابيع</button>
+                                    <button class="btn-badge py-2">متوسط</button></span>
+                                <span>تقديم: إميلي جونسون</span>
+                            </div>
+                            <h4>تصميم واجهات وتجربة المستخدم (UI/UX)</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>أتقن فن إنشاء واجهات مستخدم بديهية (UI) وتحسين تجارب المستخدم (UX). تعلّم مبادئ
+                                    التصميم، التخطيط الهيكلي (Wireframing)، بناء النماذج الأولية (Prototyping)، وتقنيات
+                                    اختبار قابليتها للاستخدام.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">احصل عليها الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-lg-4 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image3.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">8 أسابيع</button>
+                                    <button class="btn-badge py-2">متوسط</button></span>
+                                <span>بواسطة: ديفيد برون</span>
+                            </div>
+                            <h4>تطوير تطبيقات الهاتف المحمول</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p> اغطس في عالم تطوير تطبيقات الهاتف المحمول. تعلّم بناء تطبيقات iOS وأندرويد أصلية
+                                    باستخدام أطر عمل رائدة في الصناعة مثل سويفت وكوتلين.
+
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">احصل عليها الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image4.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">10 أسابيع</button>
+                                    <button class="btn-badge py-2">مبتدئ</button></span>
+                                <span>بواسطة: سارة تومبسون </span>
+                            </div>
+                            <h4>التصميم الجرافيكي للمبتدئين</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p> اكتشف أساسيات التصميم الجرافيكي، بما في ذلك فن اختيار الخطوط، نظرية الألوان، تصميم
+                                    التنسيقات، وتقنيات معالجة الصور. أنشئ تصميمات مذهلة للمطبوعات والوسائط الرقمية.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">احصل عليها الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image5.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">10 أسابيع</button>
+                                    <button class="btn-badge py-2">متوسط</button></span>
+                                <span>بواسطة: ميشيل ادم</span>
+                            </div>
+                            <h4> تطوير واجهات الويب (Front-End)</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>كُن محترفاً في تطوير واجهات الويب الأمامية. تعلّم HTML وCSS وJavaScript وأشهر أطر
+                                    العمل مثل Bootstrap وReact لبناء مواقع تفاعلية بالكامل.
+
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">احصل عليها الآن</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-3">
+                            <img class="img-fluid w-100" src="assets/imgs/Image6.png" alt="Our Course image">
+                            <div class="d-flex justify-content-between align-items-center my-4"><span><button
+                                        class="btn-badge py-2 me-2">6 أسابيع</button>
+                                    <button class="btn-badge py-2">متقدم</button></span>
+                                <span>بواسطة: جينيفير ويلسون</span>
+                            </div>
+                            <h4> لغة جافا سكريبت المتقدمة</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>ارتقِ بمهاراتك في JavaScript إلى المستوى التالي. استكشف المفاهيم المتقدمة مثل
+                                    الإغلاقات (Closures)، النماذج الأولية، البرمجة غير المتزامنة، وميزات ES6 لتَبني
+                                    تطبيقات معقدة بكل ثقة.
+                                </p>
+                            </span>
+                            <button class="btn btn-get-it border w-100 py-3">احصل عليها الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Testimonials -->
+        <section class="our-testimonials-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2> آراء طلابنا</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p><button class="btn btn-outline px-3 py-1 py-lg-2">View All</button>
+                    </span>
+                </div>
+                <div class="swiper testimonial-swiper py-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "وفرت لي دورة تصميم الويب أساساً متيناً للانطلاق. كان المحاضرون على دراية
+                                            واسعة ومستعدين للدعم دائماً، كما أن البيئة التعليمية التفاعلية كانت محفزة
+                                            للغاية. أنصح بها بشدة!"
+
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile1.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>سارة ل.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "تجاوزت دورة تصميم UI/UX توقعاتي بكثير. ساعدتني خبرة المحاضر والتكليفات
+                                            العملية في تطوير مهاراتي التصميمية بشكل ملموس. أشعر الآن بثقة أكبر في مسيرتي
+                                            المهنية، شكراً لكم!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile2.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>جيسون م.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border"> اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "وفرت لي دورة تصميم الويب أساساً متيناً للانطلاق. كان المحاضرون على دراية
+                                            واسعة ومستعدين للدعم دائماً، كما أن البيئة التعليمية التفاعلية كانت محفزة
+                                            للغاية. أنصح بها بشدة!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile3.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>نور ت.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "تجاوزت دورة تصميم UI/UX توقعاتي بكثير. ساعدتني خبرة المحاضر والتكليفات
+                                            العملية في تطوير مهاراتي التصميمية بشكل ملموس. أشعر الآن بثقة أكبر في مسيرتي
+                                            المهنية، شكراً لكم!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile4.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>ميشيل ك.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "وفرت لي دورة تصميم الويب أساساً متيناً للانطلاق. كان المحاضرون على دراية
+                                            واسعة ومستعدين للدعم دائماً، كما أن البيئة التعليمية التفاعلية كانت محفزة
+                                            للغاية. أنصح بها بشدة!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile1.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>سارة ل.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "تجاوزت دورة تصميم UI/UX توقعاتي بكثير. ساعدتني خبرة المحاضر والتكليفات
+                                            العملية في تطوير مهاراتي التصميمية بشكل ملموس. أشعر الآن بثقة أكبر في مسيرتي
+                                            المهنية، شكراً لكم!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile2.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>جاسون م.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-between g-4">
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "وفرت لي دورة تصميم الويب أساساً متيناً للانطلاق. كان المحاضرون على دراية
+                                            واسعة ومستعدين للدعم دائماً، كما أن البيئة التعليمية التفاعلية كانت محفزة
+                                            للغاية. أنصح بها بشدة!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile3.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>إيميلي م.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-number h-100 p-0">
+                                        <p class="mb-0 p-lg-4 p-3">
+                                            "تجاوزت دورة تصميم UI/UX توقعاتي بكثير. ساعدتني خبرة المحاضر والتكليفات
+                                            العملية في تطوير مهاراتي التصميمية بشكل ملموس. أشعر الآن بثقة أكبر في مسيرتي
+                                            المهنية، شكراً لكم!"
+                                        </p>
+                                        <div class="border-top"></div>
+                                        <div class="d-flex justify-content-between align-items-center p-lg-4 p-3">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="assets/imgs/profile4.png" alt="Sarah L"
+                                                    class="testimonial-avatar">
+                                                <strong>ميشيل ك.</strong>
+                                            </div>
+                                            <button class="btn btn-get-it border">
+                                                اقرأ القصة الكاملة
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Pricing -->
+        <section class="our-pricing-section mb-5">
+            <div class="container">
+                <div class="title-section my-5">
+                    <h2>أسعارنا</h2>
+                    <span class="d-flex justify-content-between align-items-start flex-lg-row flex-column">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                            senectus in.</p>
+                        <div class="btn-group p-2" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-main rounded">شهرياً</button>
+                            <button type="button" class="btn btn-yearly rounded ms-2">سنوياً</button>
+                        </div>
+                    </span>
+                </div>
+                <div class=" my-5">
+                    <div class="row justify-content-between g-3 card-container">
+                        <div class="col-lg-6 col-12">
+                            <div class="our-plans rounded border p-lg-4 p-3">
+                                <div class="plan-badge p-2 rounded text-center">مجانية</div>
+                                <div class="plan-price text-center">
+                                    <span class="number">$0</span><span class="period">/شهرياً</span>
+                                </div>
+                                <div class="features-box">
+                                    <div class="features-inner p-lg-5 p-4">
+                                        <h5 class="features-title text-center pb-lg-4 pb-3">الميزات المتاحة</h5>
+
+                                        <ul class="m-0 p-0">
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>الوصول إلى دورات مجانية مختارة.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>مواد ومصادر دورة محدودة.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>دعم مجتمعي أساسي.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>لا توجد شهادة عند الإتمام.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon py-0 me-2"><i class="bi bi-check"></i></span>
+                                                <span>منصة مدعومة بالإعلانات.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon bg-light border py-0 text-dark me-2"><i
+                                                        class="bi bi-x"></i></span>
+                                                <span>الوصول إلى منتدى مجتمع خطة برو الحصري.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon bg-light border py-0 text-dark me-2"><i
+                                                        class="bi bi-x"></i></span>
+                                                <span>الوصول المبكر إلى الدورات الجديدة والتحديثات.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-get-started w-100 btn-main">ابدأ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="our-plans rounded border p-lg-4 p-3">
+                                <div class="plan-badge p-2 rounded text-center">خطة برو</div>
+                                <div class="plan-price text-center">
+                                    <span class="number">$79</span><span class="period">/شهرياً</span>
+                                </div>
+                                <div class="features-box">
+                                    <div class="features-inner p-lg-5 p-4">
+                                        <h5 class="features-title text-center pb-lg-4 pb-3">الميزات المتاحة</h5>
+                                        <ul class="m-0 p-0">
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-check"></i></span>
+                                                <span>وصول غير محدود إلى جميع الدورات.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-check"></i></span>
+                                                <span> مواد ومصادر دورة غير محدودة.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-check"></i></span>
+                                                <span>دعم ذو أولوية من المعلمين.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-check"></i></span>
+                                                <span>شهادات إتمام الدورة.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-check"></i></span>
+                                                <span>تجربة خالية من الإعلانات.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-x"></i></span>
+                                                <span>الوصول إلى منتدى مجتمع خطة برو الحصري.</span>
+                                            </li>
+                                            <li class="feature-item border my-2 p-2 rounded fw-light">
+                                                <span class="feature-icon me-2"><i class="bi bi-x"></i></span>
+                                                <span>الوصول المبكر إلى الدورات الجديدة والتحديثات.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-get-started w-100 btn-main">ابدأ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section mb-5">
+            <div class="container card-container my-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-12">
+                        <h2 class="fw-bold mb-3">الأسئلة الشائعة المتكررة</h2>
+                        <p class="mb-4">
+                            هل ما زال لديك أي أسئلة؟ اتصل بفريقنا عبر <a href="#"
+                                class="support-link">support@skillbridge.com</a>
+                        </p>
+                        <a href="#" class="btn-outline px-3 py-1 py-lg-2 rounded">رؤية جميع الأسئلة الشائعة</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        <span>هل يمكنني الالتحاق بدورات متعددة في وقت واحد؟</span>
+                                        <div class="faq-icon-box ms-3">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted pt-0 px-4 pb-4">
+                                        قطعا! يمكنك الالتحاق بدورات متعددة في وقت واحد والوصول إليها حسب ما يناسبك.
+                                        <a href="#"
+                                            class="mt-4 p-3 border rounded d-flex justify-content-between align-items-center enrollment-process">
+                                            <span>عملية الالتحاق للدورات المختلفة</span>
+                                            <i class="fa-solid fa-arrow-left mx-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        <span>ما نوع الدعم الذي يمكنني توقعه من المعلمين؟</span>
+                                        <div class="faq-icon-box ms-3">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted pt-0 px-4 pb-4">
+
+                                        للتفاصيل عن دعم المدربين اضغط هنا
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        <span>هل الدورات ذاتية الخطى أم أن لها تواريخ بدء وانتهاء محددة؟</span>
+                                        <div class="faq-icon-box ms-3">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted pt-0 px-4 pb-4">
+
+                                        للتفاصيل عن أسعار الكورسات اضغط هنا
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion mb-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        <span>هل هناك أي متطلبات سابقة للدورات؟</span>
+                                        <div class="faq-icon-box ms-3">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted pt-0 px-4 pb-4">
+
+                                        للتفاصيل عن المتطلبات السابقة اضغط هنا
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        <span>هل يمكنني تنزيل مواد الدورة للوصول دون اتصال بالإنترنت؟</span>
+                                        <div class="faq-icon-box ms-3">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted pt-0 px-4 pb-4">
+                                        للتفاصيل عن تحميل المادة العلمية اضغط هنا
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-lg-5 col-md-12">
+                    <div class="mb-4">
+                        <div class="logo-box">
+                            <img src="assets/imgs/reflect-svgrepo-com 1.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="contact-info d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:info@qlearn.com" class="footer-link fw-light">info@qlearn.com</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+963 955 000 000" class="footer-link fw-light">+963 955 000 000</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#" class="footer-link fw-light">موقعنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex flex-column gap-3">
+                    <h6 class="footer-heading">الرئيسية</h6>
+                    <a href="#" class="footer-link fw-light">الميزات</a>
+                    <a href="#" class="footer-link fw-light">دوراتنا</a>
+                    <a href="#" class="footer-link fw-light">آراء طلابنا</a>
+                    <a href="#" class="footer-link fw-light">الأسئلة الشائعة</a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex flex-column gap-3">
+                    <h6 class="footer-heading">من نحن</h6>
+                    <a href="#" class="footer-link fw-light">الشركة</a>
+                    <a href="#" class="footer-link fw-light">الإنجازات</a>
+                    <a href="#" class="footer-link fw-light">أهدافنا ورؤيتن</a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 d-flex flex-column gap-3">
+                    <h6 class="footer-heading">منصات التواصل الاجتماعي</h6>
+                    <div class="d-flex gap-3">
+                        <a href="fb://profile/6815841748" class="social-box border"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="twitter://813286" class="social-box border"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="linkedin.com" class="social-box border"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top pt-4 text-center">
+                <p class="copyright-text py-4 fs-5 mb-0 fw-light">© 2026 Qlearn. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
     </footer>
 
     <!-- scripts -->

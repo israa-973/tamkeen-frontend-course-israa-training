@@ -1,0 +1,38 @@
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: "zain";
+}
+
+.me-2{
+    margin-right:inherit ;
+    margin-left:10px ;
+}
+
+.ms-2{
+    margin-right:10px ;
+    margin-left:inherit ;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
+.benefits-section .direction{
+    text-align: left;
+}
+
+.feature-icon{
+    width: 10px;
+    height: 10px;
+}
+
+.feature-icon i::before{ 
+width: fit-content;
+height: fit-content ;
+font-size: 20px;
+} 
+
