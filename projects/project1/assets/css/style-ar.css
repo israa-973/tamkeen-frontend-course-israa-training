@@ -25,14 +25,7 @@ body {
     text-align: left;
 }
 
-.feature-icon{
-    width: 10px;
-    height: 10px;
+.background-shape{
+    background-position:left ;
 }
-
-.feature-icon i::before{ 
-width: fit-content;
-height: fit-content ;
-font-size: 20px;
-} 
 
