@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form id="my-search">
+    <div>
+      <label for="my-name">name</label>
+      <input type="text" id="my-name">
+    </div>
+    <div>
+      <label for="my-age">age</label>
+      <input type="number" id="my-age">
+    </div>
+    <button type="submit">send</button>
+  </form>
+
+  <div id="content">مرحبا</div>
+
+  <script>
+    let mySearch = document.querySelector('#my-search');
+    let myName = document.querySelector('#my-name');
+    let myAge = document.querySelector('#my-age');
+    let content = document.querySelector('#content');
+
+    content.innerHTML = `<h1>${xhr.responseText}</h1>`;
+
+    mySearch.addEventListener('submit', function (e) {
+      e.preventDefault();
+      console.log(myName.value)
+      console.log(myAge.value)
+
+
+      
+
+
+      let xhr = new XMLHttpRequest();
+
+      
+      
+      xhr.open('GET', 'https://tamkeen-dev.com/simple-api/api_get.php?name=${myName.value}&age=${myAge.value}');
+
+      xhr.send();
+
+      
+    });
+  </script>
+
+</body>
+</html>
+
