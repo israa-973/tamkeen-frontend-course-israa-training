@@ -365,6 +365,8 @@ input:checked+.custom-slider:before {
     background-color: var(--light);
 }
 
+
+
 .our-pricing-section .btn-yearly:hover {
     background-color: var(--bg-dark);
 }
@@ -655,48 +657,6 @@ footer {
     left: auto !important;
 }
 
-
-
-/* contact */
-.main-contact-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-}
-
-.info-card {
-    background: #fcfcfd;
-    border: 1px solid #f1f1f3;
-    border-radius: 8px;
-    padding: 24px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.icon-box {
-    background: #f1f1f3;
-    width: 44px;
-    height: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    margin-bottom: 14px;
-}
-
-.btn-purple {
-    background-color: #5c60f5;
-    color: white;
-    padding: 12px 24px;
-    font-weight: 500;
-}
-
-.btn-purple:hover {
-    background-color: #4b4edb;
-    color: white;
-}
-
 .hr-middle::after {
     content: "";
     position: absolute;
@@ -719,6 +679,33 @@ footer {
     width: 20px;
     height: 20px;
 }
+
+
+
+/* contact */
+
+
+.icon-box i{
+    background: none;
+}
+
+.main-contact-card .btn-purple{
+    width: fit-content;
+}
+
+.btn-purple {
+    background-color: #5c60f5;
+    color: white;
+    padding: 12px 24px;
+    font-weight: 500;
+}
+
+.btn-purple:hover {
+    background-color: #4b4edb;
+    color: white;
+}
+
+
 
 
 
@@ -774,4 +761,7 @@ footer {
     .courses-page-section .border-e {
         border-right: none;
     }
+    .main-contact-card .btn-purple{
+    width: 100%;
+}
 }

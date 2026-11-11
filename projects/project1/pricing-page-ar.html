@@ -78,8 +78,8 @@
                         </div>
                         <!-- main-btns -->
                         <div class="d-flex align-items-center justify-content-center gap-lg-2 gap-2">
-                            <a href="#" class="fw-medium sign-up-btn">تسجيل جديد</a>
-                            <a href="#" class="btn btn-main btn-login px-lg-3 px-2 text-white">تسجيل الدخول</a>
+                            <a href="signUp-ar.html" class="fw-medium sign-up-btn">تسجيل جديد</a>
+                            <a href="login-ar.html" class="btn btn-main btn-login px-lg-3 px-2 text-white">تسجيل الدخول</a>
                         </div>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
             <div class="container">
                         <div class=" d-flex justify-content-center">
                             <div class="btn-group p-2" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-main rounded">شهرياً</button>
-                            <button type="button" class="btn btn-yearly rounded ms-2">سنوياً</button>
+                                <button type="button" id="btnM" onclick="switchPlan('monthly')" class="btn btn-main rounded">شهرياً</button>
+                                <button type="button" id="btnY" onclick="switchPlan('yearly')" class="btn btn-yearly rounded ms-2">سنوياً</button>
                         </div>
                         </div>
                 <div class=" my-5">
@@ -235,9 +235,9 @@
                                     <div class="accordion-body text-muted pt-0 px-4 pb-4">
                                         بالتأكيد! يمكنك التسجيل في دورات متعددة في وقت واحد ومتابعتها بما يناسب راحتك ووقتك.
                                         <a href="#"
-                                            class="mt-4 p-3 border rounded d-flex justify-content-between align-items-center enrollment-process">
-                                            <span>عملية التسجيل للدورات المختلفة</span>
-                                            <i class="fa-solid fa-arrow-right mx-2"></i>
+                                            class="mt-4 p-3 text-muted border rounded d-flex justify-content-between align-items-center enrollment-process">
+                                            <span class="text-muted">عملية التسجيل للدورات المختلفة</span>
+                                            <i class="fa-solid fa-arrow-left mx-2"></i>
                                         </a>
                                     </div>
                                 </div>

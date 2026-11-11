@@ -6,14 +6,14 @@ body {
     font-family: "zain";
 }
 
-.me-2{
-    margin-right:inherit ;
-    margin-left:10px ;
+.me-2 {
+    margin-right: inherit;
+    margin-left: 10px;
 }
 
-.ms-2{
-    margin-right:10px ;
-    margin-left:inherit ;
+.ms-2 {
+    margin-right: 10px;
+    margin-left: inherit;
 }
 
 .dropdown-toggle::after {
@@ -21,11 +21,32 @@ body {
     margin-right: 4px;
 }
 
-.benefits-section .direction{
+.benefits-section .direction {
     text-align: left;
 }
 
-.background-shape{
-    background-position:left ;
+.background-shape {
+    background-position: left;
 }
 
+
+#loginPassword {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: 8px !important;
+    border-top-left-radius: unset;
+    border-top-right-radius: 8px !important;
+}
+
+#togglePassword {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+[type=email],
+[type=number],
+[type=tel],
+[type=url] {
+    direction: rtl;
+}

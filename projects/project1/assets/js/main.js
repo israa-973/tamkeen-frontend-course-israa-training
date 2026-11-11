@@ -149,10 +149,50 @@ function playNativeVideo() {
 var myVideo = document.getElementById("myVideo");
 var videoOverlay = document.querySelector(".video-overlay");
 
-myVideo.addEventListener("ended", function () {
-    videoOverlay.classList.remove("hide-overlay");
-    myVideo.load();
+if (myVideo) {
+    myVideo.addEventListener("ended", function () {
+        videoOverlay.classList.remove("hide-overlay");
+        myVideo.load();
+    });
+}
+
+
+
+let loginPassword = document.getElementById('loginPassword')
+let togglePassword = document.getElementById('togglePassword')
+
+togglePassword.addEventListener('click', () => {
+    // if (loginPassword.type ==='password'){
+    //     loginPassword.type = 'text';
+    //     togglePassword.className = 'fa-solid fa-eye-slash'
+    // } else {
+    //    loginPassword.type = 'password';
+    //     togglePassword.className = 'fa-solid fa-eye';
+    // }
+    
+    const isPassword = loginPassword.type === 'password';
+    loginPassword.type = isPassword ? 'text' : 'password';
+    const icon = document.querySelector('#eyeIcon');
+    console.log(icon);
+    if (icon) {
+        icon.classList.toggle('fa-eye-slash', !isPassword);
+        icon.classList.toggle('fa-eye', isPassword);
+    }
+
+
 });
 
+function switchPlan(type) {
+  const isYearly = type === 'yearly';
 
+  // تبديل كلاسات الأزرار
+  document.getElementById('btnM').className = isYearly ? 'btn btn-yearly rounded' : 'btn btn-main rounded';
+  document.getElementById('btnY').className = isYearly ? 'btn btn-main rounded ms-2' : 'btn btn-yearly rounded ms-2';
 
+  // تحديث السعر الثاني (Pro Plan) والفترات
+  document.querySelectorAll('.plan-price .number')[1].textContent = isYearly ? '$790' : '$79';
+  
+  document.querySelectorAll('.plan-price .period').forEach(el => {
+    el.textContent = isYearly ? '/year' : '/month';
+  });
+}
