@@ -185,14 +185,15 @@ togglePassword.addEventListener('click', () => {
 function switchPlan(type) {
   const isYearly = type === 'yearly';
 
-  // تبديل كلاسات الأزرار
-  document.getElementById('btnM').className = isYearly ? 'btn btn-yearly rounded' : 'btn btn-main rounded';
-  document.getElementById('btnY').className = isYearly ? 'btn btn-main rounded ms-2' : 'btn btn-yearly rounded ms-2';
+  document.getElementById('btnM').className = isYearly ? 'btn btn-seco rounded' : 'btn btn-main rounded';
+  document.getElementById('btnY').className = isYearly ? 'btn btn-main rounded ms-2' : 'btn btn-seco rounded ms-2';
 
-  // تحديث السعر الثاني (Pro Plan) والفترات
   document.querySelectorAll('.plan-price .number')[1].textContent = isYearly ? '$790' : '$79';
   
   document.querySelectorAll('.plan-price .period').forEach(el => {
     el.textContent = isYearly ? '/year' : '/month';
   });
 }
+
+
+
