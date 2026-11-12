@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+fetch("https://dummyjson.com/products")
+.then (function(res){
+    // console.log(res)
+    if(res.ok){
+        return res.json()
+    }
+    else {
+        throw new Error("حدث خطأ ما - الرجاء المحاولة لاحقا")
+    }
+})
+.then(function(data){
+    console.log(data)
+})
+.catch(function(err) {
+    console.log(err)
+});
+
+    </script>
+
+
+
+</body>
+</html>

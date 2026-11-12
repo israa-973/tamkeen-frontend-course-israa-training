@@ -706,6 +706,61 @@ footer {
 }
 
 
+.user-img{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-btn-bell{
+ background-color: var(--surface-bg);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*  */
+
+.progress-bar{
+    background-color: var(--col-primary);
+}
+
+.form-check-input:checked {
+    background-color: var(--col-primary);
+    border-color: var(--col-primary);
+
+}
+
+.form-check-input{
+    cursor: pointer;
+}
+    .form-check-inline {
+        display: block;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+.weekly-goal{
+    background-color: #4b4ddb48;
+}
+
+.goal-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    background-color: #4b4ddb4e;
+    border-radius: 50px;
+   
+}
 
 
 
@@ -764,4 +819,6 @@ footer {
     .main-contact-card .btn-purple{
     width: 100%;
 }
+
+
 }
