@@ -556,6 +556,14 @@ footer {
     transition: all 0.3s;
 }
 
+.courses-open-section .card-number:hover{
+    box-shadow: 0 0 10px 2px #FFD699;
+}
+
+.courses-open-section .card-number:hover button{
+    background-color: #FFEACC;
+}
+
 .courses-open-section .card-container:hover {
     box-shadow: 0 0 10px 2px #36378e63;
     transition: all 0.3s;
