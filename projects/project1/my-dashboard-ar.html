@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- style-ar.css -->
+    <link rel="stylesheet" href="assets/css/style-ar.css">
+</head>
+
+<!-- header -->
+<header>
+    <!-- main-btns -->
+    <div class="container-fluid pos-f top-0 bg-nav">
+        <div class="promo-bar text-center p-lg-3 p-2 m-lg-3 m-2 mb-lg-0 mb-0 rounded fs-lg-5 fs-6 text-white">
+            <a href="courses.html" class="text-white">دورات مجانية 🌟 ينتهي العرض قريباً، احصل عليها الآن</a><i
+                class="fa-solid fa-arrow-left ms-2"></i>
+        </div>
+        <nav class="navbar pb-0 pb-lg-2 navbar-expand-lg mx-lg-3 mx-2 border-bottom" id="my-nav">
+            <div class="container-lg">
+                <a class="navbar-brand p-0 mx-0 mx-xl-3" href="#"><img src="assets/imgs/Logo.svg" alt="الشعار"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="تبديل التنقل">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav p-0 gap-lg-4">
+                        <li class="nav-item"><a class="nav-link px-1 ms-2" href="index-ar.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link px-1" href="courses-ar.html">الدورات</a></li>
+                        <li class="nav-item"><a class="nav-link px-1" href="about-us-ar.html">من نحن</a></li>
+                        <li class="nav-item"><a class="nav-link px-1" href="pricing-page-ar.html">الأسعار</a></li>
+                        <li class="nav-item"><a class="nav-link px-1" href="contact-ar.html">تواصل معنا</a></li>
+                        <li class="nav-item"><a class="nav-link active px-1" href="my-dashboard-ar.html">لوحة التحكم</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-top d-flex align-items-between">
+                    <div class="d-flex align-items-center">
+                        <!-- navbar -->
+                        <div class="theme-switch-container">
+                            <label class="custom-switch" for="darkModeToggleNav">
+                                <input type="checkbox" id="darkModeToggleNav">
+                                <span class="custom-slider d-flex justify-content-between align-items-center w-100">
+                                    <i class="bi bi-sun-fill switch-icon sun-icon"></i>
+                                    <i class="bi bi-moon-stars-fill switch-icon moon-icon"></i>
+                                </span>
+                            </label>
+                        </div>
+                        <!-- custom-switch -->
+                        <div class="dropdown choosing-language">
+                            <button class="btn btn-sm btn-outline-secondary fw-bold dropdown-toggle mx-lg-3 mx-2"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-globe fs-4"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="my-dashboard.html">English</a></li>
+                                <li><a class="dropdown-item" href="my-dashboard-ar.html">العربية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- choosing-language -->
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="icon-btn-bell" type="button" aria-label="الإشعارات">
+                            <i class="fa-solid fa-bell fs-6"></i>
+                        </button>
+                        <div class="avatar " title="أليكس مورغان"><img class="rounded-5 w-100 user-img"
+                                src="assets/imgs/profile4.png" alt=""></div>
+                    </div>
+                </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+       <!-- Overview -->
+        <section class="pt-5 mt-5 ">
+            <div class="container mt-5 py-5">
+                <div class="mb-4">
+                    <p class="mb-2">لوحة تحكم الطالب</p>
+                    <h3 class="fw-bold mb-1">مرحباً بعودتك، أليكس</h3>
+                    <p>واصل التعلم، وتابع تقدمك، واستكشف دوراتك—كل ذلك في مكان واحد.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-6">
+                        <div class="card-number d-flex align-items-center gap-4 px-4 py-3 h-100">
+                            <i class="fa-solid fa-book-open goal-icon fs-4"></i>
+                            <div class="d-flex flex-column">
+                                <p>الدورات المسجل بها</p>
+                                <h4 class="lh-1">3 دورات</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card-number d-flex align-items-center gap-4 px-4 py-3 h-100">
+                            <i class="fa-solid fa-list-check goal-icon fs-4"></i>
+                            <div class="d-flex flex-column">
+                                <p>الدورات المكتملة</p>
+                                <h4 class="lh-1">دورة واحدة</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card-number d-flex align-items-center gap-4 px-4 py-3 h-100">
+                            <i class="fa-solid fa-clock goal-icon fs-4"></i>
+                            <div class="d-flex flex-column">
+                                <p>ساعات التعلم</p>
+                                <h4 class="lh-1">5 دورات</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card-number d-flex align-items-center gap-4 px-4 py-3 h-100">
+                            <i class="fa-solid fa-certificate goal-icon fs-4"></i>
+                            <div class="d-flex flex-column">
+                                <p>الشهادات المكتسبة</p>
+                                <h4 class="lh-1">دورة واحدة</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continue Learning -->
+<section>
+            <div class="container mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold">متابعة التعلم</h5>
+                    <a href="#" class="btn btn-outline px-3 py-1 py-lg-2">عرض الكل</a>
+                </div>
+                <div class="row justify-content-between g-3">
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-lg-4 p-3 d-flex flex-column">
+                            <img class="img-fluid w-100" src="assets/imgs/Image2.png" alt="صورة الدورة">
+                            <h4 class="mt-4">تصميم واجهة وتجربة المستخدم (UI/UX)</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>تعلّم كيفية إنشاء واجهات بديهية وتجارب رقمية سهلة الاستخدام.
+                                </p>
+                            </span>
+                            <div class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="assets/imgs/profile1.png" alt="سارة ج" class="testimonial-avatar">
+                                    <strong>المدربة: سارة ج</strong>
+                                </div>
+                                <p class="mb-0">مبتدئ</p>
+                            </div>
+                            <div class="progress mb-4" role="progressbar" aria-label="شريط التقدم"
+                                aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 35%">35%</div>
+                            </div>
+                            <a href="lessons-ar.html" class="btn btn-main border w-100 py-lg-3 py-2 mt-auto">متابعة التعلم</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card-number h-100 p-lg-4 p-3 d-flex flex-column">
+                            <img class="img-fluid w-100" src="assets/imgs/Image1.png" alt="صورة الدورة">
+                            <h4 class="mt-4">أساسيات تصميم الويب</h4>
+                            <span class="d-flex justify-content-between align-items-start fw-light">
+                                <p>استكشف أساسيات تصميم مواقع الويب المتجاوبة والجذابة بصرياً.
+                                </p>
+                            </span>
+                            <div class="d-flex justify-content-between align-items-center pb-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="assets/imgs/profile2.png" alt="جيسون م" class="testimonial-avatar">
+                                    <strong>المدرب: جيسون م</strong>
+                                </div>
+                                <p class="mb-0">متوسط</p>
+                            </div>
+                            <div class="progress mb-4" role="progressbar" aria-label="شريط التقدم"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 56%">56%</div>
+                            </div>
+                            <a href="lessons-ar.html" class="btn btn-main border w-100 py-lg-3 py-2 mt-auto">متابعة التعلم</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="card-number p-lg-4 p-3 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5>دوراتي</h5>
+                                <a href="#" class="btn btn-outline px-3 py-1 py-lg-2">عرض الكل</a>
+                            </div>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="card-number p-lg-4 p-3 d-flex justify-content between">
+                                    <div class="d-flex justify-content between gap-4">
+                                        <img class="img-fluid w-25 rounded" src="assets/imgs/Image1.3.png" alt="">
+                                        <div class="w-100 d-flex flex-column">
+                                            <h4>تصميم واجهة وتجربة المستخدم (UI/UX)</h4>
+                                            <p>سارة ج · مبتدئ</p>
+                                            <div class="progress " role="progressbar" aria-label="شريط التقدم"
+                                                aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 35%">35%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-chevron-right text-muted"></i></a>
+                                </div>
+                                <div class="card-number p-lg-4 p-3 d-flex justify-content between">
+                                    <div class="d-flex justify-content between gap-4">
+                                        <img class="img-fluid w-25 rounded" src="assets/imgs/Image2.3.png" alt="">
+                                        <div class="w-100 d-flex flex-column">
+                                            <h4>أساسيات تصميم الويب</h4>
+                                            <p>جيسون م · متوسط</p>
+                                            <div class="progress " role="progressbar" aria-label="شريط التقدم"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 56%">56%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-chevron-right text-muted"></i></a>
+                                </div>
+                                <div class="card-number p-lg-4 p-3 d-flex justify-content between">
+                                    <div class="d-flex justify-content between gap-4">
+                                        <img class="img-fluid w-25 rounded" src="assets/imgs/Image3.3.png" alt="">
+                                        <div class="w-100 d-flex flex-column">
+                                            <h4>مبادئ التصميم الجرافيكي</h4>
+                                            <p>إيميلي س · مبتدئ</p>
+                                            <div class="progress " role="progressbar" aria-label="شريط التقدم"
+                                                aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 42%">42%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><i class="fa-solid fa-chevron-right text-muted"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 h-100">
+                        <div class="card-number p-lg-4 p-3 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>أهداف التعلم</h5>
+                                <a href="#" class="btn btn-outline px-3 py-1 py-lg-2">عرض الكل</a>
+                            </div>
+                            <p>حافظ على استمراريتك</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1"></label>
+                                    <p class="mb-0 mt-2">الإثنين</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox2" value="option2" checked>
+                                    <label class="form-check-label" for="inlineCheckbox2"></label>
+                                    <p class="mb-0 mt-2">الثلاثاء</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3"></label>
+                                    <p class="mb-0 mt-2">الأربعاء</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox4" value="option4" checked>
+                                    <label class="form-check-label" for="inlineCheckbox4"></label>
+                                    <p class="mb-0 mt-2">الخميس</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox5" value="option5" checked>
+                                    <label class="form-check-label" for="inlineCheckbox5"></label>
+                                    <p class="mb-0 mt-2">الجمعة</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox6" value="option6">
+                                    <label class="form-check-label" for="inlineCheckbox6"></label>
+                                    <p class="mb-0 mt-2">السبت</p>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input rounded-5 mx-auto fs-4" type="checkbox"
+                                        id="inlineCheckbox7" value="option7"checked>
+                                    <label class="form-check-label" for="inlineCheckbox7"></label>
+                                    <p class="mb-0 mt-2">الأحد</p>
+                                </div>
+                            </div>
+                            <div class="container weekly-goal rounded-3 mt-4">
+                                <div class="d-flex justify-content-start align-items-center gap-3 p-3">
+                                    <div><i class="fa-solid fa-bullseye goal-icon fs-4"></i></div>
+                                    <div class="container">
+                                        <div class="d-flex justify-content-between align-items-center text-muted">
+                                            <span>هدف هذا الأسبوع</span><span>3/4 أيام</span>
+                                        </div>
+                                        <p class="fw-bold">التعلم لمدة 4 أيام على الأقل</p>
+                                        <div class="progress" role="progressbar" aria-label="شريط التقدم"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar w-75"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-number p-4 mt-4">
+                        <div class="card-number  px-2 py-0 rounded-3">
+                            <div class="d-flex justify-content-start align-items-center gap-3 p-3">
+                                <div><i class="fa-solid fa-certificate goal-icon fs-4"></i></div>
+                                <div class="container">
+                                    <h5 class="fw-bold">شهادتك</h5>
+                                    <p>نص تجريبي لوصف الشهادة المكتسبة وإنجازاتك.</p>
+                                    <button href="#" class="btn btn-outline px-3 py-1 py-lg-2">عرض الكل</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4 pb-5 pt-3 pt-lg-5">
+            <div class="col-lg-5 col-md-12">
+                <div class="mb-4">
+                    <div class="logo-box">
+                        <a href="#"><img src="assets/imgs/reflect-svgrepo-com 1.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="contact-info d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@qlearn.com" class="footer-link fw-light">info@qlearn.com</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                                                    <a href="tel:+963 955 000 000" class="telephone footer-link fw-light">+963 955 000 000</a>
+
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#" class="footer-link fw-light">موقعنا</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex flex-column gap-3">
+                <h6 class="footer-heading">الرئيسية</h6>
+                <a href="#" class="footer-link fw-light">الميزات</a>
+                <a href="#" class="footer-link fw-light">دوراتنا</a>
+                <a href="#" class="footer-link fw-light">آراء طلابنا</a>
+                <a href="#" class="footer-link fw-light">الأسئلة الشائعة</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex flex-column gap-3">
+                <h6 class="footer-heading">من نحن</h6>
+                <a href="#" class="footer-link fw-light">الشركة</a>
+                <a href="#" class="footer-link fw-light">الإنجازات</a>
+                <a href="#" class="footer-link fw-light">أهدافنا ورؤيتن</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 d-flex flex-column gap-3">
+                <h6 class="footer-heading">منصات التواصل الاجتماعي</h6>
+                <div class="d-flex gap-3">
+                    <a href="fb://profile/6815841748" class="social-box border"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="twitter://813286" class="social-box border"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="linkedin.com" class="social-box border"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top pt-4 text-center">
+            <p class="copyright-text py-4 fs-5 mb-0 fw-light">© 2026 Qlearn. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

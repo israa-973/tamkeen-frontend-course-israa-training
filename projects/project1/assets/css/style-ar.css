@@ -50,3 +50,8 @@ body {
 [type=url] {
     direction: rtl;
 }
+
+.telephone {
+    text-align: left;
+    direction: ltr;
+}

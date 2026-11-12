@@ -133,10 +133,11 @@ body[data-bs-theme="light"] {
 }
 
 .btn-outline {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--surface-bg);
+    color: var(--page-text);
     border: 1px solid var(--bg-light);
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .btn-outline:hover {
@@ -607,11 +608,6 @@ footer {
     border: 1px solid #f0f0f0;
 }
 
-.btn-purple {
-    background-color: #5c60f5;
-    color: white;
-}
-
 .btn-purple:hover {
     background-color: #4b4edb;
     color: white;
@@ -700,10 +696,6 @@ footer {
     font-weight: 500;
 }
 
-.btn-purple:hover {
-    background-color: #4b4edb;
-    color: white;
-}
 
 
 .user-img{
@@ -747,7 +739,7 @@ footer {
 }
 
 .weekly-goal{
-    background-color: #4b4ddb48;
+    background-color: #4b4ddb20;
 }
 
 .goal-icon{
@@ -757,10 +749,16 @@ footer {
     width: fit-content;
     height: fit-content;
     padding: 16px;
-    background-color: #4b4ddb4e;
+    background-color: #4b4ddb2f;
     border-radius: 50px;
    
 }
+
+/* lessons */
+.accordion-button:not(.collapsed) .fa-chevron-down {
+    rotate: calc(180deg);
+}
+
 
 
 
