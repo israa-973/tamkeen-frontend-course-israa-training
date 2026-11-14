@@ -270,6 +270,27 @@ input:checked+.custom-slider:before {
   transition: all 0.4s;
 }
 
+/* تعريف حركة الطفو الناعمة للبطاقات */
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* تطبيق الحركة المستمرة على البطاقات */
+.container-our-services .content-card {
+    animation: floatCard 3s infinite ease-in-out;
+}
+
+/* جعل البطاقات تتحرك بالتتابع (موجة) لمظهر أجمل */
+.container-our-services .card2 {
+    animation-delay: 1.5s;
+}
+
+
 /* testimonial */
 .container-testimonial {
     padding-top: 100px;
