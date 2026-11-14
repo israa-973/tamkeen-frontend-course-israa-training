@@ -17,7 +17,7 @@ toggle.addEventListener('change', () => {
 
 // Benefits "array of objects"
 const lang = document.documentElement.lang === 'ar' ? 'ar' : 'en';
-fetch('/projects/project1/assets/cardsData.json')
+fetch('./assets/cardsData.json')
     .then((res) => {
         if(res.ok) {
             return res.json();
